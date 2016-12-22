@@ -9,9 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Ramon Tayag"]
   spec.email         = ["ramon.tayag@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Ruby wrapper for eWAY's API}
+  spec.homepage      = "https://github.com/imacchiato/e_way_client-ruby"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
@@ -30,7 +29,15 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
+  spec.add_dependency "virtus", "~> 1.0"
+  spec.add_dependency "api_client_base", "~> 0.2.0"
+  spec.add_dependency "soap_client", "~> 0.2.0"
+  spec.add_dependency "deep_fetch"
+
   spec.add_development_dependency "bundler", "~> 1.13"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
+  spec.add_development_dependency "virtus-matchers"
+  spec.add_development_dependency "vcr"
+  spec.add_development_dependency "webmock"
 end
