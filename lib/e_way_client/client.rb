@@ -10,6 +10,7 @@ module EWayClient
     attribute :secret, String
 
     api_action :query_list_banks
+    api_action :query_list_provinces
     api_action :send_transaction
 
     private

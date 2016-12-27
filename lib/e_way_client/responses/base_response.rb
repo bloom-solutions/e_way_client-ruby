@@ -2,7 +2,7 @@ module EWayClient
   class BaseResponse
 
     include APIClientBase::Response.module
-    attribute :success, Boolean, default: :default_success
+    attribute :success, Boolean, lazy: true, default: :default_success
 
   end
 end

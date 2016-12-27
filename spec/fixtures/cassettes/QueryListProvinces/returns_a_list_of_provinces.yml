@@ -1,0 +1,1649 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://ws.remit.vn/ws.asmx?WSDL
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private, max-age=0
+      Content-Type:
+      - text/xml; charset=utf-8
+      Vary:
+      - Accept-Encoding
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 2.0.50727
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Tue, 27 Dec 2016 07:15:05 GMT
+      Content-Length:
+      - '5850'
+    body:
+      encoding: ASCII-8BIT
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<wsdl:definitions xmlns:soap=\"http://schemas.xmlsoap.org/wsdl/soap/\"
+        xmlns:tm=\"http://microsoft.com/wsdl/mime/textMatching/\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\"
+        xmlns:mime=\"http://schemas.xmlsoap.org/wsdl/mime/\" xmlns:tns=\"IN_OUT_API\"
+        xmlns:s=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap12=\"http://schemas.xmlsoap.org/wsdl/soap12/\"
+        xmlns:http=\"http://schemas.xmlsoap.org/wsdl/http/\" targetNamespace=\"IN_OUT_API\"
+        xmlns:wsdl=\"http://schemas.xmlsoap.org/wsdl/\">\r\n  <wsdl:types>\r\n    <s:schema
+        elementFormDefault=\"qualified\" targetNamespace=\"IN_OUT_API\">\r\n      <s:element
+        name=\"ChangePassword\">\r\n        <s:complexType>\r\n          <s:sequence>\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"AGENT_CODE\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"USERNAME\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"PASSWORD\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"NEW_PASSWORD\" type=\"s:string\" />\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"CONFIRM_PASSWORD\"
+        type=\"s:string\" />\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"ChangePasswordResponse\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"ChangePasswordResult\">\r\n              <s:complexType>\r\n
+        \               <s:sequence>\r\n                  <s:any minOccurs=\"0\" maxOccurs=\"unbounded\"
+        namespace=\"http://www.w3.org/2001/XMLSchema\" processContents=\"lax\" />\r\n
+        \                 <s:any minOccurs=\"1\" namespace=\"urn:schemas-microsoft-com:xml-diffgram-v1\"
+        processContents=\"lax\" />\r\n                </s:sequence>\r\n              </s:complexType>\r\n
+        \           </s:element>\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"ChangePasswordJson\">\r\n        <s:complexType>\r\n
+        \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"AGENT_CODE\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"USERNAME\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"PASSWORD\" type=\"s:string\" />\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"NEW_PASSWORD\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"CONFIRM_PASSWORD\" type=\"s:string\" />\r\n          </s:sequence>\r\n
+        \       </s:complexType>\r\n      </s:element>\r\n      <s:element name=\"ChangePasswordJsonResponse\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"ChangePasswordJsonResult\" type=\"s:string\"
+        />\r\n          </s:sequence>\r\n        </s:complexType>\r\n      </s:element>\r\n
+        \     <s:element name=\"SendTransaction\">\r\n        <s:complexType>\r\n
+        \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"AGENT_CODE\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"USERNAME\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"PASSWORD\" type=\"s:string\" />\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"TRANSACTION_ID\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"TRANSACTION_DATE\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"DEGIT_CODE\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"TRANSACTION_AMOUNT\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"SETT_AMOUNT\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"TRANSACTION_CURRENCY\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"SETT_CURRENCY\" type=\"s:string\" />\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"SETT_CONVERSION_RATE\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"PAYMENTMODE\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"SENDER_NAME\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"SENDER_ADDRESS\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"SENDER_DISTRICT\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"SENDER_CITY\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"SENDER_COUNTRY\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"SENDER_QUESTION\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"SENDER_ANSWER\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"RECEIVER_NAME\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"RECEIVER_ADDRESS\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"RECEIVER_WARDS\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"RECEIVER_DISTRICT\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"RECEIVER_CITY\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"RECEIVER_PHONE\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"HOURS_RECEIVE\" type=\"s:string\" />\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"BANK_ID\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"BANK_ACCOUNT_NUMBER\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"TRANSACTION_MESSAGE\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"TRANSACTION_KEY\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"BANKBRANCH_NAME\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"BANKBRANCH_ADDRESS\" type=\"s:string\" />\r\n          </s:sequence>\r\n
+        \       </s:complexType>\r\n      </s:element>\r\n      <s:element name=\"SendTransactionResponse\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"SendTransactionResult\">\r\n              <s:complexType>\r\n
+        \               <s:sequence>\r\n                  <s:any minOccurs=\"0\" maxOccurs=\"unbounded\"
+        namespace=\"http://www.w3.org/2001/XMLSchema\" processContents=\"lax\" />\r\n
+        \                 <s:any minOccurs=\"1\" namespace=\"urn:schemas-microsoft-com:xml-diffgram-v1\"
+        processContents=\"lax\" />\r\n                </s:sequence>\r\n              </s:complexType>\r\n
+        \           </s:element>\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"SendTransactionJson\">\r\n        <s:complexType>\r\n
+        \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"AGENT_CODE\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"USERNAME\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"PASSWORD\" type=\"s:string\" />\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"TRANSACTION_ID\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"TRANSACTION_DATE\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"DEGIT_CODE\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"TRANSACTION_AMOUNT\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"SETT_AMOUNT\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"TRANSACTION_CURRENCY\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"SETT_CURRENCY\" type=\"s:string\" />\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"SETT_CONVERSION_RATE\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"PAYMENTMODE\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"SENDER_NAME\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"SENDER_ADDRESS\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"SENDER_DISTRICT\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"SENDER_CITY\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"SENDER_COUNTRY\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"SENDER_QUESTION\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"SENDER_ANSWER\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"RECEIVER_NAME\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"RECEIVER_ADDRESS\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"RECEIVER_WARDS\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"RECEIVER_DISTRICT\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"RECEIVER_CITY\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"RECEIVER_PHONE\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"HOURS_RECEIVE\" type=\"s:string\" />\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"BANK_ID\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"BANK_ACCOUNT_NUMBER\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"TRANSACTION_MESSAGE\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"TRANSACTION_KEY\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"BANKBRANCH_NAME\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"BANKBRANCH_ADDRESS\" type=\"s:string\" />\r\n          </s:sequence>\r\n
+        \       </s:complexType>\r\n      </s:element>\r\n      <s:element name=\"SendTransactionJsonResponse\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"SendTransactionJsonResult\" type=\"s:string\"
+        />\r\n          </s:sequence>\r\n        </s:complexType>\r\n      </s:element>\r\n
+        \     <s:element name=\"UpdateTransactionJson\">\r\n        <s:complexType>\r\n
+        \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"AGENT_CODE\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"USERNAME\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"PASSWORD\" type=\"s:string\" />\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"TRANSACTION_ID\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"TRANSACTION_DATE\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"DEGIT_CODE\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"TRANSACTION_AMOUNT\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"SETT_AMOUNT\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"TRANSACTION_CURRENCY\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"SETT_CURRENCY\" type=\"s:string\" />\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"SETT_CONVERSION_RATE\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"PAYMENTMODE\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"SENDER_NAME\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"SENDER_ADDRESS\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"SENDER_DISTRICT\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"SENDER_CITY\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"SENDER_COUNTRY\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"SENDER_QUESTION\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"SENDER_ANSWER\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"RECEIVER_NAME\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"RECEIVER_ADDRESS\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"RECEIVER_WARDS\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"RECEIVER_DISTRICT\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"RECEIVER_CITY\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"RECEIVER_PHONE\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"HOURS_RECEIVE\" type=\"s:string\" />\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"BANK_ID\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"BANK_ACCOUNT_NUMBER\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"TRANSACTION_MESSAGE\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"TRANSACTION_KEY\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"BANKBRANCH_NAME\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"BANKBRANCH_ADDRESS\" type=\"s:string\" />\r\n          </s:sequence>\r\n
+        \       </s:complexType>\r\n      </s:element>\r\n      <s:element name=\"UpdateTransactionJsonResponse\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"UpdateTransactionJsonResult\" type=\"s:string\"
+        />\r\n          </s:sequence>\r\n        </s:complexType>\r\n      </s:element>\r\n
+        \     <s:element name=\"UpdateTransaction\">\r\n        <s:complexType>\r\n
+        \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"AGENT_CODE\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"USERNAME\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"PASSWORD\" type=\"s:string\" />\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"TRANSACTION_ID\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"TRANSACTION_DATE\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"DEGIT_CODE\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"TRANSACTION_AMOUNT\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"SETT_AMOUNT\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"TRANSACTION_CURRENCY\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"SETT_CURRENCY\" type=\"s:string\" />\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"SETT_CONVERSION_RATE\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"PAYMENTMODE\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"SENDER_NAME\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"SENDER_ADDRESS\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"SENDER_DISTRICT\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"SENDER_CITY\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"SENDER_COUNTRY\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"SENDER_QUESTION\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"SENDER_ANSWER\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"RECEIVER_NAME\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"RECEIVER_ADDRESS\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"RECEIVER_WARDS\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"RECEIVER_DISTRICT\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"RECEIVER_CITY\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"RECEIVER_PHONE\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"HOURS_RECEIVE\" type=\"s:string\" />\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"BANK_ID\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"BANK_ACCOUNT_NUMBER\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"TRANSACTION_MESSAGE\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"TRANSACTION_KEY\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"BANKBRANCH_NAME\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"BANKBRANCH_ADDRESS\" type=\"s:string\" />\r\n          </s:sequence>\r\n
+        \       </s:complexType>\r\n      </s:element>\r\n      <s:element name=\"UpdateTransactionResponse\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"UpdateTransactionResult\">\r\n              <s:complexType>\r\n
+        \               <s:sequence>\r\n                  <s:any minOccurs=\"0\" maxOccurs=\"unbounded\"
+        namespace=\"http://www.w3.org/2001/XMLSchema\" processContents=\"lax\" />\r\n
+        \                 <s:any minOccurs=\"1\" namespace=\"urn:schemas-microsoft-com:xml-diffgram-v1\"
+        processContents=\"lax\" />\r\n                </s:sequence>\r\n              </s:complexType>\r\n
+        \           </s:element>\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"QueryTXNStatus\">\r\n        <s:complexType>\r\n
+        \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"AGENT_CODE\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"USERNAME\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"PASSWORD\" type=\"s:string\" />\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"TRANSACTION_ID\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"FROMDATE\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"TODATE\" type=\"s:string\" />\r\n          </s:sequence>\r\n
+        \       </s:complexType>\r\n      </s:element>\r\n      <s:element name=\"QueryTXNStatusResponse\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"QueryTXNStatusResult\">\r\n              <s:complexType>\r\n
+        \               <s:sequence>\r\n                  <s:any minOccurs=\"0\" maxOccurs=\"unbounded\"
+        namespace=\"http://www.w3.org/2001/XMLSchema\" processContents=\"lax\" />\r\n
+        \                 <s:any minOccurs=\"1\" namespace=\"urn:schemas-microsoft-com:xml-diffgram-v1\"
+        processContents=\"lax\" />\r\n                </s:sequence>\r\n              </s:complexType>\r\n
+        \           </s:element>\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"QueryCashFlow\">\r\n        <s:complexType>\r\n
+        \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"AGENT_CODE\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"USERNAME\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"PASSWORD\" type=\"s:string\" />\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"FROMDATE\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"TODATE\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"TRANSACTION_CURRENCY\" type=\"s:string\" />\r\n          </s:sequence>\r\n
+        \       </s:complexType>\r\n      </s:element>\r\n      <s:element name=\"QueryCashFlowResponse\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"QueryCashFlowResult\">\r\n              <s:complexType>\r\n
+        \               <s:sequence>\r\n                  <s:any minOccurs=\"0\" maxOccurs=\"unbounded\"
+        namespace=\"http://www.w3.org/2001/XMLSchema\" processContents=\"lax\" />\r\n
+        \                 <s:any minOccurs=\"1\" namespace=\"urn:schemas-microsoft-com:xml-diffgram-v1\"
+        processContents=\"lax\" />\r\n                </s:sequence>\r\n              </s:complexType>\r\n
+        \           </s:element>\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"QueryCashFlowJson\">\r\n        <s:complexType>\r\n
+        \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"AGENT_CODE\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"USERNAME\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"PASSWORD\" type=\"s:string\" />\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"FROMDATE\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"TODATE\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"TRANSACTION_CURRENCY\" type=\"s:string\" />\r\n          </s:sequence>\r\n
+        \       </s:complexType>\r\n      </s:element>\r\n      <s:element name=\"QueryCashFlowJsonResponse\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"QueryCashFlowJsonResult\" type=\"s:string\"
+        />\r\n          </s:sequence>\r\n        </s:complexType>\r\n      </s:element>\r\n
+        \     <s:element name=\"QueryTXNStatusJson\">\r\n        <s:complexType>\r\n
+        \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"AGENT_CODE\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"USERNAME\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"PASSWORD\" type=\"s:string\" />\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"TRANSACTION_ID\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"FROMDATE\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"TODATE\" type=\"s:string\" />\r\n          </s:sequence>\r\n
+        \       </s:complexType>\r\n      </s:element>\r\n      <s:element name=\"QueryTXNStatusJsonResponse\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"QueryTXNStatusJsonResult\" type=\"s:string\"
+        />\r\n          </s:sequence>\r\n        </s:complexType>\r\n      </s:element>\r\n
+        \     <s:element name=\"ReceiveTransaction\">\r\n        <s:complexType>\r\n
+        \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"AGENT_CODE\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"USERNAME\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"PASSWORD\" type=\"s:string\" />\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"TRANSACTION_DATE\"
+        type=\"s:string\" />\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"ReceiveTransactionResponse\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"ReceiveTransactionResult\">\r\n              <s:complexType>\r\n
+        \               <s:sequence>\r\n                  <s:any minOccurs=\"0\" maxOccurs=\"unbounded\"
+        namespace=\"http://www.w3.org/2001/XMLSchema\" processContents=\"lax\" />\r\n
+        \                 <s:any minOccurs=\"1\" namespace=\"urn:schemas-microsoft-com:xml-diffgram-v1\"
+        processContents=\"lax\" />\r\n                </s:sequence>\r\n              </s:complexType>\r\n
+        \           </s:element>\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"ReturnTXNStatus\">\r\n        <s:complexType>\r\n
+        \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"AGENT_CODE\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"USERNAME\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"PASSWORD\" type=\"s:string\" />\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"ORDERNO1\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"PAID\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"MESSAGE_PAID\" type=\"s:string\" />\r\n          </s:sequence>\r\n
+        \       </s:complexType>\r\n      </s:element>\r\n      <s:element name=\"ReturnTXNStatusResponse\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"ReturnTXNStatusResult\">\r\n              <s:complexType>\r\n
+        \               <s:sequence>\r\n                  <s:any minOccurs=\"0\" maxOccurs=\"unbounded\"
+        namespace=\"http://www.w3.org/2001/XMLSchema\" processContents=\"lax\" />\r\n
+        \                 <s:any minOccurs=\"1\" namespace=\"urn:schemas-microsoft-com:xml-diffgram-v1\"
+        processContents=\"lax\" />\r\n                </s:sequence>\r\n              </s:complexType>\r\n
+        \           </s:element>\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"UpdateTXNStatusCancel\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"AGENT_CODE\" type=\"s:string\" />\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"USERNAME\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"PASSWORD\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"TRANSACTION_ID\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"CANCEL\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"MESSAGE_CANCEL\" type=\"s:string\"
+        />\r\n          </s:sequence>\r\n        </s:complexType>\r\n      </s:element>\r\n
+        \     <s:element name=\"UpdateTXNStatusCancelResponse\">\r\n        <s:complexType>\r\n
+        \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"UpdateTXNStatusCancelResult\">\r\n              <s:complexType>\r\n
+        \               <s:sequence>\r\n                  <s:any minOccurs=\"0\" maxOccurs=\"unbounded\"
+        namespace=\"http://www.w3.org/2001/XMLSchema\" processContents=\"lax\" />\r\n
+        \                 <s:any minOccurs=\"1\" namespace=\"urn:schemas-microsoft-com:xml-diffgram-v1\"
+        processContents=\"lax\" />\r\n                </s:sequence>\r\n              </s:complexType>\r\n
+        \           </s:element>\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"UpdateTXNStatusCancelJSon\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"AGENT_CODE\" type=\"s:string\" />\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"USERNAME\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"PASSWORD\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"TRANSACTION_ID\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"CANCEL\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"MESSAGE_CANCEL\" type=\"s:string\"
+        />\r\n          </s:sequence>\r\n        </s:complexType>\r\n      </s:element>\r\n
+        \     <s:element name=\"UpdateTXNStatusCancelJSonResponse\">\r\n        <s:complexType>\r\n
+        \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"UpdateTXNStatusCancelJSonResult\" type=\"s:string\" />\r\n          </s:sequence>\r\n
+        \       </s:complexType>\r\n      </s:element>\r\n      <s:element name=\"QueryListBanks\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"AGENT_CODE\" type=\"s:string\" />\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"USERNAME\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"PASSWORD\"
+        type=\"s:string\" />\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"QueryListBanksResponse\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"QueryListBanksResult\">\r\n              <s:complexType>\r\n
+        \               <s:sequence>\r\n                  <s:any minOccurs=\"0\" maxOccurs=\"unbounded\"
+        namespace=\"http://www.w3.org/2001/XMLSchema\" processContents=\"lax\" />\r\n
+        \                 <s:any minOccurs=\"1\" namespace=\"urn:schemas-microsoft-com:xml-diffgram-v1\"
+        processContents=\"lax\" />\r\n                </s:sequence>\r\n              </s:complexType>\r\n
+        \           </s:element>\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"QueryListBanksJson\">\r\n        <s:complexType>\r\n
+        \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"AGENT_CODE\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"USERNAME\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"PASSWORD\" type=\"s:string\" />\r\n
+        \         </s:sequence>\r\n        </s:complexType>\r\n      </s:element>\r\n
+        \     <s:element name=\"QueryListBanksJsonResponse\">\r\n        <s:complexType>\r\n
+        \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"QueryListBanksJsonResult\" type=\"s:string\" />\r\n          </s:sequence>\r\n
+        \       </s:complexType>\r\n      </s:element>\r\n      <s:element name=\"QueryListProvincesJson\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"AGENT_CODE\" type=\"s:string\" />\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"USERNAME\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"PASSWORD\"
+        type=\"s:string\" />\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"QueryListProvincesJsonResponse\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"QueryListProvincesJsonResult\" type=\"s:string\"
+        />\r\n          </s:sequence>\r\n        </s:complexType>\r\n      </s:element>\r\n
+        \     <s:element name=\"QueryListProvinces\">\r\n        <s:complexType>\r\n
+        \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"AGENT_CODE\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"USERNAME\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"PASSWORD\" type=\"s:string\" />\r\n
+        \         </s:sequence>\r\n        </s:complexType>\r\n      </s:element>\r\n
+        \     <s:element name=\"QueryListProvincesResponse\">\r\n        <s:complexType>\r\n
+        \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"QueryListProvincesResult\">\r\n              <s:complexType>\r\n                <s:sequence>\r\n
+        \                 <s:any minOccurs=\"0\" maxOccurs=\"unbounded\" namespace=\"http://www.w3.org/2001/XMLSchema\"
+        processContents=\"lax\" />\r\n                  <s:any minOccurs=\"1\" namespace=\"urn:schemas-microsoft-com:xml-diffgram-v1\"
+        processContents=\"lax\" />\r\n                </s:sequence>\r\n              </s:complexType>\r\n
+        \           </s:element>\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"QueryListDistricts\">\r\n        <s:complexType>\r\n
+        \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"AGENT_CODE\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"USERNAME\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"PASSWORD\" type=\"s:string\" />\r\n
+        \         </s:sequence>\r\n        </s:complexType>\r\n      </s:element>\r\n
+        \     <s:element name=\"QueryListDistrictsResponse\">\r\n        <s:complexType>\r\n
+        \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"QueryListDistrictsResult\">\r\n              <s:complexType>\r\n                <s:sequence>\r\n
+        \                 <s:any minOccurs=\"0\" maxOccurs=\"unbounded\" namespace=\"http://www.w3.org/2001/XMLSchema\"
+        processContents=\"lax\" />\r\n                  <s:any minOccurs=\"1\" namespace=\"urn:schemas-microsoft-com:xml-diffgram-v1\"
+        processContents=\"lax\" />\r\n                </s:sequence>\r\n              </s:complexType>\r\n
+        \           </s:element>\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"QueryListDistrictsJson\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"AGENT_CODE\" type=\"s:string\" />\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"USERNAME\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"PASSWORD\"
+        type=\"s:string\" />\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"QueryListDistrictsJsonResponse\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"QueryListDistrictsJsonResult\" type=\"s:string\"
+        />\r\n          </s:sequence>\r\n        </s:complexType>\r\n      </s:element>\r\n
+        \     <s:element name=\"QueryListWards\">\r\n        <s:complexType>\r\n          <s:sequence>\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"AGENT_CODE\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"USERNAME\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"PASSWORD\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"DISTRICT_ID\" type=\"s:string\" />\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"PROVINCE_ID\"
+        type=\"s:string\" />\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"QueryListWardsResponse\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"QueryListWardsResult\">\r\n              <s:complexType>\r\n
+        \               <s:sequence>\r\n                  <s:any minOccurs=\"0\" maxOccurs=\"unbounded\"
+        namespace=\"http://www.w3.org/2001/XMLSchema\" processContents=\"lax\" />\r\n
+        \                 <s:any minOccurs=\"1\" namespace=\"urn:schemas-microsoft-com:xml-diffgram-v1\"
+        processContents=\"lax\" />\r\n                </s:sequence>\r\n              </s:complexType>\r\n
+        \           </s:element>\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"QueryListWardsJson\">\r\n        <s:complexType>\r\n
+        \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"AGENT_CODE\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"USERNAME\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"PASSWORD\" type=\"s:string\" />\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"DISTRICT_ID\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"PROVINCE_ID\" type=\"s:string\" />\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"QueryListWardsJsonResponse\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"QueryListWardsJsonResult\" type=\"s:string\"
+        />\r\n          </s:sequence>\r\n        </s:complexType>\r\n      </s:element>\r\n
+        \     <s:element name=\"QueryListCountrysJson\">\r\n        <s:complexType>\r\n
+        \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"AGENT_CODE\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"USERNAME\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"PASSWORD\" type=\"s:string\" />\r\n
+        \         </s:sequence>\r\n        </s:complexType>\r\n      </s:element>\r\n
+        \     <s:element name=\"QueryListCountrysJsonResponse\">\r\n        <s:complexType>\r\n
+        \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"QueryListCountrysJsonResult\" type=\"s:string\" />\r\n          </s:sequence>\r\n
+        \       </s:complexType>\r\n      </s:element>\r\n      <s:element name=\"QueryListCountrys\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"AGENT_CODE\" type=\"s:string\" />\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"USERNAME\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"PASSWORD\"
+        type=\"s:string\" />\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"QueryListCountrysResponse\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"QueryListCountrysResult\">\r\n              <s:complexType>\r\n
+        \               <s:sequence>\r\n                  <s:any minOccurs=\"0\" maxOccurs=\"unbounded\"
+        namespace=\"http://www.w3.org/2001/XMLSchema\" processContents=\"lax\" />\r\n
+        \                 <s:any minOccurs=\"1\" namespace=\"urn:schemas-microsoft-com:xml-diffgram-v1\"
+        processContents=\"lax\" />\r\n                </s:sequence>\r\n              </s:complexType>\r\n
+        \           </s:element>\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"QueryListCurrencyReceive\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"AGENT_CODE\" type=\"s:string\" />\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"USERNAME\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"PASSWORD\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"CountryID\" type=\"s:string\" />\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"QueryListCurrencyReceiveResponse\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"QueryListCurrencyReceiveResult\">\r\n
+        \             <s:complexType>\r\n                <s:sequence>\r\n                  <s:any
+        minOccurs=\"0\" maxOccurs=\"unbounded\" namespace=\"http://www.w3.org/2001/XMLSchema\"
+        processContents=\"lax\" />\r\n                  <s:any minOccurs=\"1\" namespace=\"urn:schemas-microsoft-com:xml-diffgram-v1\"
+        processContents=\"lax\" />\r\n                </s:sequence>\r\n              </s:complexType>\r\n
+        \           </s:element>\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"QueryListCurrencyReceiveJson\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"AGENT_CODE\" type=\"s:string\" />\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"USERNAME\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"PASSWORD\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"CountryID\" type=\"s:string\" />\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"QueryListCurrencyReceiveJsonResponse\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"QueryListCurrencyReceiveJsonResult\"
+        type=\"s:string\" />\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"QueryTracking\">\r\n        <s:complexType>\r\n
+        \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"AGENT_CODE\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"USERNAME\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"PASSWORD\" type=\"s:string\" />\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"TRANSACTION_ID\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"SENDER_PHONE\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"COUNTRY_ID\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"AMOUNT\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"CURRENCY_ID\" type=\"s:string\" />\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"ENGLISH\" type=\"s:string\"
+        />\r\n          </s:sequence>\r\n        </s:complexType>\r\n      </s:element>\r\n
+        \     <s:element name=\"QueryTrackingResponse\">\r\n        <s:complexType>\r\n
+        \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"QueryTrackingResult\">\r\n              <s:complexType>\r\n                <s:sequence>\r\n
+        \                 <s:any minOccurs=\"0\" maxOccurs=\"unbounded\" namespace=\"http://www.w3.org/2001/XMLSchema\"
+        processContents=\"lax\" />\r\n                  <s:any minOccurs=\"1\" namespace=\"urn:schemas-microsoft-com:xml-diffgram-v1\"
+        processContents=\"lax\" />\r\n                </s:sequence>\r\n              </s:complexType>\r\n
+        \           </s:element>\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"QueryTrackingJson\">\r\n        <s:complexType>\r\n
+        \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"AGENT_CODE\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"USERNAME\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"PASSWORD\" type=\"s:string\" />\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"TRANSACTION_ID\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"SENDER_PHONE\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"COUNTRY_ID\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"AMOUNT\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"CURRENCY_ID\" type=\"s:string\" />\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"ENGLISH\" type=\"s:string\"
+        />\r\n          </s:sequence>\r\n        </s:complexType>\r\n      </s:element>\r\n
+        \     <s:element name=\"QueryTrackingJsonResponse\">\r\n        <s:complexType>\r\n
+        \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"QueryTrackingJsonResult\" type=\"s:string\" />\r\n          </s:sequence>\r\n
+        \       </s:complexType>\r\n      </s:element>\r\n    </s:schema>\r\n  </wsdl:types>\r\n
+        \ <wsdl:message name=\"ChangePasswordSoapIn\">\r\n    <wsdl:part name=\"parameters\"
+        element=\"tns:ChangePassword\" />\r\n  </wsdl:message>\r\n  <wsdl:message
+        name=\"ChangePasswordSoapOut\">\r\n    <wsdl:part name=\"parameters\" element=\"tns:ChangePasswordResponse\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"ChangePasswordJsonSoapIn\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:ChangePasswordJson\" />\r\n
+        \ </wsdl:message>\r\n  <wsdl:message name=\"ChangePasswordJsonSoapOut\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:ChangePasswordJsonResponse\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"SendTransactionSoapIn\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:SendTransaction\" />\r\n
+        \ </wsdl:message>\r\n  <wsdl:message name=\"SendTransactionSoapOut\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:SendTransactionResponse\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"SendTransactionJsonSoapIn\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:SendTransactionJson\" />\r\n
+        \ </wsdl:message>\r\n  <wsdl:message name=\"SendTransactionJsonSoapOut\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:SendTransactionJsonResponse\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"UpdateTransactionJsonSoapIn\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:UpdateTransactionJson\" />\r\n
+        \ </wsdl:message>\r\n  <wsdl:message name=\"UpdateTransactionJsonSoapOut\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:UpdateTransactionJsonResponse\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"UpdateTransactionSoapIn\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:UpdateTransaction\" />\r\n
+        \ </wsdl:message>\r\n  <wsdl:message name=\"UpdateTransactionSoapOut\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:UpdateTransactionResponse\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"QueryTXNStatusSoapIn\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:QueryTXNStatus\" />\r\n  </wsdl:message>\r\n
+        \ <wsdl:message name=\"QueryTXNStatusSoapOut\">\r\n    <wsdl:part name=\"parameters\"
+        element=\"tns:QueryTXNStatusResponse\" />\r\n  </wsdl:message>\r\n  <wsdl:message
+        name=\"QueryCashFlowSoapIn\">\r\n    <wsdl:part name=\"parameters\" element=\"tns:QueryCashFlow\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"QueryCashFlowSoapOut\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:QueryCashFlowResponse\" />\r\n
+        \ </wsdl:message>\r\n  <wsdl:message name=\"QueryCashFlowJsonSoapIn\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:QueryCashFlowJson\" />\r\n
+        \ </wsdl:message>\r\n  <wsdl:message name=\"QueryCashFlowJsonSoapOut\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:QueryCashFlowJsonResponse\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"QueryTXNStatusJsonSoapIn\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:QueryTXNStatusJson\" />\r\n
+        \ </wsdl:message>\r\n  <wsdl:message name=\"QueryTXNStatusJsonSoapOut\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:QueryTXNStatusJsonResponse\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"ReceiveTransactionSoapIn\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:ReceiveTransaction\" />\r\n
+        \ </wsdl:message>\r\n  <wsdl:message name=\"ReceiveTransactionSoapOut\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:ReceiveTransactionResponse\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"ReturnTXNStatusSoapIn\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:ReturnTXNStatus\" />\r\n
+        \ </wsdl:message>\r\n  <wsdl:message name=\"ReturnTXNStatusSoapOut\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:ReturnTXNStatusResponse\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"UpdateTXNStatusCancelSoapIn\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:UpdateTXNStatusCancel\" />\r\n
+        \ </wsdl:message>\r\n  <wsdl:message name=\"UpdateTXNStatusCancelSoapOut\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:UpdateTXNStatusCancelResponse\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"UpdateTXNStatusCancelJSonSoapIn\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:UpdateTXNStatusCancelJSon\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"UpdateTXNStatusCancelJSonSoapOut\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:UpdateTXNStatusCancelJSonResponse\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"QueryListBanksSoapIn\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:QueryListBanks\" />\r\n  </wsdl:message>\r\n
+        \ <wsdl:message name=\"QueryListBanksSoapOut\">\r\n    <wsdl:part name=\"parameters\"
+        element=\"tns:QueryListBanksResponse\" />\r\n  </wsdl:message>\r\n  <wsdl:message
+        name=\"QueryListBanksJsonSoapIn\">\r\n    <wsdl:part name=\"parameters\" element=\"tns:QueryListBanksJson\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"QueryListBanksJsonSoapOut\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:QueryListBanksJsonResponse\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"QueryListProvincesJsonSoapIn\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:QueryListProvincesJson\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"QueryListProvincesJsonSoapOut\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:QueryListProvincesJsonResponse\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"QueryListProvincesSoapIn\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:QueryListProvinces\" />\r\n
+        \ </wsdl:message>\r\n  <wsdl:message name=\"QueryListProvincesSoapOut\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:QueryListProvincesResponse\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"QueryListDistrictsSoapIn\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:QueryListDistricts\" />\r\n
+        \ </wsdl:message>\r\n  <wsdl:message name=\"QueryListDistrictsSoapOut\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:QueryListDistrictsResponse\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"QueryListDistrictsJsonSoapIn\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:QueryListDistrictsJson\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"QueryListDistrictsJsonSoapOut\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:QueryListDistrictsJsonResponse\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"QueryListWardsSoapIn\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:QueryListWards\" />\r\n  </wsdl:message>\r\n
+        \ <wsdl:message name=\"QueryListWardsSoapOut\">\r\n    <wsdl:part name=\"parameters\"
+        element=\"tns:QueryListWardsResponse\" />\r\n  </wsdl:message>\r\n  <wsdl:message
+        name=\"QueryListWardsJsonSoapIn\">\r\n    <wsdl:part name=\"parameters\" element=\"tns:QueryListWardsJson\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"QueryListWardsJsonSoapOut\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:QueryListWardsJsonResponse\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"QueryListCountrysJsonSoapIn\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:QueryListCountrysJson\" />\r\n
+        \ </wsdl:message>\r\n  <wsdl:message name=\"QueryListCountrysJsonSoapOut\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:QueryListCountrysJsonResponse\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"QueryListCountrysSoapIn\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:QueryListCountrys\" />\r\n
+        \ </wsdl:message>\r\n  <wsdl:message name=\"QueryListCountrysSoapOut\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:QueryListCountrysResponse\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"QueryListCurrencyReceiveSoapIn\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:QueryListCurrencyReceive\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"QueryListCurrencyReceiveSoapOut\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:QueryListCurrencyReceiveResponse\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"QueryListCurrencyReceiveJsonSoapIn\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:QueryListCurrencyReceiveJson\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"QueryListCurrencyReceiveJsonSoapOut\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:QueryListCurrencyReceiveJsonResponse\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"QueryTrackingSoapIn\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:QueryTracking\" />\r\n  </wsdl:message>\r\n
+        \ <wsdl:message name=\"QueryTrackingSoapOut\">\r\n    <wsdl:part name=\"parameters\"
+        element=\"tns:QueryTrackingResponse\" />\r\n  </wsdl:message>\r\n  <wsdl:message
+        name=\"QueryTrackingJsonSoapIn\">\r\n    <wsdl:part name=\"parameters\" element=\"tns:QueryTrackingJson\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"QueryTrackingJsonSoapOut\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:QueryTrackingJsonResponse\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:portType name=\"ServiceSoap\">\r\n    <wsdl:operation
+        name=\"ChangePassword\">\r\n      <wsdl:input message=\"tns:ChangePasswordSoapIn\"
+        />\r\n      <wsdl:output message=\"tns:ChangePasswordSoapOut\" />\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"ChangePasswordJson\">\r\n      <wsdl:input message=\"tns:ChangePasswordJsonSoapIn\"
+        />\r\n      <wsdl:output message=\"tns:ChangePasswordJsonSoapOut\" />\r\n
+        \   </wsdl:operation>\r\n    <wsdl:operation name=\"SendTransaction\">\r\n
+        \     <wsdl:input message=\"tns:SendTransactionSoapIn\" />\r\n      <wsdl:output
+        message=\"tns:SendTransactionSoapOut\" />\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"SendTransactionJson\">\r\n      <wsdl:input message=\"tns:SendTransactionJsonSoapIn\"
+        />\r\n      <wsdl:output message=\"tns:SendTransactionJsonSoapOut\" />\r\n
+        \   </wsdl:operation>\r\n    <wsdl:operation name=\"UpdateTransactionJson\">\r\n
+        \     <wsdl:input message=\"tns:UpdateTransactionJsonSoapIn\" />\r\n      <wsdl:output
+        message=\"tns:UpdateTransactionJsonSoapOut\" />\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"UpdateTransaction\">\r\n      <wsdl:input message=\"tns:UpdateTransactionSoapIn\"
+        />\r\n      <wsdl:output message=\"tns:UpdateTransactionSoapOut\" />\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"QueryTXNStatus\">\r\n      <wsdl:input message=\"tns:QueryTXNStatusSoapIn\"
+        />\r\n      <wsdl:output message=\"tns:QueryTXNStatusSoapOut\" />\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"QueryCashFlow\">\r\n      <wsdl:input message=\"tns:QueryCashFlowSoapIn\"
+        />\r\n      <wsdl:output message=\"tns:QueryCashFlowSoapOut\" />\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"QueryCashFlowJson\">\r\n      <wsdl:input message=\"tns:QueryCashFlowJsonSoapIn\"
+        />\r\n      <wsdl:output message=\"tns:QueryCashFlowJsonSoapOut\" />\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"QueryTXNStatusJson\">\r\n      <wsdl:input message=\"tns:QueryTXNStatusJsonSoapIn\"
+        />\r\n      <wsdl:output message=\"tns:QueryTXNStatusJsonSoapOut\" />\r\n
+        \   </wsdl:operation>\r\n    <wsdl:operation name=\"ReceiveTransaction\">\r\n
+        \     <wsdl:input message=\"tns:ReceiveTransactionSoapIn\" />\r\n      <wsdl:output
+        message=\"tns:ReceiveTransactionSoapOut\" />\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"ReturnTXNStatus\">\r\n      <wsdl:input message=\"tns:ReturnTXNStatusSoapIn\"
+        />\r\n      <wsdl:output message=\"tns:ReturnTXNStatusSoapOut\" />\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"UpdateTXNStatusCancel\">\r\n      <wsdl:input message=\"tns:UpdateTXNStatusCancelSoapIn\"
+        />\r\n      <wsdl:output message=\"tns:UpdateTXNStatusCancelSoapOut\" />\r\n
+        \   </wsdl:operation>\r\n    <wsdl:operation name=\"UpdateTXNStatusCancelJSon\">\r\n
+        \     <wsdl:input message=\"tns:UpdateTXNStatusCancelJSonSoapIn\" />\r\n      <wsdl:output
+        message=\"tns:UpdateTXNStatusCancelJSonSoapOut\" />\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"QueryListBanks\">\r\n      <wsdl:input message=\"tns:QueryListBanksSoapIn\"
+        />\r\n      <wsdl:output message=\"tns:QueryListBanksSoapOut\" />\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"QueryListBanksJson\">\r\n      <wsdl:input message=\"tns:QueryListBanksJsonSoapIn\"
+        />\r\n      <wsdl:output message=\"tns:QueryListBanksJsonSoapOut\" />\r\n
+        \   </wsdl:operation>\r\n    <wsdl:operation name=\"QueryListProvincesJson\">\r\n
+        \     <wsdl:input message=\"tns:QueryListProvincesJsonSoapIn\" />\r\n      <wsdl:output
+        message=\"tns:QueryListProvincesJsonSoapOut\" />\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"QueryListProvinces\">\r\n      <wsdl:input message=\"tns:QueryListProvincesSoapIn\"
+        />\r\n      <wsdl:output message=\"tns:QueryListProvincesSoapOut\" />\r\n
+        \   </wsdl:operation>\r\n    <wsdl:operation name=\"QueryListDistricts\">\r\n
+        \     <wsdl:input message=\"tns:QueryListDistrictsSoapIn\" />\r\n      <wsdl:output
+        message=\"tns:QueryListDistrictsSoapOut\" />\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"QueryListDistrictsJson\">\r\n      <wsdl:input
+        message=\"tns:QueryListDistrictsJsonSoapIn\" />\r\n      <wsdl:output message=\"tns:QueryListDistrictsJsonSoapOut\"
+        />\r\n    </wsdl:operation>\r\n    <wsdl:operation name=\"QueryListWards\">\r\n
+        \     <wsdl:input message=\"tns:QueryListWardsSoapIn\" />\r\n      <wsdl:output
+        message=\"tns:QueryListWardsSoapOut\" />\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryListWardsJson\">\r\n      <wsdl:input message=\"tns:QueryListWardsJsonSoapIn\"
+        />\r\n      <wsdl:output message=\"tns:QueryListWardsJsonSoapOut\" />\r\n
+        \   </wsdl:operation>\r\n    <wsdl:operation name=\"QueryListCountrysJson\">\r\n
+        \     <wsdl:input message=\"tns:QueryListCountrysJsonSoapIn\" />\r\n      <wsdl:output
+        message=\"tns:QueryListCountrysJsonSoapOut\" />\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"QueryListCountrys\">\r\n      <wsdl:input message=\"tns:QueryListCountrysSoapIn\"
+        />\r\n      <wsdl:output message=\"tns:QueryListCountrysSoapOut\" />\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"QueryListCurrencyReceive\">\r\n      <wsdl:input
+        message=\"tns:QueryListCurrencyReceiveSoapIn\" />\r\n      <wsdl:output message=\"tns:QueryListCurrencyReceiveSoapOut\"
+        />\r\n    </wsdl:operation>\r\n    <wsdl:operation name=\"QueryListCurrencyReceiveJson\">\r\n
+        \     <wsdl:input message=\"tns:QueryListCurrencyReceiveJsonSoapIn\" />\r\n
+        \     <wsdl:output message=\"tns:QueryListCurrencyReceiveJsonSoapOut\" />\r\n
+        \   </wsdl:operation>\r\n    <wsdl:operation name=\"QueryTracking\">\r\n      <wsdl:input
+        message=\"tns:QueryTrackingSoapIn\" />\r\n      <wsdl:output message=\"tns:QueryTrackingSoapOut\"
+        />\r\n    </wsdl:operation>\r\n    <wsdl:operation name=\"QueryTrackingJson\">\r\n
+        \     <wsdl:input message=\"tns:QueryTrackingJsonSoapIn\" />\r\n      <wsdl:output
+        message=\"tns:QueryTrackingJsonSoapOut\" />\r\n    </wsdl:operation>\r\n  </wsdl:portType>\r\n
+        \ <wsdl:binding name=\"ServiceSoap\" type=\"tns:ServiceSoap\">\r\n    <soap:binding
+        transport=\"http://schemas.xmlsoap.org/soap/http\" />\r\n    <wsdl:operation
+        name=\"ChangePassword\">\r\n      <soap:operation soapAction=\"IN_OUT_API/ChangePassword\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"ChangePasswordJson\">\r\n      <soap:operation soapAction=\"IN_OUT_API/ChangePasswordJson\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"SendTransaction\">\r\n      <soap:operation soapAction=\"IN_OUT_API/SendTransaction\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"SendTransactionJson\">\r\n      <soap:operation soapAction=\"IN_OUT_API/SendTransactionJson\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"UpdateTransactionJson\">\r\n      <soap:operation soapAction=\"IN_OUT_API/UpdateTransactionJson\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"UpdateTransaction\">\r\n      <soap:operation soapAction=\"IN_OUT_API/UpdateTransaction\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryTXNStatus\">\r\n      <soap:operation soapAction=\"IN_OUT_API/QueryTXNStatus\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryCashFlow\">\r\n      <soap:operation soapAction=\"IN_OUT_API/QueryCashFlow\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryCashFlowJson\">\r\n      <soap:operation soapAction=\"IN_OUT_API/QueryCashFlowJson\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryTXNStatusJson\">\r\n      <soap:operation soapAction=\"IN_OUT_API/QueryTXNStatusJson\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"ReceiveTransaction\">\r\n      <soap:operation soapAction=\"IN_OUT_API/ReceiveTransaction\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"ReturnTXNStatus\">\r\n      <soap:operation soapAction=\"IN_OUT_API/ReturnTXNStatus\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"UpdateTXNStatusCancel\">\r\n      <soap:operation soapAction=\"IN_OUT_API/UpdateTXNStatusCancel\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"UpdateTXNStatusCancelJSon\">\r\n      <soap:operation soapAction=\"IN_OUT_API/UpdateTXNStatusCancelJSon\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryListBanks\">\r\n      <soap:operation soapAction=\"IN_OUT_API/QueryListBanks\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryListBanksJson\">\r\n      <soap:operation soapAction=\"IN_OUT_API/QueryListBanksJson\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryListProvincesJson\">\r\n      <soap:operation soapAction=\"IN_OUT_API/QueryListProvincesJson\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryListProvinces\">\r\n      <soap:operation soapAction=\"IN_OUT_API/QueryListProvinces\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryListDistricts\">\r\n      <soap:operation soapAction=\"IN_OUT_API/QueryListDistricts\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryListDistrictsJson\">\r\n      <soap:operation soapAction=\"IN_OUT_API/QueryListDistrictsJson\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryListWards\">\r\n      <soap:operation soapAction=\"IN_OUT_API/QueryListWards\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryListWardsJson\">\r\n      <soap:operation soapAction=\"IN_OUT_API/QueryListWardsJson\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryListCountrysJson\">\r\n      <soap:operation soapAction=\"IN_OUT_API/QueryListCountrysJson\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryListCountrys\">\r\n      <soap:operation soapAction=\"IN_OUT_API/QueryListCountrys\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryListCurrencyReceive\">\r\n      <soap:operation soapAction=\"IN_OUT_API/QueryListCurrencyReceive\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryListCurrencyReceiveJson\">\r\n      <soap:operation soapAction=\"IN_OUT_API/QueryListCurrencyReceiveJson\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryTracking\">\r\n      <soap:operation soapAction=\"IN_OUT_API/QueryTracking\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryTrackingJson\">\r\n      <soap:operation soapAction=\"IN_OUT_API/QueryTrackingJson\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n  </wsdl:binding>\r\n
+        \ <wsdl:binding name=\"ServiceSoap12\" type=\"tns:ServiceSoap\">\r\n    <soap12:binding
+        transport=\"http://schemas.xmlsoap.org/soap/http\" />\r\n    <wsdl:operation
+        name=\"ChangePassword\">\r\n      <soap12:operation soapAction=\"IN_OUT_API/ChangePassword\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"ChangePasswordJson\">\r\n      <soap12:operation soapAction=\"IN_OUT_API/ChangePasswordJson\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"SendTransaction\">\r\n      <soap12:operation soapAction=\"IN_OUT_API/SendTransaction\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"SendTransactionJson\">\r\n      <soap12:operation soapAction=\"IN_OUT_API/SendTransactionJson\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"UpdateTransactionJson\">\r\n      <soap12:operation soapAction=\"IN_OUT_API/UpdateTransactionJson\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"UpdateTransaction\">\r\n      <soap12:operation soapAction=\"IN_OUT_API/UpdateTransaction\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryTXNStatus\">\r\n      <soap12:operation soapAction=\"IN_OUT_API/QueryTXNStatus\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryCashFlow\">\r\n      <soap12:operation soapAction=\"IN_OUT_API/QueryCashFlow\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryCashFlowJson\">\r\n      <soap12:operation soapAction=\"IN_OUT_API/QueryCashFlowJson\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryTXNStatusJson\">\r\n      <soap12:operation soapAction=\"IN_OUT_API/QueryTXNStatusJson\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"ReceiveTransaction\">\r\n      <soap12:operation soapAction=\"IN_OUT_API/ReceiveTransaction\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"ReturnTXNStatus\">\r\n      <soap12:operation soapAction=\"IN_OUT_API/ReturnTXNStatus\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"UpdateTXNStatusCancel\">\r\n      <soap12:operation soapAction=\"IN_OUT_API/UpdateTXNStatusCancel\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"UpdateTXNStatusCancelJSon\">\r\n      <soap12:operation soapAction=\"IN_OUT_API/UpdateTXNStatusCancelJSon\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryListBanks\">\r\n      <soap12:operation soapAction=\"IN_OUT_API/QueryListBanks\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryListBanksJson\">\r\n      <soap12:operation soapAction=\"IN_OUT_API/QueryListBanksJson\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryListProvincesJson\">\r\n      <soap12:operation soapAction=\"IN_OUT_API/QueryListProvincesJson\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryListProvinces\">\r\n      <soap12:operation soapAction=\"IN_OUT_API/QueryListProvinces\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryListDistricts\">\r\n      <soap12:operation soapAction=\"IN_OUT_API/QueryListDistricts\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryListDistrictsJson\">\r\n      <soap12:operation soapAction=\"IN_OUT_API/QueryListDistrictsJson\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryListWards\">\r\n      <soap12:operation soapAction=\"IN_OUT_API/QueryListWards\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryListWardsJson\">\r\n      <soap12:operation soapAction=\"IN_OUT_API/QueryListWardsJson\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryListCountrysJson\">\r\n      <soap12:operation soapAction=\"IN_OUT_API/QueryListCountrysJson\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryListCountrys\">\r\n      <soap12:operation soapAction=\"IN_OUT_API/QueryListCountrys\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryListCurrencyReceive\">\r\n      <soap12:operation soapAction=\"IN_OUT_API/QueryListCurrencyReceive\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryListCurrencyReceiveJson\">\r\n      <soap12:operation soapAction=\"IN_OUT_API/QueryListCurrencyReceiveJson\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryTracking\">\r\n      <soap12:operation soapAction=\"IN_OUT_API/QueryTracking\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryTrackingJson\">\r\n      <soap12:operation soapAction=\"IN_OUT_API/QueryTrackingJson\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n  </wsdl:binding>\r\n
+        \ <wsdl:service name=\"Service\">\r\n    <wsdl:port name=\"ServiceSoap\" binding=\"tns:ServiceSoap\">\r\n
+        \     <soap:address location=\"https://ws.remit.vn/ws.asmx\" />\r\n    </wsdl:port>\r\n
+        \   <wsdl:port name=\"ServiceSoap12\" binding=\"tns:ServiceSoap12\">\r\n      <soap12:address
+        location=\"https://ws.remit.vn/ws.asmx\" />\r\n    </wsdl:port>\r\n  </wsdl:service>\r\n</wsdl:definitions>"
+    http_version: 
+  recorded_at: Tue, 27 Dec 2016 07:15:10 GMT
+- request:
+    method: post
+    uri: https://ws.remit.vn/ws.asmx
+    body:
+      encoding: UTF-8
+      string: <?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="IN_OUT_API"
+        xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Body><tns:QueryListProvinces><tns:USERNAME>[username]</tns:USERNAME><tns:PASSWORD>[password]</tns:PASSWORD></tns:QueryListProvinces></env:Body></env:Envelope>
+    headers:
+      Soapaction:
+      - '"IN_OUT_API/QueryListProvinces"'
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Content-Length:
+      - '385'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private, max-age=0
+      Content-Type:
+      - text/xml; charset=utf-8
+      Vary:
+      - Accept-Encoding
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 2.0.50727
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Tue, 27 Dec 2016 07:15:12 GMT
+      Content-Length:
+      - '7372'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c29hcDpF
+        bnZlbG9wZSB4bWxuczpzb2FwPSJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9y
+        Zy9zb2FwL2VudmVsb3BlLyIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9y
+        Zy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeG1sbnM6eHNkPSJodHRwOi8v
+        d3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYSI+PHNvYXA6Qm9keT48UXVlcnlM
+        aXN0UHJvdmluY2VzUmVzcG9uc2UgeG1sbnM9IklOX09VVF9BUEkiPjxRdWVy
+        eUxpc3RQcm92aW5jZXNSZXN1bHQ+PHhzOnNjaGVtYSBpZD0iTmV3RGF0YVNl
+        dCIgeG1sbnM9IiIgeG1sbnM6eHM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEv
+        WE1MU2NoZW1hIiB4bWxuczptc2RhdGE9InVybjpzY2hlbWFzLW1pY3Jvc29m
+        dC1jb206eG1sLW1zZGF0YSI+PHhzOmVsZW1lbnQgbmFtZT0iTmV3RGF0YVNl
+        dCIgbXNkYXRhOklzRGF0YVNldD0idHJ1ZSIgbXNkYXRhOk1haW5EYXRhVGFi
+        bGU9IlF1ZXJ5TGlzdFByb3ZpbmNlcyIgbXNkYXRhOlVzZUN1cnJlbnRMb2Nh
+        bGU9InRydWUiPjx4czpjb21wbGV4VHlwZT48eHM6Y2hvaWNlIG1pbk9jY3Vy
+        cz0iMCIgbWF4T2NjdXJzPSJ1bmJvdW5kZWQiPjx4czplbGVtZW50IG5hbWU9
+        IlF1ZXJ5TGlzdFByb3ZpbmNlcyI+PHhzOmNvbXBsZXhUeXBlPjx4czpzZXF1
+        ZW5jZT48eHM6ZWxlbWVudCBuYW1lPSJSRVNQT05TRV9DT0RFIiB0eXBlPSJ4
+        czpzdHJpbmciIG1pbk9jY3Vycz0iMCIgLz48eHM6ZWxlbWVudCBuYW1lPSJQ
+        cm92aW5jZV9JRCIgdHlwZT0ieHM6c3RyaW5nIiBtaW5PY2N1cnM9IjAiIC8+
+        PHhzOmVsZW1lbnQgbmFtZT0iUHJvdmluY2VfTmFtZV9FbmciIHR5cGU9Inhz
+        OnN0cmluZyIgbWluT2NjdXJzPSIwIiAvPjx4czplbGVtZW50IG5hbWU9IlBy
+        b3ZpbmNlX05hbWVfVmlldCIgdHlwZT0ieHM6c3RyaW5nIiBtaW5PY2N1cnM9
+        IjAiIC8+PHhzOmVsZW1lbnQgbmFtZT0iRGlzdHJpY3RzMSIgdHlwZT0ieHM6
+        c3RyaW5nIiBtaW5PY2N1cnM9IjAiIC8+PHhzOmVsZW1lbnQgbmFtZT0iVGlt
+        ZTEiIHR5cGU9InhzOnN0cmluZyIgbWluT2NjdXJzPSIwIiAvPjx4czplbGVt
+        ZW50IG5hbWU9IkRpc3RyaWN0czIiIHR5cGU9InhzOnN0cmluZyIgbWluT2Nj
+        dXJzPSIwIiAvPjx4czplbGVtZW50IG5hbWU9IlRpbWUyIiB0eXBlPSJ4czpz
+        dHJpbmciIG1pbk9jY3Vycz0iMCIgLz48eHM6ZWxlbWVudCBuYW1lPSJEaXN0
+        cmljdHMzIiB0eXBlPSJ4czpzdHJpbmciIG1pbk9jY3Vycz0iMCIgLz48eHM6
+        ZWxlbWVudCBuYW1lPSJUaW1lMyIgdHlwZT0ieHM6c3RyaW5nIiBtaW5PY2N1
+        cnM9IjAiIC8+PHhzOmVsZW1lbnQgbmFtZT0iRGlzdHJpY3RzNCIgdHlwZT0i
+        eHM6c3RyaW5nIiBtaW5PY2N1cnM9IjAiIC8+PHhzOmVsZW1lbnQgbmFtZT0i
+        VGltZTQiIHR5cGU9InhzOnN0cmluZyIgbWluT2NjdXJzPSIwIiAvPjx4czpl
+        bGVtZW50IG5hbWU9IkRpc3RyaWN0czUiIHR5cGU9InhzOnN0cmluZyIgbWlu
+        T2NjdXJzPSIwIiAvPjx4czplbGVtZW50IG5hbWU9IlRpbWU1IiB0eXBlPSJ4
+        czpzdHJpbmciIG1pbk9jY3Vycz0iMCIgLz48L3hzOnNlcXVlbmNlPjwveHM6
+        Y29tcGxleFR5cGU+PC94czplbGVtZW50PjwveHM6Y2hvaWNlPjwveHM6Y29t
+        cGxleFR5cGU+PC94czplbGVtZW50PjwveHM6c2NoZW1hPjxkaWZmZ3I6ZGlm
+        ZmdyYW0geG1sbnM6bXNkYXRhPSJ1cm46c2NoZW1hcy1taWNyb3NvZnQtY29t
+        OnhtbC1tc2RhdGEiIHhtbG5zOmRpZmZncj0idXJuOnNjaGVtYXMtbWljcm9z
+        b2Z0LWNvbTp4bWwtZGlmZmdyYW0tdjEiPjxEb2N1bWVudEVsZW1lbnQgeG1s
+        bnM9IiI+PFF1ZXJ5TGlzdFByb3ZpbmNlcyBkaWZmZ3I6aWQ9IlF1ZXJ5TGlz
+        dFByb3ZpbmNlczEiIG1zZGF0YTpyb3dPcmRlcj0iMCI+PFJFU1BPTlNFX0NP
+        REU+MDAwMDwvUkVTUE9OU0VfQ09ERT48UHJvdmluY2VfSUQ+OTwvUHJvdmlu
+        Y2VfSUQ+PFByb3ZpbmNlX05hbWVfRW5nPkFOR0lBTkc8L1Byb3ZpbmNlX05h
+        bWVfRW5nPjxQcm92aW5jZV9OYW1lX1ZpZXQ+QW4gR2lhbmc8L1Byb3ZpbmNl
+        X05hbWVfVmlldD48RGlzdHJpY3RzMT5Mb25nIFh1eWVuLCBDaGF1IERvYywg
+        QW4gUGh1LCBDaGF1IFBodSwgQ2hhdSBUaGFuaCwgQ2hvIE1vaSwgUGh1IFRh
+        biwgVGFuIENoYXUsIFRob2FpIFNvbiwgVGluaCBCaWVuLCBUcmkgVG9uLjwv
+        RGlzdHJpY3RzMT48VGltZTE+Ni0xMjwvVGltZTE+PC9RdWVyeUxpc3RQcm92
+        aW5jZXM+PFF1ZXJ5TGlzdFByb3ZpbmNlcyBkaWZmZ3I6aWQ9IlF1ZXJ5TGlz
+        dFByb3ZpbmNlczIiIG1zZGF0YTpyb3dPcmRlcj0iMSI+PFJFU1BPTlNFX0NP
+        REU+MDAwMDwvUkVTUE9OU0VfQ09ERT48UHJvdmluY2VfSUQ+MTwvUHJvdmlu
+        Y2VfSUQ+PFByb3ZpbmNlX05hbWVfRW5nPkJBIFJJQSAtIFZVTkcgVEFVPC9Q
+        cm92aW5jZV9OYW1lX0VuZz48UHJvdmluY2VfTmFtZV9WaWV0PkLDoCBS4buL
+        YSBWxaluZyBUw6B1PC9Qcm92aW5jZV9OYW1lX1ZpZXQ+PERpc3RyaWN0czE+
+        VnVuZyBUYXUsIEJhIFJpYSwgQ2hhdUR1YywgRGF0IERvLCBMb25nIERpZW4s
+        IFRhbiBUaGFuaCwgWHV5ZW5Nb2MsIENvbiBEYW88L0Rpc3RyaWN0czE+PFRp
+        bWUxPjYtMTI8L1RpbWUxPjxEaXN0cmljdHMyPkNvbiBEYW88L0Rpc3RyaWN0
+        czI+PFRpbWUyPk5vdCB5ZXQ8L1RpbWUyPjwvUXVlcnlMaXN0UHJvdmluY2Vz
+        PjxRdWVyeUxpc3RQcm92aW5jZXMgZGlmZmdyOmlkPSJRdWVyeUxpc3RQcm92
+        aW5jZXMzIiBtc2RhdGE6cm93T3JkZXI9IjIiPjxSRVNQT05TRV9DT0RFPjAw
+        MDA8L1JFU1BPTlNFX0NPREU+PFByb3ZpbmNlX0lEPjI8L1Byb3ZpbmNlX0lE
+        PjxQcm92aW5jZV9OYW1lX0VuZz5CQUNHSUFORzwvUHJvdmluY2VfTmFtZV9F
+        bmc+PFByb3ZpbmNlX05hbWVfVmlldD5C4bqvYyBHaWFuZzwvUHJvdmluY2Vf
+        TmFtZV9WaWV0PjxEaXN0cmljdHMxPkJhY0dpYW5nLCBZZW4gVGhlLCBUYW4g
+        WWVuLCBMdWMgTmdhbiwgSGllcEhvYSwgTGFuZyBHaWFuZywgU29uIERvbmcs
+        IGx1YyBOYW0sIFZpZXQgWWVuLCBZZW4gRHVuZzwvRGlzdHJpY3RzMT48VGlt
+        ZTE+MTItMjQ8L1RpbWUxPjwvUXVlcnlMaXN0UHJvdmluY2VzPjxRdWVyeUxp
+        c3RQcm92aW5jZXMgZGlmZmdyOmlkPSJRdWVyeUxpc3RQcm92aW5jZXM0IiBt
+        c2RhdGE6cm93T3JkZXI9IjMiPjxSRVNQT05TRV9DT0RFPjAwMDA8L1JFU1BP
+        TlNFX0NPREU+PFByb3ZpbmNlX0lEPjM8L1Byb3ZpbmNlX0lEPjxQcm92aW5j
+        ZV9OYW1lX0VuZz5CQUNLQU48L1Byb3ZpbmNlX05hbWVfRW5nPjxQcm92aW5j
+        ZV9OYW1lX1ZpZXQ+QuG6r2MgS+G6oW48L1Byb3ZpbmNlX05hbWVfVmlldD48
+        RGlzdHJpY3RzMT5CYWNLYW4sIEJhIEJlLCBCYWNoIFRob25nLCBDaG8gRG9u
+        LCBDaG8gTW9pLCBOYSBSLCBOZ2FuIFNvbiwgUGFjIE5hbTwvRGlzdHJpY3Rz
+        MT48VGltZTE+Tm90IHlldDwvVGltZTE+PC9RdWVyeUxpc3RQcm92aW5jZXM+
+        PFF1ZXJ5TGlzdFByb3ZpbmNlcyBkaWZmZ3I6aWQ9IlF1ZXJ5TGlzdFByb3Zp
+        bmNlczUiIG1zZGF0YTpyb3dPcmRlcj0iNCI+PFJFU1BPTlNFX0NPREU+MDAw
+        MDwvUkVTUE9OU0VfQ09ERT48UHJvdmluY2VfSUQ+MTA8L1Byb3ZpbmNlX0lE
+        PjxQcm92aW5jZV9OYW1lX0VuZz5CQUNMSUVVPC9Qcm92aW5jZV9OYW1lX0Vu
+        Zz48UHJvdmluY2VfTmFtZV9WaWV0PkLhuqFjIExpw6p1PC9Qcm92aW5jZV9O
+        YW1lX1ZpZXQ+PERpc3RyaWN0czE+QmFjIExpZXUsIFBodW9jIExvbmcsIEhv
+        bmcgRGFuLCBWaW5oTG9pLCBHaWFSYWksIERvbmcgSGFpLCBIb2FCaW5oPC9E
+        aXN0cmljdHMxPjxUaW1lMT42LTEyPC9UaW1lMT48L1F1ZXJ5TGlzdFByb3Zp
+        bmNlcz48UXVlcnlMaXN0UHJvdmluY2VzIGRpZmZncjppZD0iUXVlcnlMaXN0
+        UHJvdmluY2VzNiIgbXNkYXRhOnJvd09yZGVyPSI1Ij48UkVTUE9OU0VfQ09E
+        RT4wMDAwPC9SRVNQT05TRV9DT0RFPjxQcm92aW5jZV9JRD40PC9Qcm92aW5j
+        ZV9JRD48UHJvdmluY2VfTmFtZV9Fbmc+QkFDTklOSDwvUHJvdmluY2VfTmFt
+        ZV9Fbmc+PFByb3ZpbmNlX05hbWVfVmlldD5C4bqvYyBOaW5oPC9Qcm92aW5j
+        ZV9OYW1lX1ZpZXQ+PERpc3RyaWN0czE+QmFjIE5pbmgsIEdpYSBCaW5oLCBM
+        dW9uZyBUYWksIFF1ZSBWbywgVGh1YW4gVGhhbmgsIFRpZW4gRHUsIFR1IFNv
+        biwgWWVuIFBob25nPC9EaXN0cmljdHMxPjxUaW1lMT4xMi0yNDwvVGltZTE+
+        PC9RdWVyeUxpc3RQcm92aW5jZXM+PFF1ZXJ5TGlzdFByb3ZpbmNlcyBkaWZm
+        Z3I6aWQ9IlF1ZXJ5TGlzdFByb3ZpbmNlczciIG1zZGF0YTpyb3dPcmRlcj0i
+        NiI+PFJFU1BPTlNFX0NPREU+MDAwMDwvUkVTUE9OU0VfQ09ERT48UHJvdmlu
+        Y2VfSUQ+MTI8L1Byb3ZpbmNlX0lEPjxQcm92aW5jZV9OYW1lX0VuZz5CRU5U
+        UkU8L1Byb3ZpbmNlX05hbWVfRW5nPjxQcm92aW5jZV9OYW1lX1ZpZXQ+QuG6
+        v24gVHJlPC9Qcm92aW5jZV9OYW1lX1ZpZXQ+PERpc3RyaWN0czE+QmVuIFRy
+        ZSwgQmEgVHJpLCBCaW5oIERhaSwgQ2hhdVRoYW5oLCBDaG8gTGFjaCwgR2lv
+        bmdUcm9tLCBNbyBDYXksIFRoYW5oUGh1PC9EaXN0cmljdHMxPjxUaW1lMT42
+        LTEyPC9UaW1lMT48L1F1ZXJ5TGlzdFByb3ZpbmNlcz48UXVlcnlMaXN0UHJv
+        dmluY2VzIGRpZmZncjppZD0iUXVlcnlMaXN0UHJvdmluY2VzOCIgbXNkYXRh
+        OnJvd09yZGVyPSI3Ij48UkVTUE9OU0VfQ09ERT4wMDAwPC9SRVNQT05TRV9D
+        T0RFPjxQcm92aW5jZV9JRD4xMzwvUHJvdmluY2VfSUQ+PFByb3ZpbmNlX05h
+        bWVfRW5nPkJJTkhESU5IPC9Qcm92aW5jZV9OYW1lX0VuZz48UHJvdmluY2Vf
+        TmFtZV9WaWV0PkLDrG5oIMSQ4buLbmg8L1Byb3ZpbmNlX05hbWVfVmlldD48
+        RGlzdHJpY3RzMT5RdWkgTmhvbiwgQW4gTGFvLCBBbiBOaG9uLCBIb2FpIEFu
+        LCBIb2FpTmhvbiwgUGh1IENhdCwgUGh1IE15LCBUdXlQaHVvYywgVGF5IFNv
+        biwgVmFuIENhbmgsIFZpbmhUaGFuaDwvRGlzdHJpY3RzMT48VGltZTE+Ni0x
+        MjwvVGltZTE+PC9RdWVyeUxpc3RQcm92aW5jZXM+PFF1ZXJ5TGlzdFByb3Zp
+        bmNlcyBkaWZmZ3I6aWQ9IlF1ZXJ5TGlzdFByb3ZpbmNlczkiIG1zZGF0YTpy
+        b3dPcmRlcj0iOCI+PFJFU1BPTlNFX0NPREU+MDAwMDwvUkVTUE9OU0VfQ09E
+        RT48UHJvdmluY2VfSUQ+MTQ8L1Byb3ZpbmNlX0lEPjxQcm92aW5jZV9OYW1l
+        X0VuZz5CSU5IRFVPTkc8L1Byb3ZpbmNlX05hbWVfRW5nPjxQcm92aW5jZV9O
+        YW1lX1ZpZXQ+QsOsbmggRMawxqFuZzwvUHJvdmluY2VfTmFtZV9WaWV0PjxE
+        aXN0cmljdHMxPlRodSBEYXUgTW90LCBCZW4gQ2F0LCBEYXVUaWVuZywgVGFu
+        IFV5ZW4sIFBodUdpYW8sIFRodWFuIEFuLCBEaSBBbjwvRGlzdHJpY3RzMT48
+        VGltZTE+Ni0xMjwvVGltZTE+PC9RdWVyeUxpc3RQcm92aW5jZXM+PFF1ZXJ5
+        TGlzdFByb3ZpbmNlcyBkaWZmZ3I6aWQ9IlF1ZXJ5TGlzdFByb3ZpbmNlczEw
+        IiBtc2RhdGE6cm93T3JkZXI9IjkiPjxSRVNQT05TRV9DT0RFPjAwMDA8L1JF
+        U1BPTlNFX0NPREU+PFByb3ZpbmNlX0lEPjM2PC9Qcm92aW5jZV9JRD48UHJv
+        dmluY2VfTmFtZV9Fbmc+QklOSFBIVU9DPC9Qcm92aW5jZV9OYW1lX0VuZz48
+        UHJvdmluY2VfTmFtZV9WaWV0PkLDrG5oIFBoxrDhu5tjPC9Qcm92aW5jZV9O
+        YW1lX1ZpZXQ+PERpc3RyaWN0czE+RG9uZyBYb2FpLCBCaW5oIExvbmcsIEJ1
+        IERhbmcsIEJ1IERvcCwgQ2hvbiBUaGFuaCwgRG9uZyBQaHUsIExvY05pbmgs
+        IFBodW9jIExvbmc8L0Rpc3RyaWN0czE+PFRpbWUxPjYtMTI8L1RpbWUxPjwv
+        UXVlcnlMaXN0UHJvdmluY2VzPjxRdWVyeUxpc3RQcm92aW5jZXMgZGlmZmdy
+        OmlkPSJRdWVyeUxpc3RQcm92aW5jZXMxMSIgbXNkYXRhOnJvd09yZGVyPSIx
+        MCI+PFJFU1BPTlNFX0NPREU+MDAwMDwvUkVTUE9OU0VfQ09ERT48UHJvdmlu
+        Y2VfSUQ+MTU8L1Byb3ZpbmNlX0lEPjxQcm92aW5jZV9OYW1lX0VuZz5CSU5I
+        VEhVQU48L1Byb3ZpbmNlX05hbWVfRW5nPjxQcm92aW5jZV9OYW1lX1ZpZXQ+
+        QsOsbmggVGh14bqtbjwvUHJvdmluY2VfTmFtZV9WaWV0PjxEaXN0cmljdHMx
+        PlBoYW5UaGlldCwgTGEgR2ksIFR1eVBob25nLCBCYWNCaW5oLCBIYW0gVGh1
+        YW5CYWMsIEhhbSBUaHVhbiBOYW0sIFRhbmhMaW5oLCBIYW0gVGFuLCBEdWNM
+        aW5oPC9EaXN0cmljdHMxPjxUaW1lMT42LTEyPC9UaW1lMT48RGlzdHJpY3Rz
+        Mj5QaHVRdXk8L0Rpc3RyaWN0czI+PFRpbWUyPk5vdCB5ZXQ8L1RpbWUyPjwv
+        UXVlcnlMaXN0UHJvdmluY2VzPjxRdWVyeUxpc3RQcm92aW5jZXMgZGlmZmdy
+        OmlkPSJRdWVyeUxpc3RQcm92aW5jZXMxMiIgbXNkYXRhOnJvd09yZGVyPSIx
+        MSI+PFJFU1BPTlNFX0NPREU+MDAwMDwvUkVTUE9OU0VfQ09ERT48UHJvdmlu
+        Y2VfSUQ+MTY8L1Byb3ZpbmNlX0lEPjxQcm92aW5jZV9OYW1lX0VuZz5DQU1B
+        VTwvUHJvdmluY2VfTmFtZV9Fbmc+PFByb3ZpbmNlX05hbWVfVmlldD5Dw6Ag
+        TWF1PC9Qcm92aW5jZV9OYW1lX1ZpZXQ+PERpc3RyaWN0czE+Q2EgTWF1LCBE
+        YW0gRG9pLCBOZ29jIEhpZW4sIENhaU51b2MsIFRyYW4gVmFuIFRob2ksIFUg
+        TWluaCwgVGhvaUJpbmgsIE5hbSBDYW4sIFBodSBUYW48L0Rpc3RyaWN0czE+
+        PFRpbWUxPjYtMTI8L1RpbWUxPjwvUXVlcnlMaXN0UHJvdmluY2VzPjxRdWVy
+        eUxpc3RQcm92aW5jZXMgZGlmZmdyOmlkPSJRdWVyeUxpc3RQcm92aW5jZXMx
+        MyIgbXNkYXRhOnJvd09yZGVyPSIxMiI+PFJFU1BPTlNFX0NPREU+MDAwMDwv
+        UkVTUE9OU0VfQ09ERT48UHJvdmluY2VfSUQ+Mzk8L1Byb3ZpbmNlX0lEPjxQ
+        cm92aW5jZV9OYW1lX0VuZz5DQU5USE88L1Byb3ZpbmNlX05hbWVfRW5nPjxQ
+        cm92aW5jZV9OYW1lX1ZpZXQ+Y+G6p24gdGjGoTwvUHJvdmluY2VfTmFtZV9W
+        aWV0PjxEaXN0cmljdHMxPkNhbiBUaG8sIE5pbmhLaWV1LCBCaW5oVGh1eSwg
+        Q2FpIFJhbmcsIE8gTW9uLCBQaG9uZ0RpZW4sIENvIERvLCBUaG90IE5vdCwg
+        VmluaFRoYW5oPC9EaXN0cmljdHMxPjxUaW1lMT40LTg8L1RpbWUxPjwvUXVl
+        cnlMaXN0UHJvdmluY2VzPjxRdWVyeUxpc3RQcm92aW5jZXMgZGlmZmdyOmlk
+        PSJRdWVyeUxpc3RQcm92aW5jZXMxNCIgbXNkYXRhOnJvd09yZGVyPSIxMyI+
+        PFJFU1BPTlNFX0NPREU+MDAwMDwvUkVTUE9OU0VfQ09ERT48UHJvdmluY2Vf
+        SUQ+NTwvUHJvdmluY2VfSUQ+PFByb3ZpbmNlX05hbWVfRW5nPkNBT0JBTkc8
+        L1Byb3ZpbmNlX05hbWVfRW5nPjxQcm92aW5jZV9OYW1lX1ZpZXQ+Q2FvIELh
+        urFuZzwvUHJvdmluY2VfTmFtZV9WaWV0PjxEaXN0cmljdHMxPkNhbyBCYW5n
+        LCBCYW8gTGFjLCBCYW8gTGFtLCBIYSBMYW5nLCBIYSBRdWFuZywgSG9hIEFu
+        LCBOZ3V5ZW4gQmluaCwgUGh1Y0hvYSwgUXVhbmdVeWVuLCBUaGFjaCBBbiwg
+        VGhvbmcgTm9uZywgVHJhTGluaCwgVHJ1bmdLaGFuaDwvRGlzdHJpY3RzMT48
+        VGltZTE+Tm90IHlldDwvVGltZTE+PC9RdWVyeUxpc3RQcm92aW5jZXM+PFF1
+        ZXJ5TGlzdFByb3ZpbmNlcyBkaWZmZ3I6aWQ9IlF1ZXJ5TGlzdFByb3ZpbmNl
+        czE1IiBtc2RhdGE6cm93T3JkZXI9IjE0Ij48UkVTUE9OU0VfQ09ERT4wMDAw
+        PC9SRVNQT05TRV9DT0RFPjxQcm92aW5jZV9JRD4xOTwvUHJvdmluY2VfSUQ+
+        PFByb3ZpbmNlX05hbWVfRW5nPkRBTkFORzwvUHJvdmluY2VfTmFtZV9Fbmc+
+        PFByb3ZpbmNlX05hbWVfVmlldD7EkMOgIE7hurVuZzwvUHJvdmluY2VfTmFt
+        ZV9WaWV0PjxEaXN0cmljdHMxPkRhIE5hbmcsIEhhaSBDaGF1LCBUaGFuaEto
+        ZSwgU29uIFRyYSwgTmd1SGFuaCBTb24sIExpZW4gQ2hpZXUsIENhbSBMZSwg
+        SG9hIFZhbmcsIERhbyBIb2FuZyBTYTwvRGlzdHJpY3RzMT48VGltZTE+NC04
+        PC9UaW1lMT48L1F1ZXJ5TGlzdFByb3ZpbmNlcz48UXVlcnlMaXN0UHJvdmlu
+        Y2VzIGRpZmZncjppZD0iUXVlcnlMaXN0UHJvdmluY2VzMTYiIG1zZGF0YTpy
+        b3dPcmRlcj0iMTUiPjxSRVNQT05TRV9DT0RFPjAwMDA8L1JFU1BPTlNFX0NP
+        REU+PFByb3ZpbmNlX0lEPjc8L1Byb3ZpbmNlX0lEPjxQcm92aW5jZV9OYW1l
+        X0VuZz5EQUtMQUs8L1Byb3ZpbmNlX05hbWVfRW5nPjxQcm92aW5jZV9OYW1l
+        X1ZpZXQ+xJDhuq9rIEzhuq9rPC9Qcm92aW5jZV9OYW1lX1ZpZXQ+PERpc3Ry
+        aWN0czE+QnVvbiBNYSBUaHVvdCwgRWFI4oCZbGVvKiwgRWEgU3VwLCBLcm9u
+        ZyBOYW5nLCBLcm9uZ0J1aywgQnVvbiBEb24sIEN1IE3igJlnYXIsIEVhS2Fy
+        LCBN4oCZRHJhaywgS3JvbmcgUGFrLCBLcm9uZyBBbmEsIEtyb25nIEJvbmc8
+        L0Rpc3RyaWN0czE+PFRpbWUxPjEyLTI0PC9UaW1lMT48L1F1ZXJ5TGlzdFBy
+        b3ZpbmNlcz48UXVlcnlMaXN0UHJvdmluY2VzIGRpZmZncjppZD0iUXVlcnlM
+        aXN0UHJvdmluY2VzMTciIG1zZGF0YTpyb3dPcmRlcj0iMTYiPjxSRVNQT05T
+        RV9DT0RFPjAwMDA8L1JFU1BPTlNFX0NPREU+PFByb3ZpbmNlX0lEPjg8L1By
+        b3ZpbmNlX0lEPjxQcm92aW5jZV9OYW1lX0VuZz5EQUtOT05HPC9Qcm92aW5j
+        ZV9OYW1lX0VuZz48UHJvdmluY2VfTmFtZV9WaWV0PsSQ4bqvayBOw7RuZzwv
+        UHJvdmluY2VfTmFtZV9WaWV0PjxEaXN0cmljdHMxPkdpYU5naGlhKiwgQ3Ug
+        SnV0LCBEYWtHbG9uZywgRGFrIE1pbCwgRGFrUuKAmWxhcCosIERhayBTb25n
+        LCBLcm9uZyBObzwvRGlzdHJpY3RzMT48VGltZTE+MTItMjQ8L1RpbWUxPjwv
+        UXVlcnlMaXN0UHJvdmluY2VzPjxRdWVyeUxpc3RQcm92aW5jZXMgZGlmZmdy
+        OmlkPSJRdWVyeUxpc3RQcm92aW5jZXMxOCIgbXNkYXRhOnJvd09yZGVyPSIx
+        NyI+PFJFU1BPTlNFX0NPREU+MDAwMDwvUkVTUE9OU0VfQ09ERT48UHJvdmlu
+        Y2VfSUQ+NTk8L1Byb3ZpbmNlX0lEPjxQcm92aW5jZV9OYW1lX0VuZz5ESUVO
+        QklFTjwvUHJvdmluY2VfTmFtZV9Fbmc+PFByb3ZpbmNlX05hbWVfVmlldD7E
+        kGnhu4duIEJpw6puPC9Qcm92aW5jZV9OYW1lX1ZpZXQ+PERpc3RyaWN0czE+
+        RGllbiBCaWVuIFBodSwgTXVvbmcgTGFpLCBMYWkgQ2hhdSwgVHVhIENodWEs
+        IFR1YW4gR2lhbywgRGllbiBCaWVuLCBEaWVuIEJpZW4gRG9uZywgTXVvbmcg
+        TmhlLCBNdW9uZyBDaGE8L0Rpc3RyaWN0czE+PFRpbWUxPk5vdCB5ZXQ8L1Rp
+        bWUxPjwvUXVlcnlMaXN0UHJvdmluY2VzPjxRdWVyeUxpc3RQcm92aW5jZXMg
+        ZGlmZmdyOmlkPSJRdWVyeUxpc3RQcm92aW5jZXMxOSIgbXNkYXRhOnJvd09y
+        ZGVyPSIxOCI+PFJFU1BPTlNFX0NPREU+MDAwMDwvUkVTUE9OU0VfQ09ERT48
+        UHJvdmluY2VfSUQ+MjA8L1Byb3ZpbmNlX0lEPjxQcm92aW5jZV9OYW1lX0Vu
+        Zz5ET05HTkFJPC9Qcm92aW5jZV9OYW1lX0VuZz48UHJvdmluY2VfTmFtZV9W
+        aWV0PsSQ4buTbmcgTmFpPC9Qcm92aW5jZV9OYW1lX1ZpZXQ+PERpc3RyaWN0
+        czE+QmllbiBIb2EsIExvbmcgS2hhbmgsIERpbmhRdWFuLCBMb25nIFRoYW5o
+        LCBOaG9uVHJhY2gsIFRhbiBQaHUsIFRob25nIE5oYXQsIFZpbmhDdXUsIFh1
+        YW5Mb2MsIENhbSBNeSwgVHJhbmdCb208L0Rpc3RyaWN0czE+PFRpbWUxPjQt
+        ODwvVGltZTE+PC9RdWVyeUxpc3RQcm92aW5jZXM+PFF1ZXJ5TGlzdFByb3Zp
+        bmNlcyBkaWZmZ3I6aWQ9IlF1ZXJ5TGlzdFByb3ZpbmNlczIwIiBtc2RhdGE6
+        cm93T3JkZXI9IjE5Ij48UkVTUE9OU0VfQ09ERT4wMDAwPC9SRVNQT05TRV9D
+        T0RFPjxQcm92aW5jZV9JRD4yMTwvUHJvdmluY2VfSUQ+PFByb3ZpbmNlX05h
+        bWVfRW5nPkRPTkdUSEFQPC9Qcm92aW5jZV9OYW1lX0VuZz48UHJvdmluY2Vf
+        TmFtZV9WaWV0PsSQ4buTbmcgVGjDoXA8L1Byb3ZpbmNlX05hbWVfVmlldD48
+        RGlzdHJpY3RzMT5DYW8gTGFuaCwgU2EgRGVjLCBUYW4gSG9uZywgSG9uZyBO
+        Z3UsIFRhbSBOb25nLCBUaGFuaEJpbmgsIFRoYXBNdW9pLCBMYXAgVm8sIExh
+        aSBWdW5nLCBDaGF1VGhhbmg8L0Rpc3RyaWN0czE+PFRpbWUxPjYtMTI8L1Rp
+        bWUxPjwvUXVlcnlMaXN0UHJvdmluY2VzPjxRdWVyeUxpc3RQcm92aW5jZXMg
+        ZGlmZmdyOmlkPSJRdWVyeUxpc3RQcm92aW5jZXMyMSIgbXNkYXRhOnJvd09y
+        ZGVyPSIyMCI+PFJFU1BPTlNFX0NPREU+MDAwMDwvUkVTUE9OU0VfQ09ERT48
+        UHJvdmluY2VfSUQ+MTc8L1Byb3ZpbmNlX0lEPjxQcm92aW5jZV9OYW1lX0Vu
+        Zz5HSUFMQUk8L1Byb3ZpbmNlX05hbWVfRW5nPjxQcm92aW5jZV9OYW1lX1Zp
+        ZXQ+R2lhIExhaTwvUHJvdmluY2VfTmFtZV9WaWV0PjxEaXN0cmljdHMxPlBs
+        ZWlrdSwgQW4gS2hlLCBBeXVuIFBhLCBDaHUgUGFoKiwgQ2h1IFByb25nLCBD
+        aHUgU2UsIERha0RvYSwgRGFrIFBvLCBEdWMgQ28sIExhIEdyYWksIExhIFBh
+        LCBLYmFuZyosIEtvbmcgQ2hybyosIEtyb25nIFBhKiwgTWFuZyBZYW5nPC9E
+        aXN0cmljdHMxPjxUaW1lMT4xMi0yNDwvVGltZTE+PC9RdWVyeUxpc3RQcm92
+        aW5jZXM+PFF1ZXJ5TGlzdFByb3ZpbmNlcyBkaWZmZ3I6aWQ9IlF1ZXJ5TGlz
+        dFByb3ZpbmNlczIyIiBtc2RhdGE6cm93T3JkZXI9IjIxIj48UkVTUE9OU0Vf
+        Q09ERT4wMDAwPC9SRVNQT05TRV9DT0RFPjxQcm92aW5jZV9JRD42MTwvUHJv
+        dmluY2VfSUQ+PFByb3ZpbmNlX05hbWVfRW5nPkhBR0lBTkc8L1Byb3ZpbmNl
+        X05hbWVfRW5nPjxQcm92aW5jZV9OYW1lX1ZpZXQ+SMOgIEdpYW5nPC9Qcm92
+        aW5jZV9OYW1lX1ZpZXQ+PERpc3RyaWN0czE+SGEgR2lhbmcsIERvbmcgVmFu
+        LCBNYW8gVmFjLCBZZW4gTWluaCwgUXVhbiBCYSwgQmFjIE1lLCBIb2FuZyBT
+        dSBQaGksIFZpIFh1eWVuLCBYaW4gTWFuLCBCYWNRdWFuZywgUXVhbmdCaW5o
+        PC9EaXN0cmljdHMxPjxUaW1lMT5Ob3QgeWV0PC9UaW1lMT48L1F1ZXJ5TGlz
+        dFByb3ZpbmNlcz48UXVlcnlMaXN0UHJvdmluY2VzIGRpZmZncjppZD0iUXVl
+        cnlMaXN0UHJvdmluY2VzMjMiIG1zZGF0YTpyb3dPcmRlcj0iMjIiPjxSRVNQ
+        T05TRV9DT0RFPjAwMDA8L1JFU1BPTlNFX0NPREU+PFByb3ZpbmNlX0lEPjE4
+        PC9Qcm92aW5jZV9JRD48UHJvdmluY2VfTmFtZV9Fbmc+SEFOQU08L1Byb3Zp
+        bmNlX05hbWVfRW5nPjxQcm92aW5jZV9OYW1lX1ZpZXQ+SMOgIE5hbTwvUHJv
+        dmluY2VfTmFtZV9WaWV0PjxEaXN0cmljdHMxPlBodSBMeSwgQmluaCBMdWMs
+        IER1eVRpZW4sIEtpbSBCYW5nLCBMeSBOaGFuLCBUaGFuaExpZW08L0Rpc3Ry
+        aWN0czE+PFRpbWUxPjEyLTI0PC9UaW1lMT48L1F1ZXJ5TGlzdFByb3ZpbmNl
+        cz48UXVlcnlMaXN0UHJvdmluY2VzIGRpZmZncjppZD0iUXVlcnlMaXN0UHJv
+        dmluY2VzMjQiIG1zZGF0YTpyb3dPcmRlcj0iMjMiPjxSRVNQT05TRV9DT0RF
+        PjAwMDA8L1JFU1BPTlNFX0NPREU+PFByb3ZpbmNlX0lEPjIzPC9Qcm92aW5j
+        ZV9JRD48UHJvdmluY2VfTmFtZV9Fbmc+SEFOT0k8L1Byb3ZpbmNlX05hbWVf
+        RW5nPjxQcm92aW5jZV9OYW1lX1ZpZXQ+SMOgIE7hu5lpPC9Qcm92aW5jZV9O
+        YW1lX1ZpZXQ+PERpc3RyaWN0czE+SGEgTm9pLCBCYSBEaW5oLCBDYXVHaWF5
+        LCBEb25nIERhLCBIYWkgQmEgVHJ1bmcsIEhvYW5LaWVtLCBIb2FuZyBNYWks
+        IExvbmcgQmllbiwgVGF5IEhvLCBUaGFuaFh1YW4sIERvbmcgQW5oLCBHaWEg
+        TGFtLCBTb2MgU29uLCBUaGFuaCBUcmksIFR1TGllbTwvRGlzdHJpY3RzMT48
+        VGltZTE+My02PC9UaW1lMT48L1F1ZXJ5TGlzdFByb3ZpbmNlcz48UXVlcnlM
+        aXN0UHJvdmluY2VzIGRpZmZncjppZD0iUXVlcnlMaXN0UHJvdmluY2VzMjUi
+        IG1zZGF0YTpyb3dPcmRlcj0iMjQiPjxSRVNQT05TRV9DT0RFPjAwMDA8L1JF
+        U1BPTlNFX0NPREU+PFByb3ZpbmNlX0lEPjYyPC9Qcm92aW5jZV9JRD48UHJv
+        dmluY2VfTmFtZV9Fbmc+SEFUQVk8L1Byb3ZpbmNlX05hbWVfRW5nPjxQcm92
+        aW5jZV9OYW1lX1ZpZXQ+SMOgIFTDonk8L1Byb3ZpbmNlX05hbWVfVmlldD48
+        RGlzdHJpY3RzMT5IYSBEb25nLCBTb24gVGF5LCBCYSBWaSwgQ2h1b25nIE15
+        LCBEYW4gUGh1b25nLCBIb2FpRHVjLCBNeSBEdWMsIFBodVh1eWVuLCBQaHVj
+        VGhvLCBRdW9jT2FpLCBUaGFjaCBUaGF0LCBUaGFuaE9haSwgVGh1b25nIFRp
+        biwgVW5nSG9hPC9EaXN0cmljdHMxPjxUaW1lMT42LTEyPC9UaW1lMT48L1F1
+        ZXJ5TGlzdFByb3ZpbmNlcz48UXVlcnlMaXN0UHJvdmluY2VzIGRpZmZncjpp
+        ZD0iUXVlcnlMaXN0UHJvdmluY2VzMjYiIG1zZGF0YTpyb3dPcmRlcj0iMjUi
+        PjxSRVNQT05TRV9DT0RFPjAwMDA8L1JFU1BPTlNFX0NPREU+PFByb3ZpbmNl
+        X0lEPjYzPC9Qcm92aW5jZV9JRD48UHJvdmluY2VfTmFtZV9Fbmc+SEFUSU5I
+        PC9Qcm92aW5jZV9OYW1lX0VuZz48UHJvdmluY2VfTmFtZV9WaWV0PkjDoCBU
+        xKluaDwvUHJvdmluY2VfTmFtZV9WaWV0PjxEaXN0cmljdHMxPkhhIFRpbmgs
+        IEhvbmcgTGluaCwgQ2FtIFh1eWVuLCBDYW4gTG9jLCBEdWNUaG8sIEh1b25n
+        S2hlLCBIdW9uZyBTb24sIEt5QW5oKiwgTmdoaVh1YW4sIFRoYWNoIEhhLCBW
+        dSBRdWFuZzwvRGlzdHJpY3RzMT48VGltZTE+MTItMjQ8L1RpbWUxPjwvUXVl
+        cnlMaXN0UHJvdmluY2VzPjxRdWVyeUxpc3RQcm92aW5jZXMgZGlmZmdyOmlk
+        PSJRdWVyeUxpc3RQcm92aW5jZXMyNyIgbXNkYXRhOnJvd09yZGVyPSIyNiI+
+        PFJFU1BPTlNFX0NPREU+MDAwMDwvUkVTUE9OU0VfQ09ERT48UHJvdmluY2Vf
+        SUQ+Mjg8L1Byb3ZpbmNlX0lEPjxQcm92aW5jZV9OYW1lX0VuZz5IQUlEVU9O
+        RzwvUHJvdmluY2VfTmFtZV9Fbmc+PFByb3ZpbmNlX05hbWVfVmlldD5I4bqj
+        aSBExrDGoW5nPC9Qcm92aW5jZV9OYW1lX1ZpZXQ+PERpc3RyaWN0czE+SGFp
+        IER1b25nLCBCaW5oR2lhbmcsIENhbSBHaWFuZywgQ2hpIExpbmgsIEdpYUxv
+        YywgS2ltIFRoYW5oLCBLaW5oIE1vbiwgTmFtIFNhY2gsIE5pbmhHaWFuZywg
+        VGhhbmggSGEsIFRoYW5oIE1pZW4sIFR1S3k8L0Rpc3RyaWN0czE+PFRpbWUx
+        PjEyLTI0PC9UaW1lMT48L1F1ZXJ5TGlzdFByb3ZpbmNlcz48UXVlcnlMaXN0
+        UHJvdmluY2VzIGRpZmZncjppZD0iUXVlcnlMaXN0UHJvdmluY2VzMjgiIG1z
+        ZGF0YTpyb3dPcmRlcj0iMjciPjxSRVNQT05TRV9DT0RFPjAwMDA8L1JFU1BP
+        TlNFX0NPREU+PFByb3ZpbmNlX0lEPjIyPC9Qcm92aW5jZV9JRD48UHJvdmlu
+        Y2VfTmFtZV9Fbmc+SEFJUEhPTkc8L1Byb3ZpbmNlX05hbWVfRW5nPjxQcm92
+        aW5jZV9OYW1lX1ZpZXQ+SOG6o2kgUGjDsm5nPC9Qcm92aW5jZV9OYW1lX1Zp
+        ZXQ+PERpc3RyaWN0czE+SGFpUGhvbmcsIERvIFNvbiwgSGFpIEFuLCBIb25n
+        IEJhbmcsIE5nbyBRdXllbiwgTGUgQ2hhbiwgS2llbiBBbiwgVGh1eSBOZ3V5
+        ZW4sIEFuIER1b25nLCBBbiBIYWksIFRpZW4gTGFuZywgVmluaEJhbywgQW4g
+        TGFvLCBLaWVuVGh1eSwgQ2F0IEhhaSwgQmFjaCBMb25nIFZ5PC9EaXN0cmlj
+        dHMxPjxUaW1lMT42LTEyPC9UaW1lMT48L1F1ZXJ5TGlzdFByb3ZpbmNlcz48
+        UXVlcnlMaXN0UHJvdmluY2VzIGRpZmZncjppZD0iUXVlcnlMaXN0UHJvdmlu
+        Y2VzMjkiIG1zZGF0YTpyb3dPcmRlcj0iMjgiPjxSRVNQT05TRV9DT0RFPjAw
+        MDA8L1JFU1BPTlNFX0NPREU+PFByb3ZpbmNlX0lEPjMwPC9Qcm92aW5jZV9J
+        RD48UHJvdmluY2VfTmFtZV9Fbmc+SEFVR0lBTkc8L1Byb3ZpbmNlX05hbWVf
+        RW5nPjxQcm92aW5jZV9OYW1lX1ZpZXQ+SOG6rXUgR2lhbmc8L1Byb3ZpbmNl
+        X05hbWVfVmlldD48RGlzdHJpY3RzMT5WaSBUaGFuaCwgTmdhIEJheSwgUGh1
+        bmdIaWVwLCBWaSBUaHV5LCBMb25nIE15LCBDaGF1VGhhbmggQSwgQ2hhdVRo
+        YW5oPC9EaXN0cmljdHMxPjxUaW1lMT42LTEyPC9UaW1lMT48L1F1ZXJ5TGlz
+        dFByb3ZpbmNlcz48UXVlcnlMaXN0UHJvdmluY2VzIGRpZmZncjppZD0iUXVl
+        cnlMaXN0UHJvdmluY2VzMzAiIG1zZGF0YTpyb3dPcmRlcj0iMjkiPjxSRVNQ
+        T05TRV9DT0RFPjAwMDA8L1JFU1BPTlNFX0NPREU+PFByb3ZpbmNlX0lEPjY0
+        PC9Qcm92aW5jZV9JRD48UHJvdmluY2VfTmFtZV9Fbmc+SE9BQklOSDwvUHJv
+        dmluY2VfTmFtZV9Fbmc+PFByb3ZpbmNlX05hbWVfVmlldD5Iw7JhIELDrG5o
+        PC9Qcm92aW5jZV9OYW1lX1ZpZXQ+PERpc3RyaWN0czE+SG9hQmluaCwgRGEg
+        QmFjLCBNYWkgQ2hhdSwgS3kgU29uLCBDYW8gUGhvbmcsIEx1b25nIFNvbiwg
+        S2ltIEJvaSwgVGFuIExhYywgTGFjIFNvbiwgTGFjIFRodXksIFllbiBUaHV5
+        PC9EaXN0cmljdHMxPjxUaW1lMT4xMi0yNDwvVGltZTE+PC9RdWVyeUxpc3RQ
+        cm92aW5jZXM+PFF1ZXJ5TGlzdFByb3ZpbmNlcyBkaWZmZ3I6aWQ9IlF1ZXJ5
+        TGlzdFByb3ZpbmNlczMxIiBtc2RhdGE6cm93T3JkZXI9IjMwIj48UkVTUE9O
+        U0VfQ09ERT4wMDAwPC9SRVNQT05TRV9DT0RFPjxQcm92aW5jZV9JRD4xMTwv
+        UHJvdmluY2VfSUQ+PFByb3ZpbmNlX05hbWVfRW5nPkhVTkdZRU48L1Byb3Zp
+        bmNlX05hbWVfRW5nPjxQcm92aW5jZV9OYW1lX1ZpZXQ+SMawbmcgWcOqbjwv
+        UHJvdmluY2VfTmFtZV9WaWV0PjxEaXN0cmljdHMxPkh1bmcgWWVuLCBBbiBU
+        aGksIEtob2FpQ2hhdSwgS2ltIERvbmcsIE15IEhhbywgUGh1IEN1LCBUaWVu
+        IEx5LCBWYW4gR2lhbmcsIFZhbiBMYW0sIFllbiBNeTwvRGlzdHJpY3RzMT48
+        VGltZTE+MTItMjQ8L1RpbWUxPjwvUXVlcnlMaXN0UHJvdmluY2VzPjxRdWVy
+        eUxpc3RQcm92aW5jZXMgZGlmZmdyOmlkPSJRdWVyeUxpc3RQcm92aW5jZXMz
+        MiIgbXNkYXRhOnJvd09yZGVyPSIzMSI+PFJFU1BPTlNFX0NPREU+MDAwMDwv
+        UkVTUE9OU0VfQ09ERT48UHJvdmluY2VfSUQ+Mjc8L1Byb3ZpbmNlX0lEPjxQ
+        cm92aW5jZV9OYW1lX0VuZz5LSEFOSEhPQTwvUHJvdmluY2VfTmFtZV9Fbmc+
+        PFByb3ZpbmNlX05hbWVfVmlldD5LaMOhbmggSMOyYTwvUHJvdmluY2VfTmFt
+        ZV9WaWV0PjxEaXN0cmljdHMxPk5oYVRyYW5nLCBDYW0gUmFuaCwgVmFuIE5p
+        bmgsIE5pbmhIb2EsIERpZW5LaGFuaCwgS2hhbmhWaW5oLCBLaGFuaCBTb24s
+        IFRydW9uZyBTYTwvRGlzdHJpY3RzMT48VGltZTE+NC04PC9UaW1lMT48L1F1
+        ZXJ5TGlzdFByb3ZpbmNlcz48UXVlcnlMaXN0UHJvdmluY2VzIGRpZmZncjpp
+        ZD0iUXVlcnlMaXN0UHJvdmluY2VzMzMiIG1zZGF0YTpyb3dPcmRlcj0iMzIi
+        PjxSRVNQT05TRV9DT0RFPjAwMDA8L1JFU1BPTlNFX0NPREU+PFByb3ZpbmNl
+        X0lEPjI2PC9Qcm92aW5jZV9JRD48UHJvdmluY2VfTmFtZV9Fbmc+S0lFTiBH
+        SUFORzwvUHJvdmluY2VfTmFtZV9Fbmc+PFByb3ZpbmNlX05hbWVfVmlldD5L
+        acOqbiBHaWFuZzwvUHJvdmluY2VfTmFtZV9WaWV0PjxEaXN0cmljdHMxPlJh
+        Y2hHaWEsIEhhIFRpZW4sIEFuIEJpZW4sIEFuIE1pbmgsIENoYXVUaGFuaCwg
+        R2lvbmdSaWVuZywgR28gUXVhbywgSG9uIERhdCwgS2llbkhhaSwgS2llbkx1
+        b25nLCBUYW4gSGllcCwgVmluaFRodWFuPC9EaXN0cmljdHMxPjxUaW1lMT42
+        LTEyPC9UaW1lMT48RGlzdHJpY3RzMj4gUGh1UXVvYzwvRGlzdHJpY3RzMj48
+        VGltZTI+Tm90IHlldDwvVGltZTI+PC9RdWVyeUxpc3RQcm92aW5jZXM+PFF1
+        ZXJ5TGlzdFByb3ZpbmNlcyBkaWZmZ3I6aWQ9IlF1ZXJ5TGlzdFByb3ZpbmNl
+        czM0IiBtc2RhdGE6cm93T3JkZXI9IjMzIj48UkVTUE9OU0VfQ09ERT4wMDAw
+        PC9SRVNQT05TRV9DT0RFPjxQcm92aW5jZV9JRD42MDwvUHJvdmluY2VfSUQ+
+        PFByb3ZpbmNlX05hbWVfRW5nPktPTlRVTTwvUHJvdmluY2VfTmFtZV9Fbmc+
+        PFByb3ZpbmNlX05hbWVfVmlldD5Lb24gVHVtPC9Qcm92aW5jZV9OYW1lX1Zp
+        ZXQ+PERpc3RyaWN0czE+S29uIFR1bSwgRGFrR2xlaSosIERhayBIYSwgRGFr
+        IFRvLCBLb25QbG9uZyosIEtvbiBSYXkqLCBOZ29jIEhvaSosIFNhIFRoYXks
+        IFR1IE1vIFJvbmc8L0Rpc3RyaWN0czE+PFRpbWUxPjEyLTI0PC9UaW1lMT48
+        L1F1ZXJ5TGlzdFByb3ZpbmNlcz48UXVlcnlMaXN0UHJvdmluY2VzIGRpZmZn
+        cjppZD0iUXVlcnlMaXN0UHJvdmluY2VzMzUiIG1zZGF0YTpyb3dPcmRlcj0i
+        MzQiPjxSRVNQT05TRV9DT0RFPjAwMDA8L1JFU1BPTlNFX0NPREU+PFByb3Zp
+        bmNlX0lEPjY8L1Byb3ZpbmNlX0lEPjxQcm92aW5jZV9OYW1lX0VuZz5MQUlD
+        SEFVPC9Qcm92aW5jZV9OYW1lX0VuZz48UHJvdmluY2VfTmFtZV9WaWV0Pkxh
+        aSBDaMOidTwvUHJvdmluY2VfTmFtZV9WaWV0PjxEaXN0cmljdHMxPkxhaSBD
+        aGF1LCBUYW0gRHVvbmcsIFNpbiBIbywgVGhhbiBVeWVuLCBQaG9uZ1Robywg
+        TXVvbmdUZTwvRGlzdHJpY3RzMT48VGltZTE+Tm90IHlldDwvVGltZTE+PC9R
+        dWVyeUxpc3RQcm92aW5jZXM+PFF1ZXJ5TGlzdFByb3ZpbmNlcyBkaWZmZ3I6
+        aWQ9IlF1ZXJ5TGlzdFByb3ZpbmNlczM2IiBtc2RhdGE6cm93T3JkZXI9IjM1
+        Ij48UkVTUE9OU0VfQ09ERT4wMDAwPC9SRVNQT05TRV9DT0RFPjxQcm92aW5j
+        ZV9JRD40MDwvUHJvdmluY2VfSUQ+PFByb3ZpbmNlX05hbWVfRW5nPkxBTURP
+        Tkc8L1Byb3ZpbmNlX05hbWVfRW5nPjxQcm92aW5jZV9OYW1lX1ZpZXQ+TMOi
+        bSDEkOG7k25nPC9Qcm92aW5jZV9OYW1lX1ZpZXQ+PERpc3RyaWN0czE+RGEg
+        TGF0LCBCYW9Mb2MsIExhYyBEdW9uZywgRG9uIER1b25nLCBEdWNUcm9uZywg
+        TGFtIEhhLCBEYW0gUm9uZywgQmFvIExhbSwgRGkgTGluaCwgRGEgSHVvYWks
+        IERhIFRoZSwgQ2F0IFRpZW48L0Rpc3RyaWN0czE+PFRpbWUxPjEyLTI0PC9U
+        aW1lMT48L1F1ZXJ5TGlzdFByb3ZpbmNlcz48UXVlcnlMaXN0UHJvdmluY2Vz
+        IGRpZmZncjppZD0iUXVlcnlMaXN0UHJvdmluY2VzMzciIG1zZGF0YTpyb3dP
+        cmRlcj0iMzYiPjxSRVNQT05TRV9DT0RFPjAwMDA8L1JFU1BPTlNFX0NPREU+
+        PFByb3ZpbmNlX0lEPjQxPC9Qcm92aW5jZV9JRD48UHJvdmluY2VfTmFtZV9F
+        bmc+TEFOR1NPTjwvUHJvdmluY2VfTmFtZV9Fbmc+PFByb3ZpbmNlX05hbWVf
+        VmlldD5M4bqhbmcgU8ahbjwvUHJvdmluY2VfTmFtZV9WaWV0PjxEaXN0cmlj
+        dHMxPkxhbmcgU29uLCBUcmFuZ0RpbmgsIFZhbiBMYW5nLCBWYW4gUXVhbiwg
+        QmluaEdpYSwgQmFjIFNvbiwgSHV1IER1bmcsIENoaSBMYW5nLCBDYW8gTG9j
+        LCBMb2NCaW5oLCBEaW5oIExhcDwvRGlzdHJpY3RzMT48VGltZTE+Tm90IHll
+        dDwvVGltZTE+PC9RdWVyeUxpc3RQcm92aW5jZXM+PFF1ZXJ5TGlzdFByb3Zp
+        bmNlcyBkaWZmZ3I6aWQ9IlF1ZXJ5TGlzdFByb3ZpbmNlczM4IiBtc2RhdGE6
+        cm93T3JkZXI9IjM3Ij48UkVTUE9OU0VfQ09ERT4wMDAwPC9SRVNQT05TRV9D
+        T0RFPjxQcm92aW5jZV9JRD40MjwvUHJvdmluY2VfSUQ+PFByb3ZpbmNlX05h
+        bWVfRW5nPkxBT0NBSTwvUHJvdmluY2VfTmFtZV9Fbmc+PFByb3ZpbmNlX05h
+        bWVfVmlldD5Mw6BvIENhaTwvUHJvdmluY2VfTmFtZV9WaWV0PjxEaXN0cmlj
+        dHMxPkxhbyBDYWksIEJhb1RoYW5nLCBCYXQgWGF0LCBCYW8gWWVuLCBCYWMg
+        SGEsIENhbSBEdW9uZywgTXVvbmdLaHVvbmcsIFNhIFBhLCBTaSBNYSBDYWks
+        IFZhbiBCYW48L0Rpc3RyaWN0czE+PFRpbWUxPk5vdCB5ZXQ8L1RpbWUxPjwv
+        UXVlcnlMaXN0UHJvdmluY2VzPjxRdWVyeUxpc3RQcm92aW5jZXMgZGlmZmdy
+        OmlkPSJRdWVyeUxpc3RQcm92aW5jZXMzOSIgbXNkYXRhOnJvd09yZGVyPSIz
+        OCI+PFJFU1BPTlNFX0NPREU+MDAwMDwvUkVTUE9OU0VfQ09ERT48UHJvdmlu
+        Y2VfSUQ+NDM8L1Byb3ZpbmNlX0lEPjxQcm92aW5jZV9OYW1lX0VuZz5MT05H
+        QU48L1Byb3ZpbmNlX05hbWVfRW5nPjxQcm92aW5jZV9OYW1lX1ZpZXQ+TG9u
+        ZyBBbjwvUHJvdmluY2VfTmFtZV9WaWV0PjxEaXN0cmljdHMxPlRhbiBBbiwg
+        QmVuIEx1YywgQ2FuIER1b2MsIENhbiBHaXVvYywgQ2hhdVRoYW5oLCBEdWNI
+        b2EsIER1YyBIdWUsIFRhbiBUaGFuaCwgVGFuIFRydSwgVGhhbmhIb2EsIFRo
+        dSBUaHVhPC9EaXN0cmljdHMxPjxUaW1lMT42LTEyPC9UaW1lMT48RGlzdHJp
+        Y3RzMj5Nb2NIb2EqLCBUYW4gSHVuZyosIFZpbmggSHVuZyo8L0Rpc3RyaWN0
+        czI+PFRpbWUyPjEyLTI0PC9UaW1lMj48L1F1ZXJ5TGlzdFByb3ZpbmNlcz48
+        UXVlcnlMaXN0UHJvdmluY2VzIGRpZmZncjppZD0iUXVlcnlMaXN0UHJvdmlu
+        Y2VzNDAiIG1zZGF0YTpyb3dPcmRlcj0iMzkiPjxSRVNQT05TRV9DT0RFPjAw
+        MDA8L1JFU1BPTlNFX0NPREU+PFByb3ZpbmNlX0lEPjQ0PC9Qcm92aW5jZV9J
+        RD48UHJvdmluY2VfTmFtZV9Fbmc+TkFNRElOSDwvUHJvdmluY2VfTmFtZV9F
+        bmc+PFByb3ZpbmNlX05hbWVfVmlldD5OYW0gxJDhu4tuaDwvUHJvdmluY2Vf
+        TmFtZV9WaWV0PjxEaXN0cmljdHMxPk5hbSBEaW5oLCBHaWFvVGh1eSwgSGFp
+        SGF1LCBNeSBMb2MsIE5hbSBUcnVjLCBOZ2hpYSBIdW5nLCBUcnVjTmluaCwg
+        VnUgQmFuLCBYdWFuIFRydW9uZywgWSBZZW48L0Rpc3RyaWN0czE+PFRpbWUx
+        PjEyLTI0PC9UaW1lMT48L1F1ZXJ5TGlzdFByb3ZpbmNlcz48UXVlcnlMaXN0
+        UHJvdmluY2VzIGRpZmZncjppZD0iUXVlcnlMaXN0UHJvdmluY2VzNDEiIG1z
+        ZGF0YTpyb3dPcmRlcj0iNDAiPjxSRVNQT05TRV9DT0RFPjAwMDA8L1JFU1BP
+        TlNFX0NPREU+PFByb3ZpbmNlX0lEPjQ2PC9Qcm92aW5jZV9JRD48UHJvdmlu
+        Y2VfTmFtZV9Fbmc+TkdIRUFOPC9Qcm92aW5jZV9OYW1lX0VuZz48UHJvdmlu
+        Y2VfTmFtZV9WaWV0Pk5naOG7hyBBbjwvUHJvdmluY2VfTmFtZV9WaWV0PjxE
+        aXN0cmljdHMxPlZpbmgsIEN1YSBMbywgSG9hbmcgTWFpLCBBbmggU29uLCBD
+        b24gQ3VvbmcsIERpZW5DaGF1LCBEbyBMdW9uZywgSHVuZyBOZ3V5ZW4sIEt5
+        Q2hhdSwgS3kgU29uLCBOYW0gRGFuLCBOZ2hpTG9jLCBOZ2hpYSBEYW4sIFF1
+        ZVBob25nLCBRdXkgSG9wLCBRdXluaEx1dSwgVGFuIEt5LCBUaGFuaENodW9u
+        ZywgVHVvbmcgRHVvbmcsIFllbiBUaGFuaDwvRGlzdHJpY3RzMT48VGltZTE+
+        MTItMjQ8L1RpbWUxPjwvUXVlcnlMaXN0UHJvdmluY2VzPjxRdWVyeUxpc3RQ
+        cm92aW5jZXMgZGlmZmdyOmlkPSJRdWVyeUxpc3RQcm92aW5jZXM0MiIgbXNk
+        YXRhOnJvd09yZGVyPSI0MSI+PFJFU1BPTlNFX0NPREU+MDAwMDwvUkVTUE9O
+        U0VfQ09ERT48UHJvdmluY2VfSUQ+NDc8L1Byb3ZpbmNlX0lEPjxQcm92aW5j
+        ZV9OYW1lX0VuZz5OSU5IQklOSDwvUHJvdmluY2VfTmFtZV9Fbmc+PFByb3Zp
+        bmNlX05hbWVfVmlldD5OaW5oIELDrG5oPC9Qcm92aW5jZV9OYW1lX1ZpZXQ+
+        PERpc3RyaWN0czE+TmluaEJpbmgsIFRhbSBEaWVwLCBHaWFWaWVuLCBIb2Eg
+        THUsIEtpbSBTb24sIE5ob1F1YW4sIFllbiBLaGFuaCwgWWVuIE1vPC9EaXN0
+        cmljdHMxPjxUaW1lMT4xMi0yNDwvVGltZTE+PC9RdWVyeUxpc3RQcm92aW5j
+        ZXM+PFF1ZXJ5TGlzdFByb3ZpbmNlcyBkaWZmZ3I6aWQ9IlF1ZXJ5TGlzdFBy
+        b3ZpbmNlczQzIiBtc2RhdGE6cm93T3JkZXI9IjQyIj48UkVTUE9OU0VfQ09E
+        RT4wMDAwPC9SRVNQT05TRV9DT0RFPjxQcm92aW5jZV9JRD40ODwvUHJvdmlu
+        Y2VfSUQ+PFByb3ZpbmNlX05hbWVfRW5nPk5JTkhUSFVBTjwvUHJvdmluY2Vf
+        TmFtZV9Fbmc+PFByb3ZpbmNlX05hbWVfVmlldD5OaW5oIFRodeG6rW48L1By
+        b3ZpbmNlX05hbWVfVmlldD48RGlzdHJpY3RzMT5QaGFuIFJhbmcgVGhhcCBD
+        aGFtLCBCYWMgQWksIE5pbmhIYWksIE5pbmhQaHVvYywgTmluaCBTb24sIFRo
+        dWFuQmFjPC9EaXN0cmljdHMxPjxUaW1lMT42LTEyPC9UaW1lMT48L1F1ZXJ5
+        TGlzdFByb3ZpbmNlcz48UXVlcnlMaXN0UHJvdmluY2VzIGRpZmZncjppZD0i
+        UXVlcnlMaXN0UHJvdmluY2VzNDQiIG1zZGF0YTpyb3dPcmRlcj0iNDMiPjxS
+        RVNQT05TRV9DT0RFPjAwMDA8L1JFU1BPTlNFX0NPREU+PFByb3ZpbmNlX0lE
+        PjQ5PC9Qcm92aW5jZV9JRD48UHJvdmluY2VfTmFtZV9Fbmc+UEhVVEhPPC9Q
+        cm92aW5jZV9OYW1lX0VuZz48UHJvdmluY2VfTmFtZV9WaWV0PlBow7ogVGjh
+        u408L1Byb3ZpbmNlX05hbWVfVmlldD48RGlzdHJpY3RzMT5WaWV0IFRyaTwv
+        RGlzdHJpY3RzMT48VGltZTE+MTItMjQ8L1RpbWUxPjxEaXN0cmljdHMyPlBo
+        dVRobywgQ2FtIEtoZSwgRG9hbiBIdW5nLCBIYSBIb2EsIFRhbSBUaGFvLCBQ
+        aHVOaW5oLCBUYW0gTm9uZywgVGhhbmggQmEsIFRoYW5oIFNvbiwgVGhhbmhU
+        aHV5LCBZZW4gTGFwPC9EaXN0cmljdHMyPjxUaW1lMj5Ob3QgeWV0PC9UaW1l
+        Mj48L1F1ZXJ5TGlzdFByb3ZpbmNlcz48UXVlcnlMaXN0UHJvdmluY2VzIGRp
+        ZmZncjppZD0iUXVlcnlMaXN0UHJvdmluY2VzNDUiIG1zZGF0YTpyb3dPcmRl
+        cj0iNDQiPjxSRVNQT05TRV9DT0RFPjAwMDA8L1JFU1BPTlNFX0NPREU+PFBy
+        b3ZpbmNlX0lEPjI5PC9Qcm92aW5jZV9JRD48UHJvdmluY2VfTmFtZV9Fbmc+
+        UEhVWUVOPC9Qcm92aW5jZV9OYW1lX0VuZz48UHJvdmluY2VfTmFtZV9WaWV0
+        PlBow7ogWcOqbjwvUHJvdmluY2VfTmFtZV9WaWV0PjxEaXN0cmljdHMxPlR1
+        eUhvYSwgRG9uZyBYdWFuLCBTb25nIENhdSwgVHV5IEFuLCBTb24gSG9hLCBQ
+        aHVIb2EsIERvbmcgSG9hLCBUYXlIb2EsIFNvbmcgSGluaDwvRGlzdHJpY3Rz
+        MT48VGltZTE+Ni0xMjwvVGltZTE+PC9RdWVyeUxpc3RQcm92aW5jZXM+PFF1
+        ZXJ5TGlzdFByb3ZpbmNlcyBkaWZmZ3I6aWQ9IlF1ZXJ5TGlzdFByb3ZpbmNl
+        czQ2IiBtc2RhdGE6cm93T3JkZXI9IjQ1Ij48UkVTUE9OU0VfQ09ERT4wMDAw
+        PC9SRVNQT05TRV9DT0RFPjxQcm92aW5jZV9JRD41MDwvUHJvdmluY2VfSUQ+
+        PFByb3ZpbmNlX05hbWVfRW5nPlFVQU5HQklOSDwvUHJvdmluY2VfTmFtZV9F
+        bmc+PFByb3ZpbmNlX05hbWVfVmlldD5RdeG6o25nIELDrG5oPC9Qcm92aW5j
+        ZV9OYW1lX1ZpZXQ+PERpc3RyaWN0czE+Qm8gVHJhY2gsIExlIFRodXksIE1p
+        bmggSG9hLCBRdWFuZ1RyYWNoLCBRdWFuZ05pbmgsIFR1eWVuSG9hPC9EaXN0
+        cmljdHMxPjxUaW1lMT4xMi0yNDwvVGltZTE+PC9RdWVyeUxpc3RQcm92aW5j
+        ZXM+PFF1ZXJ5TGlzdFByb3ZpbmNlcyBkaWZmZ3I6aWQ9IlF1ZXJ5TGlzdFBy
+        b3ZpbmNlczQ3IiBtc2RhdGE6cm93T3JkZXI9IjQ2Ij48UkVTUE9OU0VfQ09E
+        RT4wMDAwPC9SRVNQT05TRV9DT0RFPjxQcm92aW5jZV9JRD41MTwvUHJvdmlu
+        Y2VfSUQ+PFByb3ZpbmNlX05hbWVfRW5nPlFVQU5HTkFNPC9Qcm92aW5jZV9O
+        YW1lX0VuZz48UHJvdmluY2VfTmFtZV9WaWV0PlF14bqjbmcgTmFtPC9Qcm92
+        aW5jZV9OYW1lX1ZpZXQ+PERpc3RyaWN0czE+VGFtIEt5LCBIb2kgQW4sIER1
+        eVh1eWVuLCBEYWkgTG9jLCBEaWVuIEJhbiwgRG9uZyBHaWFuZywgTmFtIEdp
+        YW5nLCBUYXlHaWFuZywgUXVlIFNvbiwgSGllcER1YywgTnVpIFRoYW5oLCBO
+        YW0gVHJhIE15LCBCYWNUcmEgTXksIFBodU5pbmgsIFBodW9jIFNvbiwgVGhh
+        bmdCaW5oVGllbiwgUGh1b2M8L0Rpc3RyaWN0czE+PFRpbWUxPjYtMTI8L1Rp
+        bWUxPjwvUXVlcnlMaXN0UHJvdmluY2VzPjxRdWVyeUxpc3RQcm92aW5jZXMg
+        ZGlmZmdyOmlkPSJRdWVyeUxpc3RQcm92aW5jZXM0OCIgbXNkYXRhOnJvd09y
+        ZGVyPSI0NyI+PFJFU1BPTlNFX0NPREU+MDAwMDwvUkVTUE9OU0VfQ09ERT48
+        UHJvdmluY2VfSUQ+NDU8L1Byb3ZpbmNlX0lEPjxQcm92aW5jZV9OYW1lX0Vu
+        Zz5RVUFOR05HQUk8L1Byb3ZpbmNlX05hbWVfRW5nPjxQcm92aW5jZV9OYW1l
+        X1ZpZXQ+UXXDo25nIE5nw6NpPC9Qcm92aW5jZV9OYW1lX1ZpZXQ+PERpc3Ry
+        aWN0czE+UXVhbmdOZ2FpLCBCYSBUbywgQmluaCBTb24sIER1YyBQaG8sIE1p
+        bmggTG9uZywgTW8gRHVjLCBOZ2hpYVRoYW5oLCBTb24gSGEsICBTb24gVGF5
+        LCBTb24gVGluaCwgVGF5VHJhLCBUcmEgQm9uZywgVHVOZ2hpYSwgTHkgU29u
+        PC9EaXN0cmljdHMxPjxUaW1lMT42LTEyPC9UaW1lMT48L1F1ZXJ5TGlzdFBy
+        b3ZpbmNlcz48UXVlcnlMaXN0UHJvdmluY2VzIGRpZmZncjppZD0iUXVlcnlM
+        aXN0UHJvdmluY2VzNDkiIG1zZGF0YTpyb3dPcmRlcj0iNDgiPjxSRVNQT05T
+        RV9DT0RFPjAwMDA8L1JFU1BPTlNFX0NPREU+PFByb3ZpbmNlX0lEPjM4PC9Q
+        cm92aW5jZV9JRD48UHJvdmluY2VfTmFtZV9Fbmc+UVVBTkdOSU5IPC9Qcm92
+        aW5jZV9OYW1lX0VuZz48UHJvdmluY2VfTmFtZV9WaWV0PlF14bqjbmcgTmlu
+        aDwvUHJvdmluY2VfTmFtZV9WaWV0PjxEaXN0cmljdHMxPkhhIExvbmcsIENh
+        bSBQaGEsIE1vbmdDYWksIHVvbmcgQmksIEJhIENoZSwgQmluaCBMaWV1LCBD
+        byBUbywgRGFtIEhhLCBEb25nIFRyaWV1LCBIYWkgSGEsIEhvYW5oIEJvLCBU
+        aWVuIFllbiwgVmFuIERvbiwgWWVuIEh1bmc8L0Rpc3RyaWN0czE+PFRpbWUx
+        PjI0PC9UaW1lMT48L1F1ZXJ5TGlzdFByb3ZpbmNlcz48UXVlcnlMaXN0UHJv
+        dmluY2VzIGRpZmZncjppZD0iUXVlcnlMaXN0UHJvdmluY2VzNTAiIG1zZGF0
+        YTpyb3dPcmRlcj0iNDkiPjxSRVNQT05TRV9DT0RFPjAwMDA8L1JFU1BPTlNF
+        X0NPREU+PFByb3ZpbmNlX0lEPjUyPC9Qcm92aW5jZV9JRD48UHJvdmluY2Vf
+        TmFtZV9Fbmc+UVVBTkdUUkk8L1Byb3ZpbmNlX05hbWVfRW5nPjxQcm92aW5j
+        ZV9OYW1lX1ZpZXQ+UXXhuqNuZyBUcuG7izwvUHJvdmluY2VfTmFtZV9WaWV0
+        PjxEaXN0cmljdHMxPkRvbmcgSGEsIFF1YW5nIFRyaSwgQ2FtIExvLCBDb24g
+        Q28sIERhIEtyb25nLCBHaW9MaW5oLCBIYWkgTGFuZywgSHVvbmdIb2EsIFRy
+        aWV1UGhvbmcsIFZpbmhMaW5oPC9EaXN0cmljdHMxPjxUaW1lMT4yNDwvVGlt
+        ZTE+PC9RdWVyeUxpc3RQcm92aW5jZXM+PFF1ZXJ5TGlzdFByb3ZpbmNlcyBk
+        aWZmZ3I6aWQ9IlF1ZXJ5TGlzdFByb3ZpbmNlczUxIiBtc2RhdGE6cm93T3Jk
+        ZXI9IjUwIj48UkVTUE9OU0VfQ09ERT4wMDAwPC9SRVNQT05TRV9DT0RFPjxQ
+        cm92aW5jZV9JRD4zMTwvUHJvdmluY2VfSUQ+PFByb3ZpbmNlX05hbWVfRW5n
+        PlNPQ1RSQU5HPC9Qcm92aW5jZV9OYW1lX0VuZz48UHJvdmluY2VfTmFtZV9W
+        aWV0PlPDs2MgVHLEg25nPC9Qcm92aW5jZV9OYW1lX1ZpZXQ+PERpc3RyaWN0
+        czE+Q3UgTGFvIER1bmcsIE5nYSBOYW0sIFZpbmhDaGF1LCBNeSBUdSwgTG9u
+        ZyBQaHUsIEtlU2FjaCwgTXkgWHV5ZW4sIFRyYW5oIFRyaTwvRGlzdHJpY3Rz
+        MT48VGltZTE+Ni0xMjwvVGltZTE+PC9RdWVyeUxpc3RQcm92aW5jZXM+PFF1
+        ZXJ5TGlzdFByb3ZpbmNlcyBkaWZmZ3I6aWQ9IlF1ZXJ5TGlzdFByb3ZpbmNl
+        czUyIiBtc2RhdGE6cm93T3JkZXI9IjUxIj48UkVTUE9OU0VfQ09ERT4wMDAw
+        PC9SRVNQT05TRV9DT0RFPjxQcm92aW5jZV9JRD41MzwvUHJvdmluY2VfSUQ+
+        PFByb3ZpbmNlX05hbWVfRW5nPlNPTkxBPC9Qcm92aW5jZV9OYW1lX0VuZz48
+        UHJvdmluY2VfTmFtZV9WaWV0PlPGoW4gTGE8L1Byb3ZpbmNlX05hbWVfVmll
+        dD48RGlzdHJpY3RzMT5Nb2MgQ2hhdSwgWWVuIENoYXUsIFB1bmdCYW5oLCBD
+        aGllbmdLaHVvbmcsIFNvbmcgTWEsIE11b25nIEJhbSwgVGh1YW4gQ2hhdSwg
+        U29uIExhLCBIYXQgTG90LCBNdW9uZyBMYSwgQmFjIFllbiwgUGh1IFllbiwg
+        UXV5bmggTmhhaTwvRGlzdHJpY3RzMT48VGltZTE+Tm90IHlldDwvVGltZTE+
+        PC9RdWVyeUxpc3RQcm92aW5jZXM+PFF1ZXJ5TGlzdFByb3ZpbmNlcyBkaWZm
+        Z3I6aWQ9IlF1ZXJ5TGlzdFByb3ZpbmNlczUzIiBtc2RhdGE6cm93T3JkZXI9
+        IjUyIj48UkVTUE9OU0VfQ09ERT4wMDAwPC9SRVNQT05TRV9DT0RFPjxQcm92
+        aW5jZV9JRD4zMjwvUHJvdmluY2VfSUQ+PFByb3ZpbmNlX05hbWVfRW5nPlRB
+        WU5JTkg8L1Byb3ZpbmNlX05hbWVfRW5nPjxQcm92aW5jZV9OYW1lX1ZpZXQ+
+        VMOieSBOaW5oPC9Qcm92aW5jZV9OYW1lX1ZpZXQ+PERpc3RyaWN0czE+VGF5
+        TmluaCwgVGFuIEJpZW4sIFRhbiBDaGF1LCBEdW9uZyBNaW5oIENoYXUsIENo
+        YXVUaGFuaCwgSG9hVGhhbmgsIEJlbiBDYXUsIEdvIERhdSwgVHJhbmcgQmFu
+        ZzwvRGlzdHJpY3RzMT48VGltZTE+Ni0xMjwvVGltZTE+PC9RdWVyeUxpc3RQ
+        cm92aW5jZXM+PFF1ZXJ5TGlzdFByb3ZpbmNlcyBkaWZmZ3I6aWQ9IlF1ZXJ5
+        TGlzdFByb3ZpbmNlczU0IiBtc2RhdGE6cm93T3JkZXI9IjUzIj48UkVTUE9O
+        U0VfQ09ERT4wMDAwPC9SRVNQT05TRV9DT0RFPjxQcm92aW5jZV9JRD41NDwv
+        UHJvdmluY2VfSUQ+PFByb3ZpbmNlX05hbWVfRW5nPlRIQUlCSU5IPC9Qcm92
+        aW5jZV9OYW1lX0VuZz48UHJvdmluY2VfTmFtZV9WaWV0PlRow6FpIELDrG5o
+        PC9Qcm92aW5jZV9OYW1lX1ZpZXQ+PERpc3RyaWN0czE+VGhhaSBCaW5oLCBE
+        b25nIEh1bmcsIEh1bmcgSGEsIEtpZW5YdW9uZywgUXV5bmhQaHUsIFRoYWkg
+        VGh1eSwgVGllbkhhaSwgVnUgVGh1PC9EaXN0cmljdHMxPjxUaW1lMT4xMi0y
+        NDwvVGltZTE+PC9RdWVyeUxpc3RQcm92aW5jZXM+PFF1ZXJ5TGlzdFByb3Zp
+        bmNlcyBkaWZmZ3I6aWQ9IlF1ZXJ5TGlzdFByb3ZpbmNlczU1IiBtc2RhdGE6
+        cm93T3JkZXI9IjU0Ij48UkVTUE9OU0VfQ09ERT4wMDAwPC9SRVNQT05TRV9D
+        T0RFPjxQcm92aW5jZV9JRD41NTwvUHJvdmluY2VfSUQ+PFByb3ZpbmNlX05h
+        bWVfRW5nPlRIQUlOR1VZRU48L1Byb3ZpbmNlX05hbWVfRW5nPjxQcm92aW5j
+        ZV9OYW1lX1ZpZXQ+VGjDoWkgTmd1ecOqbjwvUHJvdmluY2VfTmFtZV9WaWV0
+        PjxEaXN0cmljdHMxPlRoYWkgTmd1eWVuPC9EaXN0cmljdHMxPjxUaW1lMT4x
+        Mi0yNDwvVGltZTE+PERpc3RyaWN0czI+U29uZyBDb25nLCBQaG8gWWVuLCBQ
+        aHVCaW5oLCBEb25nIGh5LCBWbyBOaGFpLCBEaW5oSG9hLCBEYWkgVHUsIFBo
+        dUx1b25nPC9EaXN0cmljdHMyPjxUaW1lMj5Ob3QgeWV0PC9UaW1lMj48L1F1
+        ZXJ5TGlzdFByb3ZpbmNlcz48UXVlcnlMaXN0UHJvdmluY2VzIGRpZmZncjpp
+        ZD0iUXVlcnlMaXN0UHJvdmluY2VzNTYiIG1zZGF0YTpyb3dPcmRlcj0iNTUi
+        PjxSRVNQT05TRV9DT0RFPjAwMDA8L1JFU1BPTlNFX0NPREU+PFByb3ZpbmNl
+        X0lEPjMzPC9Qcm92aW5jZV9JRD48UHJvdmluY2VfTmFtZV9Fbmc+VEhBTkhI
+        T0E8L1Byb3ZpbmNlX05hbWVfRW5nPjxQcm92aW5jZV9OYW1lX1ZpZXQ+VGhh
+        bmggSMOzYTwvUHJvdmluY2VfTmFtZV9WaWV0PjxEaXN0cmljdHMxPlRoYW5o
+        SG9hLCBCaW0gU29uLCBTYW0gU29uLCBCYSBUaHVvYywgQ2FtIFRodXksIERv
+        bmcgU29uLCBIYSBUcnVuZywgSGF1TG9jLCBIb2FuZyBIb2EsIExhbmcgQ2hh
+        bmgsIE11b25nTGF0LCBOZ2EgU29uLCBOZ29jIExhYywgTmh1VGhhbmgsIE5o
+        dVh1YW4sIE5vbmcgQ29uZywgUXVhbkhvYSwgUXVhbiBTb24sIFF1YW5nWHVv
+        bmcsIFRoYWNoVGhhbmgsIFRoaWV1SG9hLCBUaG9YdWFuLCBUaHVvbmdYdWFu
+        LCBUaW5oR2lhLCBUcmlldSBTb24sIFZpbmhMb2MsIFllbiBEaW5oPC9EaXN0
+        cmljdHMxPjxUaW1lMT5Ob3QgeWV0PC9UaW1lMT48L1F1ZXJ5TGlzdFByb3Zp
+        bmNlcz48UXVlcnlMaXN0UHJvdmluY2VzIGRpZmZncjppZD0iUXVlcnlMaXN0
+        UHJvdmluY2VzNTciIG1zZGF0YTpyb3dPcmRlcj0iNTYiPjxSRVNQT05TRV9D
+        T0RFPjAwMDA8L1JFU1BPTlNFX0NPREU+PFByb3ZpbmNlX0lEPjI1PC9Qcm92
+        aW5jZV9JRD48UHJvdmluY2VfTmFtZV9Fbmc+SFVFPC9Qcm92aW5jZV9OYW1l
+        X0VuZz48UHJvdmluY2VfTmFtZV9WaWV0PlRo4burYSBUaGnDqm4gSHXhur88
+        L1Byb3ZpbmNlX05hbWVfVmlldD48RGlzdHJpY3RzMT5IdWUsIEEgTHVvaSwg
+        SHVvbmdUaHV5LCBIdW9uZ1RyYSwgTmFtIERvbmcsIFBob25nRGllbiwgUGh1
+        TG9jLCBQaHVWYW5nLCBRdWFuZ0RpZW48L0Rpc3RyaWN0czE+PFRpbWUxPjYt
+        MTI8L1RpbWUxPjxEaXN0cmljdHMyPjYtMTI8L0Rpc3RyaWN0czI+PC9RdWVy
+        eUxpc3RQcm92aW5jZXM+PFF1ZXJ5TGlzdFByb3ZpbmNlcyBkaWZmZ3I6aWQ9
+        IlF1ZXJ5TGlzdFByb3ZpbmNlczU4IiBtc2RhdGE6cm93T3JkZXI9IjU3Ij48
+        UkVTUE9OU0VfQ09ERT4wMDAwPC9SRVNQT05TRV9DT0RFPjxQcm92aW5jZV9J
+        RD4zNDwvUHJvdmluY2VfSUQ+PFByb3ZpbmNlX05hbWVfRW5nPlRJRU5HSUFO
+        RzwvUHJvdmluY2VfTmFtZV9Fbmc+PFByb3ZpbmNlX05hbWVfVmlldD5UaeG7
+        gW4gR2lhbmc8L1Byb3ZpbmNlX05hbWVfVmlldD48RGlzdHJpY3RzMT5NeSBU
+        aG8sIEdvIENvbmcsIEdvIENvbmcgRG9uZywgR28gQ29uZyBUYXksIENobyBH
+        YW8sIENoYXVUaGFuaCwgVGFuIFBodW9jLCBDYWkgTGF5LCBDYWkgQmU8L0Rp
+        c3RyaWN0czE+PFRpbWUxPjQtODwvVGltZTE+PC9RdWVyeUxpc3RQcm92aW5j
+        ZXM+PFF1ZXJ5TGlzdFByb3ZpbmNlcyBkaWZmZ3I6aWQ9IlF1ZXJ5TGlzdFBy
+        b3ZpbmNlczU5IiBtc2RhdGE6cm93T3JkZXI9IjU4Ij48UkVTUE9OU0VfQ09E
+        RT4wMDAwPC9SRVNQT05TRV9DT0RFPjxQcm92aW5jZV9JRD4yNDwvUHJvdmlu
+        Y2VfSUQ+PFByb3ZpbmNlX05hbWVfRW5nPkhDTTwvUHJvdmluY2VfTmFtZV9F
+        bmc+PFByb3ZpbmNlX05hbWVfVmlldD5UUEhDTTwvUHJvdmluY2VfTmFtZV9W
+        aWV0PjxEaXN0cmljdHMxPkJpbmhDaGFuaCwgQmluaCBUYW4sIEJpbmhUaGFu
+        aCwgR28gVmFwLCBIb2MgTW9uLCBOaGEgQmUsIFBodU5odWFuLCBRMS1RMTIs
+        IFRhbiBCaW5oLCBUYW4gUGh1LCBUaHUgRHVjPC9EaXN0cmljdHMxPjxUaW1l
+        MT4zLTY8L1RpbWUxPjxEaXN0cmljdHMyPkNhbiBHaW88L0Rpc3RyaWN0czI+
+        PFRpbWUyPjEyLTI0PC9UaW1lMj48L1F1ZXJ5TGlzdFByb3ZpbmNlcz48UXVl
+        cnlMaXN0UHJvdmluY2VzIGRpZmZncjppZD0iUXVlcnlMaXN0UHJvdmluY2Vz
+        NjAiIG1zZGF0YTpyb3dPcmRlcj0iNTkiPjxSRVNQT05TRV9DT0RFPjAwMDA8
+        L1JFU1BPTlNFX0NPREU+PFByb3ZpbmNlX0lEPjM1PC9Qcm92aW5jZV9JRD48
+        UHJvdmluY2VfTmFtZV9Fbmc+VFJBVklOSDwvUHJvdmluY2VfTmFtZV9Fbmc+
+        PFByb3ZpbmNlX05hbWVfVmlldD5UcsOgIFZpbmg8L1Byb3ZpbmNlX05hbWVf
+        VmlldD48RGlzdHJpY3RzMT5UcmFWaW5oLCBDYW5nIExvbmcsIENoYXVUaGFu
+        aCwgQ2F1S2UsIFRpZXUgQ2FuLCBDYXVOZ2FuZywgVHJhIEN1LCBEdXllbkhh
+        aTwvRGlzdHJpY3RzMT48VGltZTE+NC04PC9UaW1lMT48L1F1ZXJ5TGlzdFBy
+        b3ZpbmNlcz48UXVlcnlMaXN0UHJvdmluY2VzIGRpZmZncjppZD0iUXVlcnlM
+        aXN0UHJvdmluY2VzNjEiIG1zZGF0YTpyb3dPcmRlcj0iNjAiPjxSRVNQT05T
+        RV9DT0RFPjAwMDA8L1JFU1BPTlNFX0NPREU+PFByb3ZpbmNlX0lEPjU2PC9Q
+        cm92aW5jZV9JRD48UHJvdmluY2VfTmFtZV9Fbmc+VFVZRU5RVUFORzwvUHJv
+        dmluY2VfTmFtZV9Fbmc+PFByb3ZpbmNlX05hbWVfVmlldD5UdXnDqm4gUXVh
+        bmc8L1Byb3ZpbmNlX05hbWVfVmlldD48RGlzdHJpY3RzMT5UdXllbiBRdWFu
+        ZywgQ2hhbSBIb2EsIEhhbSBZZW4sIE5hIEhhbmcsIFNvbiBEdW9uZywgWWVu
+        IFNvbjwvRGlzdHJpY3RzMT48VGltZTE+Tm90IHlldDwvVGltZTE+PC9RdWVy
+        eUxpc3RQcm92aW5jZXM+PFF1ZXJ5TGlzdFByb3ZpbmNlcyBkaWZmZ3I6aWQ9
+        IlF1ZXJ5TGlzdFByb3ZpbmNlczYyIiBtc2RhdGE6cm93T3JkZXI9IjYxIj48
+        UkVTUE9OU0VfQ09ERT4wMDAwPC9SRVNQT05TRV9DT0RFPjxQcm92aW5jZV9J
+        RD4zNzwvUHJvdmluY2VfSUQ+PFByb3ZpbmNlX05hbWVfRW5nPlZJTkhMT05H
+        PC9Qcm92aW5jZV9OYW1lX0VuZz48UHJvdmluY2VfTmFtZV9WaWV0PlbEqW5o
+        IExvbmc8L1Byb3ZpbmNlX05hbWVfVmlldD48RGlzdHJpY3RzMT5WaW5oIExv
+        bmcsIExvbmcgSG8sIE1hbmdUaGl0LCBCaW5oIE1pbmgsIFRhbSBCaW5oLCBU
+        cmEgT24sIFZ1bmdMaWVtPC9EaXN0cmljdHMxPjxUaW1lMT40LTg8L1RpbWUx
+        PjwvUXVlcnlMaXN0UHJvdmluY2VzPjxRdWVyeUxpc3RQcm92aW5jZXMgZGlm
+        ZmdyOmlkPSJRdWVyeUxpc3RQcm92aW5jZXM2MyIgbXNkYXRhOnJvd09yZGVy
+        PSI2MiI+PFJFU1BPTlNFX0NPREU+MDAwMDwvUkVTUE9OU0VfQ09ERT48UHJv
+        dmluY2VfSUQ+NTc8L1Byb3ZpbmNlX0lEPjxQcm92aW5jZV9OYW1lX0VuZz5W
+        SU5IUEhVQzwvUHJvdmluY2VfTmFtZV9Fbmc+PFByb3ZpbmNlX05hbWVfVmll
+        dD5WxKluaCBQaMO6YzwvUHJvdmluY2VfTmFtZV9WaWV0PjxEaXN0cmljdHMx
+        PlZpbmggWWVuLCBQaHVDIFllbiwgQmluaFh1eWVuLCBMYXAgVGhhY2gsIE1l
+        IExpbmgsIFRhbSBEdW9uZywgVGFtIERhbywgVmluaFR1b25nLCBZZW4gTGFj
+        PC9EaXN0cmljdHMxPjxUaW1lMT4xMi0yNDwvVGltZTE+PC9RdWVyeUxpc3RQ
+        cm92aW5jZXM+PFF1ZXJ5TGlzdFByb3ZpbmNlcyBkaWZmZ3I6aWQ9IlF1ZXJ5
+        TGlzdFByb3ZpbmNlczY0IiBtc2RhdGE6cm93T3JkZXI9IjYzIj48UkVTUE9O
+        U0VfQ09ERT4wMDAwPC9SRVNQT05TRV9DT0RFPjxQcm92aW5jZV9JRD41ODwv
+        UHJvdmluY2VfSUQ+PFByb3ZpbmNlX05hbWVfRW5nPllFTkJBSTwvUHJvdmlu
+        Y2VfTmFtZV9Fbmc+PFByb3ZpbmNlX05hbWVfVmlldD5Zw6puIELDoWk8L1By
+        b3ZpbmNlX05hbWVfVmlldD48RGlzdHJpY3RzMT5ZZW4gQmFpLCBOZ2hpYSBM
+        bywgTHVjIFllbiwgTXkgQ2FuZyBDaGFpLCBUcmFuIFllbiwgVHJhbSBUYXUs
+        IFZhbiBDaGFuLCBWYW4gWWVuLCBZZW4gQmluaDwvRGlzdHJpY3RzMT48VGlt
+        ZTE+Tm90IHlldDwvVGltZTE+PC9RdWVyeUxpc3RQcm92aW5jZXM+PC9Eb2N1
+        bWVudEVsZW1lbnQ+PC9kaWZmZ3I6ZGlmZmdyYW0+PC9RdWVyeUxpc3RQcm92
+        aW5jZXNSZXN1bHQ+PC9RdWVyeUxpc3RQcm92aW5jZXNSZXNwb25zZT48L3Nv
+        YXA6Qm9keT48L3NvYXA6RW52ZWxvcGU+
+    http_version: 
+  recorded_at: Tue, 27 Dec 2016 07:15:17 GMT
+recorded_with: VCR 3.0.3
