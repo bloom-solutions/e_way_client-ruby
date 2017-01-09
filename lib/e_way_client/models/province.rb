@@ -24,7 +24,7 @@ module EWayClient
     attribute :districts, Array[String], lazy: true, default: :default_districts
     TYPES_COUNT.times do |n|
       count = n+1
-      attribute(:"districts#{count}", Array[String], {
+      attribute(:"districts#{count}", String, {
         lazy: true,
         default: :"default_districts#{count}",
       })
