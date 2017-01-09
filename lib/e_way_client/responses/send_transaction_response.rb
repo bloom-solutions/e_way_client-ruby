@@ -32,7 +32,6 @@ module EWayClient
       "6006" => "Sender country is blank",
     }
 
-    attribute :data, Object, lazy: true, default: :default_data
     attribute(:response_code, String, {
       lazy: true,
       default: :default_response_code,
@@ -43,16 +42,6 @@ module EWayClient
     })
 
     private
-
-    def default_data
-      raw_response.body.deep_fetch(*%i[
-        send_transaction_response
-        send_transaction_result
-        diffgram
-        document_element
-        send_transaction
-      ])
-    end
 
     def default_success
       response_code == SUCCESS_RESPONSE_CODE
