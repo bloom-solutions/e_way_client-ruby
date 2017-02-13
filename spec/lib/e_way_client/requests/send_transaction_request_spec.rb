@@ -64,6 +64,9 @@ module EWayClient
     describe "#transaction_date" do
       let(:request) { described_class.new(transaction_date: transaction_date) }
       subject { request.transaction_date }
+      before do
+        Timecop.freeze
+      end
 
       context "no date is set" do
         let(:transaction_date) { nil }

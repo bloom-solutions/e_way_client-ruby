@@ -31,7 +31,7 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "virtus", "~> 1.0"
   spec.add_dependency "api_client_base", "~> 0.2.0"
-  spec.add_dependency "soap_client", "~> 0.2.0"
+  spec.add_dependency "soap_client", "~> 0.3.0"
   spec.add_dependency "deep_fetch"
 
   spec.add_development_dependency "bundler", "~> 1.13"
@@ -40,4 +40,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "virtus-matchers"
   spec.add_development_dependency "vcr"
   spec.add_development_dependency "webmock"
+  spec.add_development_dependency "timecop"
 end

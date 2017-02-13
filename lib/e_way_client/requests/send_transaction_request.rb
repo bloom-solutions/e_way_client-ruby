@@ -73,10 +73,6 @@ module EWayClient
       bankbranch_address
     ]
 
-    def call
-      SOAPClient.(wsdl: wsdl, action: :send_transaction, message: message)
-    end
-
     def transaction_date
       return nil if super.nil?
       super.in_time_zone("Bangkok").strftime("%m/%d/%Y %H:%M:%S")
@@ -84,7 +80,7 @@ module EWayClient
 
     private
 
-    def message
+    def default_message
       MESSAGE_ATTRS.each_with_object({}) do |attr, hash|
         hash[attr.to_s.upcase] = send(attr)
       end

@@ -31,7 +31,7 @@ http_interactions:
       X-Powered-By:
       - ASP.NET
       Date:
-      - Mon, 13 Feb 2017 07:59:23 GMT
+      - Mon, 13 Feb 2017 05:56:02 GMT
       Content-Length:
       - '5850'
     body:
@@ -976,7 +976,7 @@ http_interactions:
         \   <wsdl:port name=\"ServiceSoap12\" binding=\"tns:ServiceSoap12\">\r\n      <soap12:address
         location=\"https://ws.remit.vn/ws.asmx\" />\r\n    </wsdl:port>\r\n  </wsdl:service>\r\n</wsdl:definitions>"
     http_version: 
-  recorded_at: Mon, 13 Feb 2017 07:59:25 GMT
+  recorded_at: Mon, 13 Feb 2017 05:56:04 GMT
 - request:
     method: post
     uri: https://ws.remit.vn/ws.asmx
@@ -1016,7 +1016,7 @@ http_interactions:
       X-Powered-By:
       - ASP.NET
       Date:
-      - Mon, 13 Feb 2017 07:59:25 GMT
+      - Mon, 13 Feb 2017 05:56:05 GMT
       Content-Length:
       - '6992'
     body:
@@ -1838,7 +1838,7 @@ http_interactions:
         cjpkaWZmZ3JhbT48L1F1ZXJ5TGlzdEJhbmtzUmVzdWx0PjwvUXVlcnlMaXN0
         QmFua3NSZXNwb25zZT48L3NvYXA6Qm9keT48L3NvYXA6RW52ZWxvcGU+
     http_version: 
-  recorded_at: Mon, 13 Feb 2017 07:59:28 GMT
+  recorded_at: Mon, 13 Feb 2017 05:56:07 GMT
 - request:
     method: get
     uri: https://ws.remit.vn/ws.asmx?WSDL
@@ -1870,7 +1870,7 @@ http_interactions:
       X-Powered-By:
       - ASP.NET
       Date:
-      - Mon, 13 Feb 2017 07:59:28 GMT
+      - Mon, 13 Feb 2017 05:56:08 GMT
       Content-Length:
       - '5850'
     body:
@@ -2815,7 +2815,7 @@ http_interactions:
         \   <wsdl:port name=\"ServiceSoap12\" binding=\"tns:ServiceSoap12\">\r\n      <soap12:address
         location=\"https://ws.remit.vn/ws.asmx\" />\r\n    </wsdl:port>\r\n  </wsdl:service>\r\n</wsdl:definitions>"
     http_version: 
-  recorded_at: Mon, 13 Feb 2017 07:59:30 GMT
+  recorded_at: Mon, 13 Feb 2017 05:56:10 GMT
 - request:
     method: post
     uri: https://ws.remit.vn/ws.asmx
@@ -2824,8 +2824,8 @@ http_interactions:
       string: <?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="IN_OUT_API"
         xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Body><tns:SendTransaction><tns:AGENT_CODE
-        xsi:nil="true"/><tns:USERNAME>[username]</tns:USERNAME><tns:PASSWORD>[password]</tns:PASSWORD><tns:TRANSACTION_ID>a21081fbd972</tns:TRANSACTION_ID><tns:TRANSACTION_DATE>02/13/2017
-        14:59:28</tns:TRANSACTION_DATE><tns:DEGIT_CODE xsi:nil="true"/><tns:TRANSACTION_AMOUNT>50000</tns:TRANSACTION_AMOUNT><tns:SETT_AMOUNT>50000</tns:SETT_AMOUNT><tns:TRANSACTION_CURRENCY>VND</tns:TRANSACTION_CURRENCY><tns:SETT_CURRENCY>VND</tns:SETT_CURRENCY><tns:SETT_CONVERSION_RATE>1.0</tns:SETT_CONVERSION_RATE><tns:PAYMENTMODE>FT</tns:PAYMENTMODE><tns:SENDER_NAME>Test
+        xsi:nil="true"/><tns:USERNAME>[username]</tns:USERNAME><tns:PASSWORD>[password]</tns:PASSWORD><tns:TRANSACTION_ID>6f0554c4f4d3</tns:TRANSACTION_ID><tns:TRANSACTION_DATE>02/13/2017
+        12:56:07</tns:TRANSACTION_DATE><tns:DEGIT_CODE xsi:nil="true"/><tns:TRANSACTION_AMOUNT>50000</tns:TRANSACTION_AMOUNT><tns:SETT_AMOUNT>50000</tns:SETT_AMOUNT><tns:TRANSACTION_CURRENCY>VND</tns:TRANSACTION_CURRENCY><tns:SETT_CURRENCY>VND</tns:SETT_CURRENCY><tns:SETT_CONVERSION_RATE>1.0</tns:SETT_CONVERSION_RATE><tns:PAYMENTMODE>FT</tns:PAYMENTMODE><tns:SENDER_NAME>Test
         Sender</tns:SENDER_NAME><tns:SENDER_ADDRESS xsi:nil="true"/><tns:SENDER_DISTRICT
         xsi:nil="true"/><tns:SENDER_CITY xsi:nil="true"/><tns:SENDER_COUNTRY>Philippines</tns:SENDER_COUNTRY><tns:SENDER_QUESTION
         xsi:nil="true"/><tns:SENDER_ANSWER xsi:nil="true"/><tns:RECEIVER_NAME>Test
@@ -2834,14 +2834,14 @@ http_interactions:
         Chi Minh</tns:RECEIVER_CITY><tns:RECEIVER_PHONE xsi:nil="true"/><tns:HOURS_RECEIVE
         xsi:nil="true"/><tns:BANK_ID>1</tns:BANK_ID><tns:BANK_ACCOUNT_NUMBER>0123456789</tns:BANK_ACCOUNT_NUMBER><tns:TRANSACTION_MESSAGE
         xsi:nil="true"/><tns:TRANSACTION_KEY>2aae7260a3f5d466cd853f69ccf98b7a</tns:TRANSACTION_KEY><tns:BANKBRANCH_NAME>Test
-        Branch</tns:BANKBRANCH_NAME><tns:BANKBRANCH_ADDRESS>123 Testy</tns:BANKBRANCH_ADDRESS></tns:SendTransaction></env:Body></env:Envelope>
+        Branch</tns:BANKBRANCH_NAME><tns:BANKBRANCH_ADDRESS>Test address</tns:BANKBRANCH_ADDRESS></tns:SendTransaction></env:Body></env:Envelope>
     headers:
       Soapaction:
       - '"IN_OUT_API/SendTransaction"'
       Content-Type:
       - text/xml;charset=UTF-8
       Content-Length:
-      - '1757'
+      - '1760'
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -2866,7 +2866,7 @@ http_interactions:
       X-Powered-By:
       - ASP.NET
       Date:
-      - Mon, 13 Feb 2017 07:59:30 GMT
+      - Mon, 13 Feb 2017 05:56:11 GMT
       Content-Length:
       - '907'
     body:
@@ -2887,7 +2887,1051 @@ http_interactions:
         /><xs:element name="TRANSACTION_DATE" type="xs:dateTime" minOccurs="0" /><xs:element
         name="TRANSACTION_KEY" type="xs:string" minOccurs="0" /></xs:sequence></xs:complexType></xs:element></xs:choice></xs:complexType></xs:element></xs:schema><diffgr:diffgram
         xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1"><DocumentElement
-        xmlns=""><SendTransaction diffgr:id="SendTransaction1" msdata:rowOrder="0"><RESPONSE_CODE>0000</RESPONSE_CODE><TRANSACTION_ID>a21081fbd972</TRANSACTION_ID><TRANSACTION_AMOUNT>50000</TRANSACTION_AMOUNT><SERVICE_CHARGE>0</SERVICE_CHARGE><SETT_AMOUNT>50000</SETT_AMOUNT><TRANSACTION_CURRENCY>VND</TRANSACTION_CURRENCY><SETT_CURRENCY>VND</SETT_CURRENCY><PAYMENTMODE>FT</PAYMENTMODE><TRANSACTION_DATE>2017-02-13T14:59:00+07:00</TRANSACTION_DATE><TRANSACTION_KEY>2aae7260a3f5d466cd853f69ccf98b7a</TRANSACTION_KEY></SendTransaction></DocumentElement></diffgr:diffgram></SendTransactionResult></SendTransactionResponse></soap:Body></soap:Envelope>
+        xmlns=""><SendTransaction diffgr:id="SendTransaction1" msdata:rowOrder="0"><RESPONSE_CODE>0000</RESPONSE_CODE><TRANSACTION_ID>6f0554c4f4d3</TRANSACTION_ID><TRANSACTION_AMOUNT>50000</TRANSACTION_AMOUNT><SERVICE_CHARGE>0</SERVICE_CHARGE><SETT_AMOUNT>50000</SETT_AMOUNT><TRANSACTION_CURRENCY>VND</TRANSACTION_CURRENCY><SETT_CURRENCY>VND</SETT_CURRENCY><PAYMENTMODE>FT</PAYMENTMODE><TRANSACTION_DATE>2017-02-13T12:56:00+07:00</TRANSACTION_DATE><TRANSACTION_KEY>2aae7260a3f5d466cd853f69ccf98b7a</TRANSACTION_KEY></SendTransaction></DocumentElement></diffgr:diffgram></SendTransactionResult></SendTransactionResponse></soap:Body></soap:Envelope>
     http_version: 
-  recorded_at: Mon, 13 Feb 2017 07:59:32 GMT
+  recorded_at: Mon, 13 Feb 2017 05:56:13 GMT
+- request:
+    method: get
+    uri: https://ws.remit.vn/ws.asmx?WSDL
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private, max-age=0
+      Content-Type:
+      - text/xml; charset=utf-8
+      Vary:
+      - Accept-Encoding
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 2.0.50727
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Mon, 13 Feb 2017 05:56:17 GMT
+      Content-Length:
+      - '5850'
+    body:
+      encoding: ASCII-8BIT
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<wsdl:definitions xmlns:soap=\"http://schemas.xmlsoap.org/wsdl/soap/\"
+        xmlns:tm=\"http://microsoft.com/wsdl/mime/textMatching/\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\"
+        xmlns:mime=\"http://schemas.xmlsoap.org/wsdl/mime/\" xmlns:tns=\"IN_OUT_API\"
+        xmlns:s=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap12=\"http://schemas.xmlsoap.org/wsdl/soap12/\"
+        xmlns:http=\"http://schemas.xmlsoap.org/wsdl/http/\" targetNamespace=\"IN_OUT_API\"
+        xmlns:wsdl=\"http://schemas.xmlsoap.org/wsdl/\">\r\n  <wsdl:types>\r\n    <s:schema
+        elementFormDefault=\"qualified\" targetNamespace=\"IN_OUT_API\">\r\n      <s:element
+        name=\"ChangePassword\">\r\n        <s:complexType>\r\n          <s:sequence>\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"AGENT_CODE\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"USERNAME\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"PASSWORD\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"NEW_PASSWORD\" type=\"s:string\" />\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"CONFIRM_PASSWORD\"
+        type=\"s:string\" />\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"ChangePasswordResponse\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"ChangePasswordResult\">\r\n              <s:complexType>\r\n
+        \               <s:sequence>\r\n                  <s:any minOccurs=\"0\" maxOccurs=\"unbounded\"
+        namespace=\"http://www.w3.org/2001/XMLSchema\" processContents=\"lax\" />\r\n
+        \                 <s:any minOccurs=\"1\" namespace=\"urn:schemas-microsoft-com:xml-diffgram-v1\"
+        processContents=\"lax\" />\r\n                </s:sequence>\r\n              </s:complexType>\r\n
+        \           </s:element>\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"ChangePasswordJson\">\r\n        <s:complexType>\r\n
+        \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"AGENT_CODE\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"USERNAME\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"PASSWORD\" type=\"s:string\" />\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"NEW_PASSWORD\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"CONFIRM_PASSWORD\" type=\"s:string\" />\r\n          </s:sequence>\r\n
+        \       </s:complexType>\r\n      </s:element>\r\n      <s:element name=\"ChangePasswordJsonResponse\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"ChangePasswordJsonResult\" type=\"s:string\"
+        />\r\n          </s:sequence>\r\n        </s:complexType>\r\n      </s:element>\r\n
+        \     <s:element name=\"SendTransaction\">\r\n        <s:complexType>\r\n
+        \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"AGENT_CODE\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"USERNAME\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"PASSWORD\" type=\"s:string\" />\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"TRANSACTION_ID\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"TRANSACTION_DATE\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"DEGIT_CODE\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"TRANSACTION_AMOUNT\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"SETT_AMOUNT\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"TRANSACTION_CURRENCY\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"SETT_CURRENCY\" type=\"s:string\" />\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"SETT_CONVERSION_RATE\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"PAYMENTMODE\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"SENDER_NAME\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"SENDER_ADDRESS\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"SENDER_DISTRICT\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"SENDER_CITY\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"SENDER_COUNTRY\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"SENDER_QUESTION\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"SENDER_ANSWER\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"RECEIVER_NAME\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"RECEIVER_ADDRESS\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"RECEIVER_WARDS\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"RECEIVER_DISTRICT\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"RECEIVER_CITY\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"RECEIVER_PHONE\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"HOURS_RECEIVE\" type=\"s:string\" />\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"BANK_ID\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"BANK_ACCOUNT_NUMBER\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"TRANSACTION_MESSAGE\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"TRANSACTION_KEY\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"BANKBRANCH_NAME\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"BANKBRANCH_ADDRESS\" type=\"s:string\" />\r\n          </s:sequence>\r\n
+        \       </s:complexType>\r\n      </s:element>\r\n      <s:element name=\"SendTransactionResponse\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"SendTransactionResult\">\r\n              <s:complexType>\r\n
+        \               <s:sequence>\r\n                  <s:any minOccurs=\"0\" maxOccurs=\"unbounded\"
+        namespace=\"http://www.w3.org/2001/XMLSchema\" processContents=\"lax\" />\r\n
+        \                 <s:any minOccurs=\"1\" namespace=\"urn:schemas-microsoft-com:xml-diffgram-v1\"
+        processContents=\"lax\" />\r\n                </s:sequence>\r\n              </s:complexType>\r\n
+        \           </s:element>\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"SendTransactionJson\">\r\n        <s:complexType>\r\n
+        \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"AGENT_CODE\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"USERNAME\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"PASSWORD\" type=\"s:string\" />\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"TRANSACTION_ID\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"TRANSACTION_DATE\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"DEGIT_CODE\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"TRANSACTION_AMOUNT\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"SETT_AMOUNT\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"TRANSACTION_CURRENCY\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"SETT_CURRENCY\" type=\"s:string\" />\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"SETT_CONVERSION_RATE\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"PAYMENTMODE\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"SENDER_NAME\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"SENDER_ADDRESS\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"SENDER_DISTRICT\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"SENDER_CITY\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"SENDER_COUNTRY\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"SENDER_QUESTION\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"SENDER_ANSWER\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"RECEIVER_NAME\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"RECEIVER_ADDRESS\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"RECEIVER_WARDS\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"RECEIVER_DISTRICT\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"RECEIVER_CITY\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"RECEIVER_PHONE\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"HOURS_RECEIVE\" type=\"s:string\" />\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"BANK_ID\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"BANK_ACCOUNT_NUMBER\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"TRANSACTION_MESSAGE\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"TRANSACTION_KEY\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"BANKBRANCH_NAME\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"BANKBRANCH_ADDRESS\" type=\"s:string\" />\r\n          </s:sequence>\r\n
+        \       </s:complexType>\r\n      </s:element>\r\n      <s:element name=\"SendTransactionJsonResponse\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"SendTransactionJsonResult\" type=\"s:string\"
+        />\r\n          </s:sequence>\r\n        </s:complexType>\r\n      </s:element>\r\n
+        \     <s:element name=\"UpdateTransactionJson\">\r\n        <s:complexType>\r\n
+        \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"AGENT_CODE\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"USERNAME\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"PASSWORD\" type=\"s:string\" />\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"TRANSACTION_ID\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"TRANSACTION_DATE\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"DEGIT_CODE\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"TRANSACTION_AMOUNT\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"SETT_AMOUNT\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"TRANSACTION_CURRENCY\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"SETT_CURRENCY\" type=\"s:string\" />\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"SETT_CONVERSION_RATE\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"PAYMENTMODE\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"SENDER_NAME\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"SENDER_ADDRESS\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"SENDER_DISTRICT\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"SENDER_CITY\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"SENDER_COUNTRY\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"SENDER_QUESTION\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"SENDER_ANSWER\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"RECEIVER_NAME\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"RECEIVER_ADDRESS\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"RECEIVER_WARDS\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"RECEIVER_DISTRICT\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"RECEIVER_CITY\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"RECEIVER_PHONE\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"HOURS_RECEIVE\" type=\"s:string\" />\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"BANK_ID\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"BANK_ACCOUNT_NUMBER\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"TRANSACTION_MESSAGE\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"TRANSACTION_KEY\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"BANKBRANCH_NAME\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"BANKBRANCH_ADDRESS\" type=\"s:string\" />\r\n          </s:sequence>\r\n
+        \       </s:complexType>\r\n      </s:element>\r\n      <s:element name=\"UpdateTransactionJsonResponse\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"UpdateTransactionJsonResult\" type=\"s:string\"
+        />\r\n          </s:sequence>\r\n        </s:complexType>\r\n      </s:element>\r\n
+        \     <s:element name=\"UpdateTransaction\">\r\n        <s:complexType>\r\n
+        \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"AGENT_CODE\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"USERNAME\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"PASSWORD\" type=\"s:string\" />\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"TRANSACTION_ID\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"TRANSACTION_DATE\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"DEGIT_CODE\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"TRANSACTION_AMOUNT\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"SETT_AMOUNT\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"TRANSACTION_CURRENCY\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"SETT_CURRENCY\" type=\"s:string\" />\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"SETT_CONVERSION_RATE\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"PAYMENTMODE\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"SENDER_NAME\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"SENDER_ADDRESS\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"SENDER_DISTRICT\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"SENDER_CITY\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"SENDER_COUNTRY\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"SENDER_QUESTION\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"SENDER_ANSWER\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"RECEIVER_NAME\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"RECEIVER_ADDRESS\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"RECEIVER_WARDS\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"RECEIVER_DISTRICT\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"RECEIVER_CITY\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"RECEIVER_PHONE\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"HOURS_RECEIVE\" type=\"s:string\" />\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"BANK_ID\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"BANK_ACCOUNT_NUMBER\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"TRANSACTION_MESSAGE\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"TRANSACTION_KEY\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"BANKBRANCH_NAME\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"BANKBRANCH_ADDRESS\" type=\"s:string\" />\r\n          </s:sequence>\r\n
+        \       </s:complexType>\r\n      </s:element>\r\n      <s:element name=\"UpdateTransactionResponse\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"UpdateTransactionResult\">\r\n              <s:complexType>\r\n
+        \               <s:sequence>\r\n                  <s:any minOccurs=\"0\" maxOccurs=\"unbounded\"
+        namespace=\"http://www.w3.org/2001/XMLSchema\" processContents=\"lax\" />\r\n
+        \                 <s:any minOccurs=\"1\" namespace=\"urn:schemas-microsoft-com:xml-diffgram-v1\"
+        processContents=\"lax\" />\r\n                </s:sequence>\r\n              </s:complexType>\r\n
+        \           </s:element>\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"QueryTXNStatus\">\r\n        <s:complexType>\r\n
+        \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"AGENT_CODE\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"USERNAME\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"PASSWORD\" type=\"s:string\" />\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"TRANSACTION_ID\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"FROMDATE\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"TODATE\" type=\"s:string\" />\r\n          </s:sequence>\r\n
+        \       </s:complexType>\r\n      </s:element>\r\n      <s:element name=\"QueryTXNStatusResponse\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"QueryTXNStatusResult\">\r\n              <s:complexType>\r\n
+        \               <s:sequence>\r\n                  <s:any minOccurs=\"0\" maxOccurs=\"unbounded\"
+        namespace=\"http://www.w3.org/2001/XMLSchema\" processContents=\"lax\" />\r\n
+        \                 <s:any minOccurs=\"1\" namespace=\"urn:schemas-microsoft-com:xml-diffgram-v1\"
+        processContents=\"lax\" />\r\n                </s:sequence>\r\n              </s:complexType>\r\n
+        \           </s:element>\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"QueryCashFlow\">\r\n        <s:complexType>\r\n
+        \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"AGENT_CODE\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"USERNAME\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"PASSWORD\" type=\"s:string\" />\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"FROMDATE\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"TODATE\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"TRANSACTION_CURRENCY\" type=\"s:string\" />\r\n          </s:sequence>\r\n
+        \       </s:complexType>\r\n      </s:element>\r\n      <s:element name=\"QueryCashFlowResponse\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"QueryCashFlowResult\">\r\n              <s:complexType>\r\n
+        \               <s:sequence>\r\n                  <s:any minOccurs=\"0\" maxOccurs=\"unbounded\"
+        namespace=\"http://www.w3.org/2001/XMLSchema\" processContents=\"lax\" />\r\n
+        \                 <s:any minOccurs=\"1\" namespace=\"urn:schemas-microsoft-com:xml-diffgram-v1\"
+        processContents=\"lax\" />\r\n                </s:sequence>\r\n              </s:complexType>\r\n
+        \           </s:element>\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"QueryCashFlowJson\">\r\n        <s:complexType>\r\n
+        \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"AGENT_CODE\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"USERNAME\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"PASSWORD\" type=\"s:string\" />\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"FROMDATE\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"TODATE\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"TRANSACTION_CURRENCY\" type=\"s:string\" />\r\n          </s:sequence>\r\n
+        \       </s:complexType>\r\n      </s:element>\r\n      <s:element name=\"QueryCashFlowJsonResponse\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"QueryCashFlowJsonResult\" type=\"s:string\"
+        />\r\n          </s:sequence>\r\n        </s:complexType>\r\n      </s:element>\r\n
+        \     <s:element name=\"QueryTXNStatusJson\">\r\n        <s:complexType>\r\n
+        \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"AGENT_CODE\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"USERNAME\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"PASSWORD\" type=\"s:string\" />\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"TRANSACTION_ID\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"FROMDATE\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"TODATE\" type=\"s:string\" />\r\n          </s:sequence>\r\n
+        \       </s:complexType>\r\n      </s:element>\r\n      <s:element name=\"QueryTXNStatusJsonResponse\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"QueryTXNStatusJsonResult\" type=\"s:string\"
+        />\r\n          </s:sequence>\r\n        </s:complexType>\r\n      </s:element>\r\n
+        \     <s:element name=\"ReceiveTransaction\">\r\n        <s:complexType>\r\n
+        \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"AGENT_CODE\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"USERNAME\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"PASSWORD\" type=\"s:string\" />\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"TRANSACTION_DATE\"
+        type=\"s:string\" />\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"ReceiveTransactionResponse\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"ReceiveTransactionResult\">\r\n              <s:complexType>\r\n
+        \               <s:sequence>\r\n                  <s:any minOccurs=\"0\" maxOccurs=\"unbounded\"
+        namespace=\"http://www.w3.org/2001/XMLSchema\" processContents=\"lax\" />\r\n
+        \                 <s:any minOccurs=\"1\" namespace=\"urn:schemas-microsoft-com:xml-diffgram-v1\"
+        processContents=\"lax\" />\r\n                </s:sequence>\r\n              </s:complexType>\r\n
+        \           </s:element>\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"ReturnTXNStatus\">\r\n        <s:complexType>\r\n
+        \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"AGENT_CODE\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"USERNAME\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"PASSWORD\" type=\"s:string\" />\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"ORDERNO1\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"PAID\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"MESSAGE_PAID\" type=\"s:string\" />\r\n          </s:sequence>\r\n
+        \       </s:complexType>\r\n      </s:element>\r\n      <s:element name=\"ReturnTXNStatusResponse\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"ReturnTXNStatusResult\">\r\n              <s:complexType>\r\n
+        \               <s:sequence>\r\n                  <s:any minOccurs=\"0\" maxOccurs=\"unbounded\"
+        namespace=\"http://www.w3.org/2001/XMLSchema\" processContents=\"lax\" />\r\n
+        \                 <s:any minOccurs=\"1\" namespace=\"urn:schemas-microsoft-com:xml-diffgram-v1\"
+        processContents=\"lax\" />\r\n                </s:sequence>\r\n              </s:complexType>\r\n
+        \           </s:element>\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"UpdateTXNStatusCancel\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"AGENT_CODE\" type=\"s:string\" />\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"USERNAME\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"PASSWORD\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"TRANSACTION_ID\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"CANCEL\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"MESSAGE_CANCEL\" type=\"s:string\"
+        />\r\n          </s:sequence>\r\n        </s:complexType>\r\n      </s:element>\r\n
+        \     <s:element name=\"UpdateTXNStatusCancelResponse\">\r\n        <s:complexType>\r\n
+        \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"UpdateTXNStatusCancelResult\">\r\n              <s:complexType>\r\n
+        \               <s:sequence>\r\n                  <s:any minOccurs=\"0\" maxOccurs=\"unbounded\"
+        namespace=\"http://www.w3.org/2001/XMLSchema\" processContents=\"lax\" />\r\n
+        \                 <s:any minOccurs=\"1\" namespace=\"urn:schemas-microsoft-com:xml-diffgram-v1\"
+        processContents=\"lax\" />\r\n                </s:sequence>\r\n              </s:complexType>\r\n
+        \           </s:element>\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"UpdateTXNStatusCancelJSon\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"AGENT_CODE\" type=\"s:string\" />\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"USERNAME\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"PASSWORD\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"TRANSACTION_ID\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"CANCEL\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"MESSAGE_CANCEL\" type=\"s:string\"
+        />\r\n          </s:sequence>\r\n        </s:complexType>\r\n      </s:element>\r\n
+        \     <s:element name=\"UpdateTXNStatusCancelJSonResponse\">\r\n        <s:complexType>\r\n
+        \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"UpdateTXNStatusCancelJSonResult\" type=\"s:string\" />\r\n          </s:sequence>\r\n
+        \       </s:complexType>\r\n      </s:element>\r\n      <s:element name=\"QueryListBanks\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"AGENT_CODE\" type=\"s:string\" />\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"USERNAME\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"PASSWORD\"
+        type=\"s:string\" />\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"QueryListBanksResponse\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"QueryListBanksResult\">\r\n              <s:complexType>\r\n
+        \               <s:sequence>\r\n                  <s:any minOccurs=\"0\" maxOccurs=\"unbounded\"
+        namespace=\"http://www.w3.org/2001/XMLSchema\" processContents=\"lax\" />\r\n
+        \                 <s:any minOccurs=\"1\" namespace=\"urn:schemas-microsoft-com:xml-diffgram-v1\"
+        processContents=\"lax\" />\r\n                </s:sequence>\r\n              </s:complexType>\r\n
+        \           </s:element>\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"QueryListBanksJson\">\r\n        <s:complexType>\r\n
+        \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"AGENT_CODE\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"USERNAME\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"PASSWORD\" type=\"s:string\" />\r\n
+        \         </s:sequence>\r\n        </s:complexType>\r\n      </s:element>\r\n
+        \     <s:element name=\"QueryListBanksJsonResponse\">\r\n        <s:complexType>\r\n
+        \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"QueryListBanksJsonResult\" type=\"s:string\" />\r\n          </s:sequence>\r\n
+        \       </s:complexType>\r\n      </s:element>\r\n      <s:element name=\"QueryListProvincesJson\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"AGENT_CODE\" type=\"s:string\" />\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"USERNAME\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"PASSWORD\"
+        type=\"s:string\" />\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"QueryListProvincesJsonResponse\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"QueryListProvincesJsonResult\" type=\"s:string\"
+        />\r\n          </s:sequence>\r\n        </s:complexType>\r\n      </s:element>\r\n
+        \     <s:element name=\"QueryListProvinces\">\r\n        <s:complexType>\r\n
+        \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"AGENT_CODE\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"USERNAME\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"PASSWORD\" type=\"s:string\" />\r\n
+        \         </s:sequence>\r\n        </s:complexType>\r\n      </s:element>\r\n
+        \     <s:element name=\"QueryListProvincesResponse\">\r\n        <s:complexType>\r\n
+        \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"QueryListProvincesResult\">\r\n              <s:complexType>\r\n                <s:sequence>\r\n
+        \                 <s:any minOccurs=\"0\" maxOccurs=\"unbounded\" namespace=\"http://www.w3.org/2001/XMLSchema\"
+        processContents=\"lax\" />\r\n                  <s:any minOccurs=\"1\" namespace=\"urn:schemas-microsoft-com:xml-diffgram-v1\"
+        processContents=\"lax\" />\r\n                </s:sequence>\r\n              </s:complexType>\r\n
+        \           </s:element>\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"QueryListDistricts\">\r\n        <s:complexType>\r\n
+        \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"AGENT_CODE\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"USERNAME\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"PASSWORD\" type=\"s:string\" />\r\n
+        \         </s:sequence>\r\n        </s:complexType>\r\n      </s:element>\r\n
+        \     <s:element name=\"QueryListDistrictsResponse\">\r\n        <s:complexType>\r\n
+        \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"QueryListDistrictsResult\">\r\n              <s:complexType>\r\n                <s:sequence>\r\n
+        \                 <s:any minOccurs=\"0\" maxOccurs=\"unbounded\" namespace=\"http://www.w3.org/2001/XMLSchema\"
+        processContents=\"lax\" />\r\n                  <s:any minOccurs=\"1\" namespace=\"urn:schemas-microsoft-com:xml-diffgram-v1\"
+        processContents=\"lax\" />\r\n                </s:sequence>\r\n              </s:complexType>\r\n
+        \           </s:element>\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"QueryListDistrictsJson\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"AGENT_CODE\" type=\"s:string\" />\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"USERNAME\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"PASSWORD\"
+        type=\"s:string\" />\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"QueryListDistrictsJsonResponse\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"QueryListDistrictsJsonResult\" type=\"s:string\"
+        />\r\n          </s:sequence>\r\n        </s:complexType>\r\n      </s:element>\r\n
+        \     <s:element name=\"QueryListWards\">\r\n        <s:complexType>\r\n          <s:sequence>\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"AGENT_CODE\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"USERNAME\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"PASSWORD\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"DISTRICT_ID\" type=\"s:string\" />\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"PROVINCE_ID\"
+        type=\"s:string\" />\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"QueryListWardsResponse\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"QueryListWardsResult\">\r\n              <s:complexType>\r\n
+        \               <s:sequence>\r\n                  <s:any minOccurs=\"0\" maxOccurs=\"unbounded\"
+        namespace=\"http://www.w3.org/2001/XMLSchema\" processContents=\"lax\" />\r\n
+        \                 <s:any minOccurs=\"1\" namespace=\"urn:schemas-microsoft-com:xml-diffgram-v1\"
+        processContents=\"lax\" />\r\n                </s:sequence>\r\n              </s:complexType>\r\n
+        \           </s:element>\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"QueryListWardsJson\">\r\n        <s:complexType>\r\n
+        \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"AGENT_CODE\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"USERNAME\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"PASSWORD\" type=\"s:string\" />\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"DISTRICT_ID\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"PROVINCE_ID\" type=\"s:string\" />\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"QueryListWardsJsonResponse\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"QueryListWardsJsonResult\" type=\"s:string\"
+        />\r\n          </s:sequence>\r\n        </s:complexType>\r\n      </s:element>\r\n
+        \     <s:element name=\"QueryListCountrysJson\">\r\n        <s:complexType>\r\n
+        \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"AGENT_CODE\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"USERNAME\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"PASSWORD\" type=\"s:string\" />\r\n
+        \         </s:sequence>\r\n        </s:complexType>\r\n      </s:element>\r\n
+        \     <s:element name=\"QueryListCountrysJsonResponse\">\r\n        <s:complexType>\r\n
+        \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"QueryListCountrysJsonResult\" type=\"s:string\" />\r\n          </s:sequence>\r\n
+        \       </s:complexType>\r\n      </s:element>\r\n      <s:element name=\"QueryListCountrys\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"AGENT_CODE\" type=\"s:string\" />\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"USERNAME\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"PASSWORD\"
+        type=\"s:string\" />\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"QueryListCountrysResponse\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"QueryListCountrysResult\">\r\n              <s:complexType>\r\n
+        \               <s:sequence>\r\n                  <s:any minOccurs=\"0\" maxOccurs=\"unbounded\"
+        namespace=\"http://www.w3.org/2001/XMLSchema\" processContents=\"lax\" />\r\n
+        \                 <s:any minOccurs=\"1\" namespace=\"urn:schemas-microsoft-com:xml-diffgram-v1\"
+        processContents=\"lax\" />\r\n                </s:sequence>\r\n              </s:complexType>\r\n
+        \           </s:element>\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"QueryListCurrencyReceive\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"AGENT_CODE\" type=\"s:string\" />\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"USERNAME\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"PASSWORD\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"CountryID\" type=\"s:string\" />\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"QueryListCurrencyReceiveResponse\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"QueryListCurrencyReceiveResult\">\r\n
+        \             <s:complexType>\r\n                <s:sequence>\r\n                  <s:any
+        minOccurs=\"0\" maxOccurs=\"unbounded\" namespace=\"http://www.w3.org/2001/XMLSchema\"
+        processContents=\"lax\" />\r\n                  <s:any minOccurs=\"1\" namespace=\"urn:schemas-microsoft-com:xml-diffgram-v1\"
+        processContents=\"lax\" />\r\n                </s:sequence>\r\n              </s:complexType>\r\n
+        \           </s:element>\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"QueryListCurrencyReceiveJson\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"AGENT_CODE\" type=\"s:string\" />\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"USERNAME\" type=\"s:string\"
+        />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"PASSWORD\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"CountryID\" type=\"s:string\" />\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"QueryListCurrencyReceiveJsonResponse\">\r\n
+        \       <s:complexType>\r\n          <s:sequence>\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"QueryListCurrencyReceiveJsonResult\"
+        type=\"s:string\" />\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"QueryTracking\">\r\n        <s:complexType>\r\n
+        \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"AGENT_CODE\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"USERNAME\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"PASSWORD\" type=\"s:string\" />\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"TRANSACTION_ID\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"SENDER_PHONE\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"COUNTRY_ID\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"AMOUNT\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"CURRENCY_ID\" type=\"s:string\" />\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"ENGLISH\" type=\"s:string\"
+        />\r\n          </s:sequence>\r\n        </s:complexType>\r\n      </s:element>\r\n
+        \     <s:element name=\"QueryTrackingResponse\">\r\n        <s:complexType>\r\n
+        \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"QueryTrackingResult\">\r\n              <s:complexType>\r\n                <s:sequence>\r\n
+        \                 <s:any minOccurs=\"0\" maxOccurs=\"unbounded\" namespace=\"http://www.w3.org/2001/XMLSchema\"
+        processContents=\"lax\" />\r\n                  <s:any minOccurs=\"1\" namespace=\"urn:schemas-microsoft-com:xml-diffgram-v1\"
+        processContents=\"lax\" />\r\n                </s:sequence>\r\n              </s:complexType>\r\n
+        \           </s:element>\r\n          </s:sequence>\r\n        </s:complexType>\r\n
+        \     </s:element>\r\n      <s:element name=\"QueryTrackingJson\">\r\n        <s:complexType>\r\n
+        \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"AGENT_CODE\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"USERNAME\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"PASSWORD\" type=\"s:string\" />\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"TRANSACTION_ID\"
+        type=\"s:string\" />\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"SENDER_PHONE\" type=\"s:string\" />\r\n            <s:element minOccurs=\"0\"
+        maxOccurs=\"1\" name=\"COUNTRY_ID\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"AMOUNT\" type=\"s:string\" />\r\n            <s:element
+        minOccurs=\"0\" maxOccurs=\"1\" name=\"CURRENCY_ID\" type=\"s:string\" />\r\n
+        \           <s:element minOccurs=\"0\" maxOccurs=\"1\" name=\"ENGLISH\" type=\"s:string\"
+        />\r\n          </s:sequence>\r\n        </s:complexType>\r\n      </s:element>\r\n
+        \     <s:element name=\"QueryTrackingJsonResponse\">\r\n        <s:complexType>\r\n
+        \         <s:sequence>\r\n            <s:element minOccurs=\"0\" maxOccurs=\"1\"
+        name=\"QueryTrackingJsonResult\" type=\"s:string\" />\r\n          </s:sequence>\r\n
+        \       </s:complexType>\r\n      </s:element>\r\n    </s:schema>\r\n  </wsdl:types>\r\n
+        \ <wsdl:message name=\"ChangePasswordSoapIn\">\r\n    <wsdl:part name=\"parameters\"
+        element=\"tns:ChangePassword\" />\r\n  </wsdl:message>\r\n  <wsdl:message
+        name=\"ChangePasswordSoapOut\">\r\n    <wsdl:part name=\"parameters\" element=\"tns:ChangePasswordResponse\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"ChangePasswordJsonSoapIn\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:ChangePasswordJson\" />\r\n
+        \ </wsdl:message>\r\n  <wsdl:message name=\"ChangePasswordJsonSoapOut\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:ChangePasswordJsonResponse\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"SendTransactionSoapIn\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:SendTransaction\" />\r\n
+        \ </wsdl:message>\r\n  <wsdl:message name=\"SendTransactionSoapOut\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:SendTransactionResponse\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"SendTransactionJsonSoapIn\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:SendTransactionJson\" />\r\n
+        \ </wsdl:message>\r\n  <wsdl:message name=\"SendTransactionJsonSoapOut\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:SendTransactionJsonResponse\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"UpdateTransactionJsonSoapIn\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:UpdateTransactionJson\" />\r\n
+        \ </wsdl:message>\r\n  <wsdl:message name=\"UpdateTransactionJsonSoapOut\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:UpdateTransactionJsonResponse\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"UpdateTransactionSoapIn\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:UpdateTransaction\" />\r\n
+        \ </wsdl:message>\r\n  <wsdl:message name=\"UpdateTransactionSoapOut\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:UpdateTransactionResponse\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"QueryTXNStatusSoapIn\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:QueryTXNStatus\" />\r\n  </wsdl:message>\r\n
+        \ <wsdl:message name=\"QueryTXNStatusSoapOut\">\r\n    <wsdl:part name=\"parameters\"
+        element=\"tns:QueryTXNStatusResponse\" />\r\n  </wsdl:message>\r\n  <wsdl:message
+        name=\"QueryCashFlowSoapIn\">\r\n    <wsdl:part name=\"parameters\" element=\"tns:QueryCashFlow\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"QueryCashFlowSoapOut\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:QueryCashFlowResponse\" />\r\n
+        \ </wsdl:message>\r\n  <wsdl:message name=\"QueryCashFlowJsonSoapIn\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:QueryCashFlowJson\" />\r\n
+        \ </wsdl:message>\r\n  <wsdl:message name=\"QueryCashFlowJsonSoapOut\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:QueryCashFlowJsonResponse\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"QueryTXNStatusJsonSoapIn\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:QueryTXNStatusJson\" />\r\n
+        \ </wsdl:message>\r\n  <wsdl:message name=\"QueryTXNStatusJsonSoapOut\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:QueryTXNStatusJsonResponse\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"ReceiveTransactionSoapIn\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:ReceiveTransaction\" />\r\n
+        \ </wsdl:message>\r\n  <wsdl:message name=\"ReceiveTransactionSoapOut\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:ReceiveTransactionResponse\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"ReturnTXNStatusSoapIn\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:ReturnTXNStatus\" />\r\n
+        \ </wsdl:message>\r\n  <wsdl:message name=\"ReturnTXNStatusSoapOut\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:ReturnTXNStatusResponse\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"UpdateTXNStatusCancelSoapIn\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:UpdateTXNStatusCancel\" />\r\n
+        \ </wsdl:message>\r\n  <wsdl:message name=\"UpdateTXNStatusCancelSoapOut\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:UpdateTXNStatusCancelResponse\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"UpdateTXNStatusCancelJSonSoapIn\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:UpdateTXNStatusCancelJSon\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"UpdateTXNStatusCancelJSonSoapOut\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:UpdateTXNStatusCancelJSonResponse\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"QueryListBanksSoapIn\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:QueryListBanks\" />\r\n  </wsdl:message>\r\n
+        \ <wsdl:message name=\"QueryListBanksSoapOut\">\r\n    <wsdl:part name=\"parameters\"
+        element=\"tns:QueryListBanksResponse\" />\r\n  </wsdl:message>\r\n  <wsdl:message
+        name=\"QueryListBanksJsonSoapIn\">\r\n    <wsdl:part name=\"parameters\" element=\"tns:QueryListBanksJson\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"QueryListBanksJsonSoapOut\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:QueryListBanksJsonResponse\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"QueryListProvincesJsonSoapIn\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:QueryListProvincesJson\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"QueryListProvincesJsonSoapOut\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:QueryListProvincesJsonResponse\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"QueryListProvincesSoapIn\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:QueryListProvinces\" />\r\n
+        \ </wsdl:message>\r\n  <wsdl:message name=\"QueryListProvincesSoapOut\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:QueryListProvincesResponse\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"QueryListDistrictsSoapIn\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:QueryListDistricts\" />\r\n
+        \ </wsdl:message>\r\n  <wsdl:message name=\"QueryListDistrictsSoapOut\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:QueryListDistrictsResponse\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"QueryListDistrictsJsonSoapIn\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:QueryListDistrictsJson\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"QueryListDistrictsJsonSoapOut\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:QueryListDistrictsJsonResponse\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"QueryListWardsSoapIn\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:QueryListWards\" />\r\n  </wsdl:message>\r\n
+        \ <wsdl:message name=\"QueryListWardsSoapOut\">\r\n    <wsdl:part name=\"parameters\"
+        element=\"tns:QueryListWardsResponse\" />\r\n  </wsdl:message>\r\n  <wsdl:message
+        name=\"QueryListWardsJsonSoapIn\">\r\n    <wsdl:part name=\"parameters\" element=\"tns:QueryListWardsJson\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"QueryListWardsJsonSoapOut\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:QueryListWardsJsonResponse\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"QueryListCountrysJsonSoapIn\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:QueryListCountrysJson\" />\r\n
+        \ </wsdl:message>\r\n  <wsdl:message name=\"QueryListCountrysJsonSoapOut\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:QueryListCountrysJsonResponse\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"QueryListCountrysSoapIn\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:QueryListCountrys\" />\r\n
+        \ </wsdl:message>\r\n  <wsdl:message name=\"QueryListCountrysSoapOut\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:QueryListCountrysResponse\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"QueryListCurrencyReceiveSoapIn\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:QueryListCurrencyReceive\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"QueryListCurrencyReceiveSoapOut\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:QueryListCurrencyReceiveResponse\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"QueryListCurrencyReceiveJsonSoapIn\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:QueryListCurrencyReceiveJson\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"QueryListCurrencyReceiveJsonSoapOut\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:QueryListCurrencyReceiveJsonResponse\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"QueryTrackingSoapIn\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:QueryTracking\" />\r\n  </wsdl:message>\r\n
+        \ <wsdl:message name=\"QueryTrackingSoapOut\">\r\n    <wsdl:part name=\"parameters\"
+        element=\"tns:QueryTrackingResponse\" />\r\n  </wsdl:message>\r\n  <wsdl:message
+        name=\"QueryTrackingJsonSoapIn\">\r\n    <wsdl:part name=\"parameters\" element=\"tns:QueryTrackingJson\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:message name=\"QueryTrackingJsonSoapOut\">\r\n
+        \   <wsdl:part name=\"parameters\" element=\"tns:QueryTrackingJsonResponse\"
+        />\r\n  </wsdl:message>\r\n  <wsdl:portType name=\"ServiceSoap\">\r\n    <wsdl:operation
+        name=\"ChangePassword\">\r\n      <wsdl:input message=\"tns:ChangePasswordSoapIn\"
+        />\r\n      <wsdl:output message=\"tns:ChangePasswordSoapOut\" />\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"ChangePasswordJson\">\r\n      <wsdl:input message=\"tns:ChangePasswordJsonSoapIn\"
+        />\r\n      <wsdl:output message=\"tns:ChangePasswordJsonSoapOut\" />\r\n
+        \   </wsdl:operation>\r\n    <wsdl:operation name=\"SendTransaction\">\r\n
+        \     <wsdl:input message=\"tns:SendTransactionSoapIn\" />\r\n      <wsdl:output
+        message=\"tns:SendTransactionSoapOut\" />\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"SendTransactionJson\">\r\n      <wsdl:input message=\"tns:SendTransactionJsonSoapIn\"
+        />\r\n      <wsdl:output message=\"tns:SendTransactionJsonSoapOut\" />\r\n
+        \   </wsdl:operation>\r\n    <wsdl:operation name=\"UpdateTransactionJson\">\r\n
+        \     <wsdl:input message=\"tns:UpdateTransactionJsonSoapIn\" />\r\n      <wsdl:output
+        message=\"tns:UpdateTransactionJsonSoapOut\" />\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"UpdateTransaction\">\r\n      <wsdl:input message=\"tns:UpdateTransactionSoapIn\"
+        />\r\n      <wsdl:output message=\"tns:UpdateTransactionSoapOut\" />\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"QueryTXNStatus\">\r\n      <wsdl:input message=\"tns:QueryTXNStatusSoapIn\"
+        />\r\n      <wsdl:output message=\"tns:QueryTXNStatusSoapOut\" />\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"QueryCashFlow\">\r\n      <wsdl:input message=\"tns:QueryCashFlowSoapIn\"
+        />\r\n      <wsdl:output message=\"tns:QueryCashFlowSoapOut\" />\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"QueryCashFlowJson\">\r\n      <wsdl:input message=\"tns:QueryCashFlowJsonSoapIn\"
+        />\r\n      <wsdl:output message=\"tns:QueryCashFlowJsonSoapOut\" />\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"QueryTXNStatusJson\">\r\n      <wsdl:input message=\"tns:QueryTXNStatusJsonSoapIn\"
+        />\r\n      <wsdl:output message=\"tns:QueryTXNStatusJsonSoapOut\" />\r\n
+        \   </wsdl:operation>\r\n    <wsdl:operation name=\"ReceiveTransaction\">\r\n
+        \     <wsdl:input message=\"tns:ReceiveTransactionSoapIn\" />\r\n      <wsdl:output
+        message=\"tns:ReceiveTransactionSoapOut\" />\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"ReturnTXNStatus\">\r\n      <wsdl:input message=\"tns:ReturnTXNStatusSoapIn\"
+        />\r\n      <wsdl:output message=\"tns:ReturnTXNStatusSoapOut\" />\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"UpdateTXNStatusCancel\">\r\n      <wsdl:input message=\"tns:UpdateTXNStatusCancelSoapIn\"
+        />\r\n      <wsdl:output message=\"tns:UpdateTXNStatusCancelSoapOut\" />\r\n
+        \   </wsdl:operation>\r\n    <wsdl:operation name=\"UpdateTXNStatusCancelJSon\">\r\n
+        \     <wsdl:input message=\"tns:UpdateTXNStatusCancelJSonSoapIn\" />\r\n      <wsdl:output
+        message=\"tns:UpdateTXNStatusCancelJSonSoapOut\" />\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"QueryListBanks\">\r\n      <wsdl:input message=\"tns:QueryListBanksSoapIn\"
+        />\r\n      <wsdl:output message=\"tns:QueryListBanksSoapOut\" />\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"QueryListBanksJson\">\r\n      <wsdl:input message=\"tns:QueryListBanksJsonSoapIn\"
+        />\r\n      <wsdl:output message=\"tns:QueryListBanksJsonSoapOut\" />\r\n
+        \   </wsdl:operation>\r\n    <wsdl:operation name=\"QueryListProvincesJson\">\r\n
+        \     <wsdl:input message=\"tns:QueryListProvincesJsonSoapIn\" />\r\n      <wsdl:output
+        message=\"tns:QueryListProvincesJsonSoapOut\" />\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"QueryListProvinces\">\r\n      <wsdl:input message=\"tns:QueryListProvincesSoapIn\"
+        />\r\n      <wsdl:output message=\"tns:QueryListProvincesSoapOut\" />\r\n
+        \   </wsdl:operation>\r\n    <wsdl:operation name=\"QueryListDistricts\">\r\n
+        \     <wsdl:input message=\"tns:QueryListDistrictsSoapIn\" />\r\n      <wsdl:output
+        message=\"tns:QueryListDistrictsSoapOut\" />\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"QueryListDistrictsJson\">\r\n      <wsdl:input
+        message=\"tns:QueryListDistrictsJsonSoapIn\" />\r\n      <wsdl:output message=\"tns:QueryListDistrictsJsonSoapOut\"
+        />\r\n    </wsdl:operation>\r\n    <wsdl:operation name=\"QueryListWards\">\r\n
+        \     <wsdl:input message=\"tns:QueryListWardsSoapIn\" />\r\n      <wsdl:output
+        message=\"tns:QueryListWardsSoapOut\" />\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryListWardsJson\">\r\n      <wsdl:input message=\"tns:QueryListWardsJsonSoapIn\"
+        />\r\n      <wsdl:output message=\"tns:QueryListWardsJsonSoapOut\" />\r\n
+        \   </wsdl:operation>\r\n    <wsdl:operation name=\"QueryListCountrysJson\">\r\n
+        \     <wsdl:input message=\"tns:QueryListCountrysJsonSoapIn\" />\r\n      <wsdl:output
+        message=\"tns:QueryListCountrysJsonSoapOut\" />\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"QueryListCountrys\">\r\n      <wsdl:input message=\"tns:QueryListCountrysSoapIn\"
+        />\r\n      <wsdl:output message=\"tns:QueryListCountrysSoapOut\" />\r\n    </wsdl:operation>\r\n
+        \   <wsdl:operation name=\"QueryListCurrencyReceive\">\r\n      <wsdl:input
+        message=\"tns:QueryListCurrencyReceiveSoapIn\" />\r\n      <wsdl:output message=\"tns:QueryListCurrencyReceiveSoapOut\"
+        />\r\n    </wsdl:operation>\r\n    <wsdl:operation name=\"QueryListCurrencyReceiveJson\">\r\n
+        \     <wsdl:input message=\"tns:QueryListCurrencyReceiveJsonSoapIn\" />\r\n
+        \     <wsdl:output message=\"tns:QueryListCurrencyReceiveJsonSoapOut\" />\r\n
+        \   </wsdl:operation>\r\n    <wsdl:operation name=\"QueryTracking\">\r\n      <wsdl:input
+        message=\"tns:QueryTrackingSoapIn\" />\r\n      <wsdl:output message=\"tns:QueryTrackingSoapOut\"
+        />\r\n    </wsdl:operation>\r\n    <wsdl:operation name=\"QueryTrackingJson\">\r\n
+        \     <wsdl:input message=\"tns:QueryTrackingJsonSoapIn\" />\r\n      <wsdl:output
+        message=\"tns:QueryTrackingJsonSoapOut\" />\r\n    </wsdl:operation>\r\n  </wsdl:portType>\r\n
+        \ <wsdl:binding name=\"ServiceSoap\" type=\"tns:ServiceSoap\">\r\n    <soap:binding
+        transport=\"http://schemas.xmlsoap.org/soap/http\" />\r\n    <wsdl:operation
+        name=\"ChangePassword\">\r\n      <soap:operation soapAction=\"IN_OUT_API/ChangePassword\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"ChangePasswordJson\">\r\n      <soap:operation soapAction=\"IN_OUT_API/ChangePasswordJson\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"SendTransaction\">\r\n      <soap:operation soapAction=\"IN_OUT_API/SendTransaction\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"SendTransactionJson\">\r\n      <soap:operation soapAction=\"IN_OUT_API/SendTransactionJson\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"UpdateTransactionJson\">\r\n      <soap:operation soapAction=\"IN_OUT_API/UpdateTransactionJson\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"UpdateTransaction\">\r\n      <soap:operation soapAction=\"IN_OUT_API/UpdateTransaction\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryTXNStatus\">\r\n      <soap:operation soapAction=\"IN_OUT_API/QueryTXNStatus\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryCashFlow\">\r\n      <soap:operation soapAction=\"IN_OUT_API/QueryCashFlow\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryCashFlowJson\">\r\n      <soap:operation soapAction=\"IN_OUT_API/QueryCashFlowJson\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryTXNStatusJson\">\r\n      <soap:operation soapAction=\"IN_OUT_API/QueryTXNStatusJson\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"ReceiveTransaction\">\r\n      <soap:operation soapAction=\"IN_OUT_API/ReceiveTransaction\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"ReturnTXNStatus\">\r\n      <soap:operation soapAction=\"IN_OUT_API/ReturnTXNStatus\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"UpdateTXNStatusCancel\">\r\n      <soap:operation soapAction=\"IN_OUT_API/UpdateTXNStatusCancel\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"UpdateTXNStatusCancelJSon\">\r\n      <soap:operation soapAction=\"IN_OUT_API/UpdateTXNStatusCancelJSon\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryListBanks\">\r\n      <soap:operation soapAction=\"IN_OUT_API/QueryListBanks\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryListBanksJson\">\r\n      <soap:operation soapAction=\"IN_OUT_API/QueryListBanksJson\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryListProvincesJson\">\r\n      <soap:operation soapAction=\"IN_OUT_API/QueryListProvincesJson\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryListProvinces\">\r\n      <soap:operation soapAction=\"IN_OUT_API/QueryListProvinces\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryListDistricts\">\r\n      <soap:operation soapAction=\"IN_OUT_API/QueryListDistricts\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryListDistrictsJson\">\r\n      <soap:operation soapAction=\"IN_OUT_API/QueryListDistrictsJson\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryListWards\">\r\n      <soap:operation soapAction=\"IN_OUT_API/QueryListWards\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryListWardsJson\">\r\n      <soap:operation soapAction=\"IN_OUT_API/QueryListWardsJson\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryListCountrysJson\">\r\n      <soap:operation soapAction=\"IN_OUT_API/QueryListCountrysJson\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryListCountrys\">\r\n      <soap:operation soapAction=\"IN_OUT_API/QueryListCountrys\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryListCurrencyReceive\">\r\n      <soap:operation soapAction=\"IN_OUT_API/QueryListCurrencyReceive\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryListCurrencyReceiveJson\">\r\n      <soap:operation soapAction=\"IN_OUT_API/QueryListCurrencyReceiveJson\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryTracking\">\r\n      <soap:operation soapAction=\"IN_OUT_API/QueryTracking\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryTrackingJson\">\r\n      <soap:operation soapAction=\"IN_OUT_API/QueryTrackingJson\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n  </wsdl:binding>\r\n
+        \ <wsdl:binding name=\"ServiceSoap12\" type=\"tns:ServiceSoap\">\r\n    <soap12:binding
+        transport=\"http://schemas.xmlsoap.org/soap/http\" />\r\n    <wsdl:operation
+        name=\"ChangePassword\">\r\n      <soap12:operation soapAction=\"IN_OUT_API/ChangePassword\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"ChangePasswordJson\">\r\n      <soap12:operation soapAction=\"IN_OUT_API/ChangePasswordJson\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"SendTransaction\">\r\n      <soap12:operation soapAction=\"IN_OUT_API/SendTransaction\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"SendTransactionJson\">\r\n      <soap12:operation soapAction=\"IN_OUT_API/SendTransactionJson\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"UpdateTransactionJson\">\r\n      <soap12:operation soapAction=\"IN_OUT_API/UpdateTransactionJson\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"UpdateTransaction\">\r\n      <soap12:operation soapAction=\"IN_OUT_API/UpdateTransaction\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryTXNStatus\">\r\n      <soap12:operation soapAction=\"IN_OUT_API/QueryTXNStatus\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryCashFlow\">\r\n      <soap12:operation soapAction=\"IN_OUT_API/QueryCashFlow\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryCashFlowJson\">\r\n      <soap12:operation soapAction=\"IN_OUT_API/QueryCashFlowJson\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryTXNStatusJson\">\r\n      <soap12:operation soapAction=\"IN_OUT_API/QueryTXNStatusJson\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"ReceiveTransaction\">\r\n      <soap12:operation soapAction=\"IN_OUT_API/ReceiveTransaction\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"ReturnTXNStatus\">\r\n      <soap12:operation soapAction=\"IN_OUT_API/ReturnTXNStatus\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"UpdateTXNStatusCancel\">\r\n      <soap12:operation soapAction=\"IN_OUT_API/UpdateTXNStatusCancel\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"UpdateTXNStatusCancelJSon\">\r\n      <soap12:operation soapAction=\"IN_OUT_API/UpdateTXNStatusCancelJSon\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryListBanks\">\r\n      <soap12:operation soapAction=\"IN_OUT_API/QueryListBanks\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryListBanksJson\">\r\n      <soap12:operation soapAction=\"IN_OUT_API/QueryListBanksJson\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryListProvincesJson\">\r\n      <soap12:operation soapAction=\"IN_OUT_API/QueryListProvincesJson\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryListProvinces\">\r\n      <soap12:operation soapAction=\"IN_OUT_API/QueryListProvinces\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryListDistricts\">\r\n      <soap12:operation soapAction=\"IN_OUT_API/QueryListDistricts\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryListDistrictsJson\">\r\n      <soap12:operation soapAction=\"IN_OUT_API/QueryListDistrictsJson\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryListWards\">\r\n      <soap12:operation soapAction=\"IN_OUT_API/QueryListWards\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryListWardsJson\">\r\n      <soap12:operation soapAction=\"IN_OUT_API/QueryListWardsJson\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryListCountrysJson\">\r\n      <soap12:operation soapAction=\"IN_OUT_API/QueryListCountrysJson\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryListCountrys\">\r\n      <soap12:operation soapAction=\"IN_OUT_API/QueryListCountrys\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryListCurrencyReceive\">\r\n      <soap12:operation soapAction=\"IN_OUT_API/QueryListCurrencyReceive\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryListCurrencyReceiveJson\">\r\n      <soap12:operation soapAction=\"IN_OUT_API/QueryListCurrencyReceiveJson\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryTracking\">\r\n      <soap12:operation soapAction=\"IN_OUT_API/QueryTracking\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n    <wsdl:operation
+        name=\"QueryTrackingJson\">\r\n      <soap12:operation soapAction=\"IN_OUT_API/QueryTrackingJson\"
+        style=\"document\" />\r\n      <wsdl:input>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:input>\r\n      <wsdl:output>\r\n        <soap12:body use=\"literal\"
+        />\r\n      </wsdl:output>\r\n    </wsdl:operation>\r\n  </wsdl:binding>\r\n
+        \ <wsdl:service name=\"Service\">\r\n    <wsdl:port name=\"ServiceSoap\" binding=\"tns:ServiceSoap\">\r\n
+        \     <soap:address location=\"https://ws.remit.vn/ws.asmx\" />\r\n    </wsdl:port>\r\n
+        \   <wsdl:port name=\"ServiceSoap12\" binding=\"tns:ServiceSoap12\">\r\n      <soap12:address
+        location=\"https://ws.remit.vn/ws.asmx\" />\r\n    </wsdl:port>\r\n  </wsdl:service>\r\n</wsdl:definitions>"
+    http_version: 
+  recorded_at: Mon, 13 Feb 2017 05:56:20 GMT
+- request:
+    method: post
+    uri: https://ws.remit.vn/ws.asmx
+    body:
+      encoding: UTF-8
+      string: <?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="IN_OUT_API"
+        xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Body><tns:QueryTXNStatus><tns:AGENT_CODE
+        xsi:nil="true"/><tns:USERNAME>[username]</tns:USERNAME><tns:PASSWORD>[password]</tns:PASSWORD><tns:TRANSACTION_ID>6f0554c4f4d3</tns:TRANSACTION_ID></tns:QueryTXNStatus></env:Body></env:Envelope>
+    headers:
+      Soapaction:
+      - '"IN_OUT_API/QueryTXNStatus"'
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Content-Length:
+      - '461'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private, max-age=0
+      Content-Type:
+      - text/xml; charset=utf-8
+      Vary:
+      - Accept-Encoding
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 2.0.50727
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Mon, 13 Feb 2017 05:56:20 GMT
+      Content-Length:
+      - '900'
+    body:
+      encoding: ASCII-8BIT
+      string: <?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><QueryTXNStatusResponse
+        xmlns="IN_OUT_API"><QueryTXNStatusResult><xs:schema id="NewDataSet" xmlns=""
+        xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"><xs:element
+        name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="QueryTXNStatus"
+        msdata:UseCurrentLocale="true"><xs:complexType><xs:choice minOccurs="0" maxOccurs="unbounded"><xs:element
+        name="QueryTXNStatus"><xs:complexType><xs:sequence><xs:element name="RESPONSE_CODE"
+        type="xs:string" minOccurs="0" /><xs:element name="TRANSACTION_ID" type="xs:string"
+        minOccurs="0" /><xs:element name="SENDER_NAME" type="xs:string" minOccurs="0"
+        /><xs:element name="RECEIVER_NAME" type="xs:string" minOccurs="0" /><xs:element
+        name="SETT_AMOUNT" type="xs:double" minOccurs="0" /><xs:element name="SETT_CURRENCY"
+        type="xs:string" minOccurs="0" /><xs:element name="PAYMENTMODE" type="xs:string"
+        minOccurs="0" /><xs:element name="TRANSACTION_STATUS" type="xs:string" minOccurs="0"
+        /><xs:element name="STATUS_DATE" type="xs:dateTime" minOccurs="0" /><xs:element
+        name="CANCEL_REASON" type="xs:string" minOccurs="0" /><xs:element name="ADJUSTMENT_REASON"
+        type="xs:string" minOccurs="0" /></xs:sequence></xs:complexType></xs:element></xs:choice></xs:complexType></xs:element></xs:schema><diffgr:diffgram
+        xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1"><DocumentElement
+        xmlns=""><QueryTXNStatus diffgr:id="QueryTXNStatus1" msdata:rowOrder="0"><RESPONSE_CODE>0000</RESPONSE_CODE><TRANSACTION_ID>6f0554c4f4d3</TRANSACTION_ID><SENDER_NAME>Test
+        Sender</SENDER_NAME><RECEIVER_NAME>Test Recipient</RECEIVER_NAME><SETT_AMOUNT>50000</SETT_AMOUNT><SETT_CURRENCY>VND</SETT_CURRENCY><PAYMENTMODE>FT</PAYMENTMODE><TRANSACTION_STATUS>P</TRANSACTION_STATUS><CANCEL_REASON
+        /><ADJUSTMENT_REASON /></QueryTXNStatus></DocumentElement></diffgr:diffgram></QueryTXNStatusResult></QueryTXNStatusResponse></soap:Body></soap:Envelope>
+    http_version: 
+  recorded_at: Mon, 13 Feb 2017 05:56:22 GMT
 recorded_with: VCR 3.0.3
