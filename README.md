@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.org/imacchiato/e_way_client-ruby.svg?branch=master)](https://travis-ci.org/imacchiato/e_way_client-ruby)
 
+Ruby wrapper for EWay.
+
 ## Installation
 
 Add this line to your application's Gemfile:
