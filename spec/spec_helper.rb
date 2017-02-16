@@ -9,9 +9,11 @@ require "timecop"
 
 SPEC_DIR = Pathname.new(File.dirname(__FILE__))
 CONFIG_YML = SPEC_DIR.join("config.yml")
+LOG_PATH = SPEC_DIR.join("log", "test.log")
+FileUtils.mkdir_p SPEC_DIR.join("log")
 CONFIG = YAML.load_file(CONFIG_YML).with_indifferent_access.merge(
-  log: false,
-  logger: Logger.new(STDOUT)
+  log: true,
+  logger: Logger.new(LOG_PATH)
 )
 
 require 'vcr'

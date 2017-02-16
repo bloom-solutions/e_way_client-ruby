@@ -11,6 +11,7 @@ module EWayClient
     attribute :logger, Object
     attribute :message, Hash, lazy: true, default: :default_message
     attribute :action, Symbol, lazy: true, default: :default_action
+    attribute :scrub_directives, Array[Hash], default: :default_scrub_directives
     attribute(:soap_client_args, Hash, {
       lazy: true,
       default: :default_soap_client_args,
@@ -26,10 +27,14 @@ module EWayClient
       GenActionName.(self.class)
     end
 
+    def default_scrub_directives
+      [ {name: {matches: /password/i}} ]
+    end
+
     def default_soap_client_args
       SOAP_ATTRS.each_with_object({}) do |attr, hash|
         hash[attr] = self.send(attr)
-      end
+      end.merge(scrub: scrub_directives)
     end
 
   end
