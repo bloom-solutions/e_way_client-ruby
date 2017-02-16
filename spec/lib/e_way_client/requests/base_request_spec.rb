@@ -10,6 +10,7 @@ module EWayClient
       it { is_expected.to have_attribute(:password, String) }
       it { is_expected.to have_attribute(:log).with_default(false) } # Boolean
       it { is_expected.to have_attribute(:logger) }
+      it { is_expected.to have_attribute(:scrub_directives, Array[Hash]) }
     end
 
     describe "#soap_client_args" do
@@ -36,6 +37,7 @@ module EWayClient
         expect(request.soap_client_args[:logger]).to eq logger
         expect(request.soap_client_args[:message]).to eq({hi: "there"})
         expect(request.soap_client_args[:action]).to eq :base
+        expect(request.soap_client_args[:scrub]).to eq request.scrub_directives
       end
     end
 
