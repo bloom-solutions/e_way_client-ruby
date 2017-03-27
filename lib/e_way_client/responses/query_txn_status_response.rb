@@ -11,10 +11,14 @@ module EWayClient
       lazy: true,
       default: :default_error_message,
     })
-    attribute :transaction_status, String, {
+    attribute(:transaction_status, String, {
       lazy: true,
       default: :default_transaction_status,
-    }
+    })
+    attribute(:cancel_reason, String, {
+      lazy: true,
+      default: :default_cancel_reason,
+    })
 
     private
 
@@ -32,6 +36,10 @@ module EWayClient
 
     def default_transaction_status
       data[:transaction_status]
+    end
+
+    def default_cancel_reason
+      data[:cancel_reason]
     end
 
   end
