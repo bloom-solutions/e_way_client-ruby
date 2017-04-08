@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [Unreleased]
+### Added
+- Province factory
+
 ## [1.1.0] - 2017-03-27
 ### Added
 - Added `cancel_reason` for `QueryTxnStatusResponse` so that developers could use this to describe cancelled transactions
