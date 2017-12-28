@@ -1,4 +1,4 @@
-FactoryGirl.define do
+FactoryBot.define do
 
   factory :e_way_client_province, class: "EWayClient::Province" do
     sequence(:province_id) {|n| n}
