@@ -1,6 +1,6 @@
 # EWayClient
 
-[![Build Status](https://travis-ci.org/imacchiato/e_way_client-ruby.svg?branch=master)](https://travis-ci.org/imacchiato/e_way_client-ruby)
+[![Build Status](https://travis-ci.org/bloom-solutions/e_way_client-ruby.svg?branch=master)](https://travis-ci.org/bloom-solutions/e_way_client-ruby)
 
 Ruby wrapper for EWay.
 
@@ -47,7 +47,7 @@ To aid development in your apps, you may include FactoryBot factories of the mod
 
 ## Contributing
 
-Bug reports and pull requests are welcome on [GitHub](https://github.com/imacchiato/e_way_client-ruby). This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on [GitHub](https://github.com/bloom-solutions/e_way_client-ruby). This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 
 ## License
