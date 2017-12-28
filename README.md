@@ -38,7 +38,7 @@ See detailed usage examples in `spec/acceptance`.
 
 ### Factories
 
-To aid development in your apps, you may include FactoryGirl factories of the models by calling `require "e_way_client/factories"`.
+To aid development in your apps, you may include FactoryBot factories of the models by calling `require "e_way_client/factories"`.
 
 ## Development
 
