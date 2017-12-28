@@ -4,7 +4,7 @@ require "e_way_client"
 require "pathname"
 require "active_support/core_ext/hash/indifferent_access"
 require "yaml"
-require "virtus-matchers"
+require "virtus/matchers/rspec"
 require "timecop"
 
 SPEC_DIR = Pathname.new(File.dirname(__FILE__))
