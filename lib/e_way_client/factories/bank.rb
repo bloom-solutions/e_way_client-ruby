@@ -4,7 +4,7 @@ FactoryBot.define do
     sequence(:bank_id) {|n| n}
     sequence(:bank_name_eng) {|n| "Eng Bank #{n}"}
     sequence(:bank_name_viet) {|n| "Viet Bank #{n}"}
-    response_code "0000"
+    response_code { "0000" }
   end
 
 end
